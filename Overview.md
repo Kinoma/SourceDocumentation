@@ -10,7 +10,7 @@ April 1, 2015
 
 KinomaJS is a runtime environment for delivering applications on a wide range of consumer electronic products. The primary programming interface to KinomajS is a JavaScript API of global constructors, functions, and objects that define the containment hierarchy, appearance, behavior, and flow of applications and shells. KinomaJS also provides an optional XML programming interface. This document introduces KinomaJS and important related concepts; all developers using KinomaJS should read it before moving on to the other KinomaJS-related documents mentioned within.
 
-This document assumes you already know JavaScript and XML programming concepts, including JavaScript constructors, objects, functions, properties, getters, and setters, and XML documents, elements, and attributes. In particular, note that a “foo instance” is an object created with new Foo (where Foo is a constructor in JavaScript), and a “foo object” is an object whose prototype is, directly or indirectly, Foo.prototype. 
+This document assumes you already know JavaScript and XML programming concepts, including JavaScript constructors, objects, functions, properties, getters, and setters, and XML documents, elements, and attributes. In particular, note that a “`foo` instance” is an object created with `new Foo` (where `Foo` is a constructor in JavaScript), and a “`foo` object” is an object whose prototype is, directly or indirectly, `Foo.prototype`. 
 
 This document is organized as follows:
 
