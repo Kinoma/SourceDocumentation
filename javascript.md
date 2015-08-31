@@ -1190,7 +1190,10 @@ These events are triggered when characters are typed and the `content` object is
 
 This event is triggered when the time of the specified `content` object changes.
 
-#####`onTouchBegan(content, id, x, y, ticks) onTouchCancelled(content, id) onTouchEnded(content, id, x, y, ticks) onTouchMoved(content, id, x, y, ticks)`
+#####`onTouchBegan(content, id, x, y, ticks)`
+#####`onTouchCancelled(content, id)`
+#####`onTouchEnded(content, id, x, y, ticks) `
+#####`onTouchMoved(content, id, x, y, ticks)`
 |||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
