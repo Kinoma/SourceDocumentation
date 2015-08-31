@@ -1,7 +1,7 @@
 
-# KinomaJS Overview<!--This is a comment-->
+# KinomaJS Overview
 
-Draft version 0.2.1 (Preliminary)<!--This is a another comment-->
+Draft version 0.2.1 (Preliminary)
 
 April 1, 2015
 
