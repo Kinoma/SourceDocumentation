@@ -1,7 +1,7 @@
 #KinomaJS Documentation Writer’s Guide
 ___
 
-##1	About This Guide
+##About This Guide
 The purpose of this guide is to help ensure quality and consistency in the writing of the KinomaJS documentation suite and otherwise make the writing process and editing process go smoothly. If the multiple programmer-writers heed these guidelines, the editing that will be done to their drafts will go a lot faster and be a more enjoyable experience for everyone involved.
 
 
@@ -22,7 +22,7 @@ Please feel free to consult with the editor (Caroline Rose, crose@differnet.com)
 
 ---
 <!-- From Caroline: Entire section needs updating to reflect the move from Word to Github/Markdown. -->
-##2	Procedural Notes
+##Procedural Notes
 If you’re reading this guide now for orientation purposes only and are not yet ready to dig in and start writing, you can turn back to this section later.
 
 
@@ -48,9 +48,9 @@ You’ll iterate with the editor until the draft is ready for tech review (or pu
 
 ---
 
-##3	About the KinomaJS Documents
+##About the KinomaJS Documents
 The KinomaJS documentation suite consists of a tightly interwoven set of documents, and it’s important to know the connections between them.
-The documents in the KinomaJS suite started out as the KPR Development Notes, documents describing KinomaXML (then called KPR Markup) and KPR Touch, and other miscellaneous documents. These got reshuffled and renamed into the following:
+The documents in the KinomaJS suite started out as the KPR Development Notes, documents describing KinomaJS XML (then called KPR Markup) and KPR Touch, and other miscellaneous documents. These got reshuffled and renamed into the following:
 
 * *KinomaJS Overview* — This document provides information that developers need to know regardless of which KinomaJS development path they choose. It contains only conceptual and overview information, with examples to help orient the developer; it does not include reference-type details.
 
@@ -59,11 +59,11 @@ The documents in the KinomaJS suite started out as the KPR Development Notes, do
 
 ---
 
-##4	Document Structure and Writing Guidelines
+##Document Structure and Writing Guidelines
 The documents in the KinomaJS documentation suite have the following structure (with close interrelationships among the different parts, as described in the sections below):
 
-<!--From Caroline: Re: "Title" below
-Yet to be decided whether to have version number and/or publication date here. -->
+<!--From Caroline: 
+Yet to be decided whether to have version number and/or publication date after the title. -->
 1.	Title (a table of contents will be generated automatically)
 
 
@@ -84,16 +84,16 @@ Yet to be decided whether to have version number and/or publication date here. -
 ---
 
 
-##4.1	 “About This Document” Section
+##“About This Document” Section
 This first section very briefly introduces the subject of the document—just enough for readers to know they’ve turned to the correct document and to make sense of the rest of the section. It then states any prerequisite documents or knowledge that the document assumes the reader is familiar with, and shows (with very brief descriptions) how the document is organized. Usually that suffices, but any other general notes that apply to the entire document can be stated here as well (such as special typographic conventions used throughout the document, if there are any that need explaining).
 
 
-*When stating prerequisite documents, do not also mention any of those documents’ prerequisites.*
+> *When stating prerequisite documents, do not also mention any of those documents’ prerequisites.*
 
 ---
 
 
-##4.2	Introductory and Conceptual/Overview Section(s)
+##Introductory and Conceptual/Overview Section(s)
 Every KinomaJS document that does not have Reference in its title has a conceptual/overview section—or sections, depending on the amount of material—whose subsections provide information that’s basically everything except reference-type details (at least everything except complete reference details; some may be mentioned for purposes of illustration or explanation). This section typically:
 
 * Introduces features
@@ -120,7 +120,7 @@ All such sections are intended to be read sequentially and so should be ordered 
 Although the reader can of course refer back to such sections at any time, they are likely to be consulted less often over time, and will generally not be accessed the same way as a Reference document or section or a Glossary (with the reader looking up specific details or definitions). Consistent with this, subheads within these sections are generally more functional (describing a feature or task) than reference-like (referring only to an API entity by name).
 
 
-These sections would ideally go down only two levels below their top level—for example, to a level like 2.1.1—although one more (unnumbered) level down is available in a pinch. Broadly speaking, the higher-level a section, the lengthier it (including any subsections) should be. Whatever a section’s level, there should be some introductory text before its first subsection, if any (in other words, no two headings in a row without intervening text).
+These sections would ideally go down only two levels below their top level, although one more (unnumbered) level down is available in a pinch. Broadly speaking, the higher-level a section, the lengthier it (including any subsections) should be. Whatever a section’s level, there should be some introductory text before its first subsection, if any (in other words, no two headings in a row without intervening text).
 
 
 To the fullest extent reasonable, the connection between any heading and the introduction immediately following it should be obvious. If, for example, a heading includes a term or concept not explained until several paragraphs later (or worse, never explicitly mentioned in the entire section), it could confuse the reader.
@@ -141,7 +141,7 @@ Other guidelines regarding the content of these sections:
 ---
 
 
-##4.3	Reference Section
+##Reference Section
 Every KinomaJS document except *KinomaJS Overview* has a Reference section that includes all the pertinent reference-type details and assumes the reader already knows the related introductory and conceptual/overview information. The Reference section is not meant to be read sequentially, so names of reference items, such as elements or attributes, are ordered alphabetically (with the exception that parameters are listed and described in order of appearance).
 
 
@@ -158,7 +158,7 @@ A reference subsection may begin (before the first subhead within it) with a ver
 
 ---
 
-##4.4	Glossary
+##Glossary
 With the exception of the *Reference* documents, every KinomaJS document ends with a Glossary that must include all terms defined (in italic) in the current document. It may also include terms that are used in the current document but are not defined in it because they’re assumed to already be understood from prerequisite knowledge or a prerequisite document.
 
 
@@ -174,15 +174,15 @@ Partial sentence. [Optional complete sentence(s).]
 Wherever reasonable, the term being defined should be singular rather than plural. Related items (such as “horizontal extent” and “vertical extent”) should not be combined into a single entry (such as “horizontal and vertical extent”). Glossary entries may cross-reference each other (as in “See also vertical extent”) but may not refer to other sections of the document.
 
  
-As much as possible, terms should be defined the same way in the glossaries of all the KinomaJS documents. If a term has a different meaning in the current document than in another KinomaJS document (or than in the world at large), you can clarify that in the definition by, for example, beginning it with “In <the current context>, …”. 
+As much as possible, terms should be defined the same way in the glossaries of all the KinomaJS documents. If a term has a different meaning in the current document than in another KinomaJS document (or than in the world at large), you can clarify that in the definition by, for example, beginning it with “In \<the current context\>, …”. 
 
 
-> *Create glossary items while you’re writing rather than at the last minute; it can help clarify your thinking about what things mean, exactly. Define things by what they are, not just what they do, and in the singular (“A <something> is …”) rather than the plural, which can be ambiguous. Check that the usage of each term is consistent throughout the document, and in related KinomaJS documents if applicable; where possible, lift definitions directly out of other documents’ glossaries.*
+> *Create glossary items while you’re writing rather than at the last minute; it can help clarify your thinking about what things mean, exactly. Define things by what they are, not just what they do, and in the singular (“A \<something\> is …”) rather than the plural, which can be ambiguous. Check that the usage of each term is consistent throughout the document, and in related KinomaJS documents if applicable; where possible, lift definitions directly out of other documents’ glossaries.*
 
 ---
 
 
-##5	Final Checks
+##Final Checks
 Some final checks you’re strongly recommended to make before turning over a draft for editing:
 
 
@@ -195,5 +195,4 @@ Some final checks you’re strongly recommended to make before turning over a dr
 * Overall comprehension/consistency check — As the very last check, reading through the entire draft from beginning to end without interruption (even if you think you’ve already checked and fixed everything possible) often brings problems to light that you can’t see nearly as well if you’ve previously focused on only one section at a time.
 
 
-> **This is a good idea even for—in fact, especially for—previously existing parts of the draft that you didn’t touch at all on this pass. It helps ensure that the old and new material mesh well together.
-**
+> *This is a good idea even for—in fact, especially for—previously existing parts of the draft that you didn’t touch at all on this pass. It helps ensure that the old and new material mesh well together.*
