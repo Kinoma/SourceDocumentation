@@ -1,7 +1,7 @@
-#KinomaJS Documentation Writer’s Guide
+#KinomaJS Documentation Writer’s Guide1
 ___
 
-##1	About This Guide
+##1	About This Guide2
 The purpose of this guide is to help ensure quality and consistency in the writing of the KinomaJS documentation suite and otherwise make the writing process and editing process go smoothly. If the multiple programmer-writers heed these guidelines, the editing that will be done to their drafts will go a lot faster and be a more enjoyable experience for everyone involved.
 
 
