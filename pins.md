@@ -3,8 +3,8 @@ Kinoma Create has 66 hardware pins. These pins implement Digital Input, Digital 
 
 There are 16 pins on the front facing header, divided into left and right groups of 8 pins each. These pins are user configurable using the Front Pins application on Kinoma Create. The left and right groups are independently configurable to operate at either 3.3 or 5 volts. There are another 50 pins on the back. The majority of the back pins are fixed function, with 8 of the back pins mirroring the pin configuration on the Front-Left pins. The back pins operate at 3.3 volts, except as noted.
 
-***
-## Front Pins
+**Figure 1.** Front Pins  
+
 ![](http://www.kinoma.com/create/img/front-pinmap.png)
 ***
 ## Back Pins
