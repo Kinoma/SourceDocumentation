@@ -5,7 +5,7 @@ ___
 The purpose of this guide is to help ensure quality and consistency in the writing of the KinomaJS documentation suite and otherwise make the writing process and editing process go smoothly. If the multiple programmer-writers heed these guidelines, the editing that will be done to their drafts will go a lot faster and be a more enjoyable experience for everyone involved.
 
 
-*Although everything in this document provides useful guidance, guidelines to especially note (regarding issues commonly overlooked, for example) appear italicized like this for emphasis.*
+> *Although everything in this document provides useful guidance, guidelines to especially note (regarding issues commonly overlooked, for example) appear italicized like this for emphasis.*
 
 
 Other documents you should consult (and why):
@@ -44,7 +44,7 @@ The editor will change-track all her edits (except maybe for minor formatting tw
 You’ll iterate with the editor until the draft is ready for tech review (or publication).
 
 
-*When rejecting an edit, do your best to state the reason for it and/or provide an alternative that you prefer. This is also a good practice when tech-reviewing someone else’s draft: say as much as you can up front to reduce the number of iterations.*
+> *When rejecting an edit, do your best to state the reason for it and/or provide an alternative that you prefer. This is also a good practice when tech-reviewing someone else’s draft: say as much as you can up front to reduce the number of iterations.*
 
 ---
 
@@ -114,7 +114,7 @@ In other words, it provides a “big picture” or context for understanding wha
 All such sections are intended to be read sequentially and so should be ordered and written with that in mind. The logical flow from one section to the next is important—as it is from one paragraph to the next and even one sentence to the next, in any good writing. Most important, terms should not be used before they’ve been introduced, whether in the current document or in a prerequisite document.
 
 
-*For things that readers should already know from the document’s prerequisite(s), avoid introducing them as if for the first time in the current document. You could instead, for example, begin with “Remember that” as an implicit reference back to something presented in a prerequisite document. Or you could simply include the prerequisite term(s) in the current document’s Glossary (generally a good idea, as a reminder).*
+> *For things that readers should already know from the document’s prerequisite(s), avoid introducing them as if for the first time in the current document. You could instead, for example, begin with “Remember that” as an implicit reference back to something presented in a prerequisite document. Or you could simply include the prerequisite term(s) in the current document’s Glossary (generally a good idea, as a reminder).*
 
 
 Although the reader can of course refer back to such sections at any time, they are likely to be consulted less often over time, and will generally not be accessed the same way as a Reference document or section or a Glossary (with the reader looking up specific details or definitions). Consistent with this, subheads within these sections are generally more functional (describing a feature or task) than reference-like (referring only to an API entity by name).
@@ -145,7 +145,7 @@ Other guidelines regarding the content of these sections:
 Every KinomaJS document except *KinomaJS Overview* has a Reference section that includes all the pertinent reference-type details and assumes the reader already knows the related introductory and conceptual/overview information. The Reference section is not meant to be read sequentially, so names of reference items, such as elements or attributes, are ordered alphabetically (with the exception that parameters are listed and described in order of appearance).
 
 
-*In a Reference section, do not include explicit cross-references to related introductory and conceptual/overview documentation. If such a cross-reference seems necessary, consider whether key information is missing that should be included in the Reference section.*
+> *In a Reference section, do not include explicit cross-references to related introductory and conceptual/overview documentation. If such a cross-reference seems necessary, consider whether key information is missing that should be included in the Reference section.*
 
 
 Reference subsections often have a lot of subheads and terse descriptions (just the facts, since the context, usage notes, and so on are covered earlier). Consequently, the Reference section may need to have an introduction that explains the categories of information its subsections provide, any defaults being assumed for brevity, and so on. For example, the introduction to a Reference section might say that any attribute not marked as required within that section is optional, and tell what default values are assumed for undefined attributes.
@@ -154,7 +154,7 @@ Reference subsections often have a lot of subheads and terse descriptions (just 
 A reference subsection may begin (before the first subhead within it) with a very brief description of the corresponding reference item, as a quick summary/reminder; however, doing so is not advised if a small screen shot would serve the same purpose (without explanation) or if the descriptive information would be completely obvious (that is, no description is needed beyond what the reference details go on to explain).
 
 
-*Do not include code examples in reference subsections; put them only in the earlier introductory and conceptual/overview section(s).*
+> *Do not include code examples in reference subsections; put them only in the earlier introductory and conceptual/overview section(s).*
 
 ---
 
@@ -177,7 +177,7 @@ Wherever reasonable, the term being defined should be singular rather than plura
 As much as possible, terms should be defined the same way in the glossaries of all the KinomaJS documents. If a term has a different meaning in the current document than in another KinomaJS document (or than in the world at large), you can clarify that in the definition by, for example, beginning it with “In <the current context>, …”. 
 
 
-*Create glossary items while you’re writing rather than at the last minute; it can help clarify your thinking about what things mean, exactly. Define things by what they are, not just what they do, and in the singular (“A <something> is …”) rather than the plural, which can be ambiguous. Check that the usage of each term is consistent throughout the document, and in related KinomaJS documents if applicable; where possible, lift definitions directly out of other documents’ glossaries.*
+> *Create glossary items while you’re writing rather than at the last minute; it can help clarify your thinking about what things mean, exactly. Define things by what they are, not just what they do, and in the singular (“A <something> is …”) rather than the plural, which can be ambiguous. Check that the usage of each term is consistent throughout the document, and in related KinomaJS documents if applicable; where possible, lift definitions directly out of other documents’ glossaries.*
 
 ---
 
@@ -195,5 +195,5 @@ Some final checks you’re strongly recommended to make before turning over a dr
 * Overall comprehension/consistency check — As the very last check, reading through the entire draft from beginning to end without interruption (even if you think you’ve already checked and fixed everything possible) often brings problems to light that you can’t see nearly as well if you’ve previously focused on only one section at a time.
 
 
-**This is a good idea even for—in fact, especially for—previously existing parts of the draft that you didn’t touch at all on this pass. It helps ensure that the old and new material mesh well together.
+> **This is a good idea even for—in fact, especially for—previously existing parts of the draft that you didn’t touch at all on this pass. It helps ensure that the old and new material mesh well together.
 **
