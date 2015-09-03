@@ -24,7 +24,7 @@ These properties of the KinomaJS global object can be used anywhere in an applic
 | --- | --- | --- |
 | `string`| `string`| required |
 
-*The string to encode*
+> *The string to encode*
 
 ||||
 | :--- | :--- | :--- |
