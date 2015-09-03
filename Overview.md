@@ -7,7 +7,7 @@ Draft version 0.2.1 (Preliminary)
 
 April 1, 2015
 
-+Kouis
++Chris
 ## About This Document
 
 KinomaJS is a runtime environment for delivering applications on a wide range of consumer electronic products. The primary programming interface to KinomajS is a JavaScript API of global constructors, functions, and objects that define the containment hierarchy, appearance, behavior, and flow of applications and shells. KinomaJS also provides an optional XML programming interface. This document introduces KinomaJS and important related concepts; all developers using KinomaJS should read it before moving on to the other KinomaJS-related documents mentioned within.
