@@ -1,6 +1,6 @@
 #Style Sheet for Kinoma Documentation
 ---
-##1	Introduction
+##Introduction
 This style sheet covers issues related to the editorial style used in Kinoma’s technical documentation and web content. It supplements the following guides:
 
 
@@ -14,10 +14,10 @@ In some cases this style sheet repeats guidelines in the documents listed above,
 Some of these guidelines are specific to past documentation, some of which may be obsolete; they are left in just in case they should come up again. The guidelines are alphabetically ordered and not meant to be read sequentially; just look up the issue of concern to you.
 
 
-For related conventions, see the Kinoma Documentation Template.
+For related conventions, see the _Kinoma Documentation Template._
 
 
-##2	Style Guidelines
+##Style Guidelines
 **5-way (adj)**  
 Not *five-way*. Use as in *5-way control pad* (not as a noun by itself).
 
@@ -53,14 +53,14 @@ Use *cancelled* and *cancelling* (double /).
 **Note:** This convention was changed (from single /) because of the spelling of the `onTouchCancelled` event in the KinomaJS API.
 
 
-**Capitalization**
+**Capitalization**  
 When capitalizing titles and the like (called “title capitalization” in contrast with “sentence capitalization”), do not capitalize the following:
 * Articles (*a, the*)
 * Conjunctions (*and, or*)
 * Short prepositions (less than five characters long, such as *with, to*) except in the rare case when it is the last word of the text being capitalized.
 
 
-**Captions**
+**Captions**  
 Per Marvell’s preferred style, use title capitalization rather than sentence capitalization for figure and table captions (as in “Parts of the User Interface”). However, use special conventions, such as for code terms, the same as you would in body text (as in “The `fillImage` Operation”).
 
 **checkbox**  
@@ -75,7 +75,8 @@ Use the same conventions throughout a document for where to add optional spaces 
 
 
 Show missing code (omitted for brevity) with “...”; this notation is acceptable on a line by itself (appropriately indented) or within open and closing tags, as in the following example.
-`<layout> ... </layout>`
+
+>`<layout> ... </layout>`
 
 **Code Entities in Body Text**  
 In any body text referring to entities that would appear exactly that way in code, use the same font as in code examples. For example, you would refer to the element illustrated under **Code Examples** above as “the `layout` element.” Note too that (at least starting with the KinomaJS documentation) instances and objects related to the constructor `Foo` in JavaScript should be referred to as “`foo` instance” and “`foo` object.”
@@ -87,10 +88,8 @@ Do not refer to a code term as a noun by itself, as in “the `port.`”
 Do not start sentences with a code term that begins in lowercase. The workaround is not to capitalize the term but instead to rewrite the sentence to avoid the problem. For example:
 
 
-|  |  |
-| ------------ | ------------- | 
-| `column` elements juxtapose their contents vertically. | *(Not OK)*  | 
-| The `column` element juxtaposes its contents vertically.| *(OK)* | 
+>`column` elements juxtapose their contents vertically.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_(Not OK)_   
+>The `column` element juxtaposes its contents vertically.&nbsp;&nbsp;&nbsp;_(OK)_ 
 
 
 However, if a heading must unavoidably begin with such a term, capitalize it (and use the normal heading font).
@@ -99,21 +98,21 @@ However, if a heading must unavoidably begin with such a term, capitalize it (an
 When referring to a string or boolean value in body text, do not include quotation marks.
 
 
-The default value of the `color` parameter is `gray`.
-The default value of the `shared` parameter is `false`.
+>The default value of the `color` parameter is `gray`.  
+>The default value of the `shared` parameter is `false`.
 
 
 When referring in body text to the value of a numeric code entity, do not put the number in the code font.
 
 
-The default value of `length` parameter is 0.
+>The default value of `length` parameter is 0.
 
 
-See also Captions and File Names/Extensions.
+See also **Captions** and **File Names/Extensions**.
 
 
 **Comma**  
-See Numbers and Serial Commas.
+See **Numbers** and **Serial Commas**.
 
 
 **content**  
@@ -126,14 +125,15 @@ Do not use these (for example, *don’t*) in technical documentation.
 
 **Cross-References**  
 Refer to another section as in this example:
-   See the section “Introduction.”
+
+>See the section “Introduction.”
 
    
 Wherever it might not be completely obvious, state what information will be found at the cross-referenced location.
 
 
 **current playlist**  
-Not active playlist.
+Not _active playlist._
 
 
 **Dash**  
@@ -143,7 +143,7 @@ Do not add a space on either side of an em dash (—) when used to set off somet
 Add a space on either side of an em dash that separates an item from its description in a bulleted list, as in the following example.
 
 
-•	Get Info — Displays detailed information about the current item.
+>* **Get Info** — Displays detailed information about the current item.
 
 
 **data**  
@@ -158,11 +158,11 @@ Not *dialog box*.
 Spell out (“for example”) unless space is at a premium (such as in a table).
 
 
-**email**
+**email**  
 No hyphen.
 
 
-etc.
+**etc.**  
 Spell out (“and so on”) unless space is at a premium (such as in a table).
 
 
@@ -191,7 +191,7 @@ Hyphenated; not *hardcode*.
 
 
 **ID**  
-Use instead of “id” to refer to an identifier in text. Use all-lowercase only when referring to a code entity, such as a parameter named id.
+Use instead of “id” to refer to an identifier in text. Use all-lowercase only when referring to a code entity, such as a parameter named `id`.
 
 
 **i.e.**  
@@ -201,7 +201,7 @@ Spell out (“that is”) unless space is at a premium (such as in a table).
 **index**  
 Always use *indexes*, not *indices*, as the plural.
 
-<!-- From Caroline: Re: "Internet of Things" below
+<!-- From Caroline: Re: "internet" below
 I’ve resisted changing to all-lowercase, but you seem not to be capitalizing it, hence this change. OK as is now? -->
 **internet**  
 Do not capitalize, except in “Internet of Things.”
@@ -228,7 +228,7 @@ For labels on fields in forms, use sentence capitalization, as in “Your email 
 
 
 **Links**  
-For links to web pages, explicitly show the corresponding URL (but without the leading <http://>, if any); for example, “See our support page, <kinoma.com/support/>.” If the URL ends in “.com”, dispense with the trailing slash; otherwise, follow the usual convention of ending in a slash unless the URL leads to a file rather than a folder.
+For links to web pages, explicitly show the corresponding URL (but without the leading <http://>, if any); for example, “See our support page, [kinoma.com/support/](http://www.kinoma.com/support/).” If the URL ends in “.com”, dispense with the trailing slash; otherwise, follow the usual convention of ending in a slash unless the URL leads to a file rather than a folder.
 
 
 **log in, log out**  
@@ -247,7 +247,7 @@ Do not capitalize.
 Users *choose from* menus. This is contrary to the Marvell (and Microsoft) guideline to use *select on*, but it is necessary because of the meaning *select* has in Kinoma Play Script terminology (where, strictly speaking, choosing a menu item not only selects but also opens it).
 
 
-See also User Interface Elements.
+See also **User Interface Elements**.
 
 
 **microSD**  
@@ -270,22 +270,19 @@ When introducing a new term, italicize it and, in documents with a glossary, inc
 Generally, words beginning with this prefix are not hyphenated (look for the word in question, or a similar word, in the dictionary).
 
 
-Numbers
+**Numbers**  
 Except where inappropriate for technical reasons (for example, because of the format required in a code context), include commas in numbers four or more digits long, as in *4,000*.
-
-
-Use *more than*, not *over*, with numbers, as in “more than 1,000 audiobooks.”
 
 
 **offscreen, onscreen**  
 Not *off-screen* or *on-screen*.
 
 
-**open source**
+**open source**  
 Not hyphenated.
 
 
-**Palm Powered**
+**Palm Powered**  
 Unusual capitalization (and no hyphen) because it is a Palm trademark.
 
 
@@ -346,7 +343,7 @@ Use them, as in “a, b, and c” (not “a, b and c”).
 
 
 **should**  
-Do not use should when you mean must.
+Do not use _should_ when you mean _must._
 
 
 **slideshow**  
@@ -354,16 +351,16 @@ One word.
 
 
 **so**  
-If you mean “consequently,” precede *so* with a comma.
+If you mean “consequently,” precede _so_ with a comma.
 
 
-He is going to the store, so he can pick up something for you if you like.
+>He is going to the store, so he can pick up something for you if you like.
 
 
-If you are instead stating a purpose or intention, use so *that*.
+If you are instead stating a purpose or intention, use _so that._
 
 
-He is going to buy more milk so that we will not run out of it.
+>He is going to buy more milk so that we will not run out of it.
 
   
 **soft key**  
@@ -386,7 +383,7 @@ Not technical note.
 Do not refer to “a text” or “texts.” For example, say “A text is content that ….” (not “A text is a content that …”) and “Pictures and text are rendered …” (not “Pictures and texts are rendered…”).
 
 
-**third party (n), third-party (adj)**
+**third party (n), third-party (adj)**  
 Do not use *3rd*.
 
 
@@ -414,7 +411,7 @@ Follow with *into*, not *in to*, as in “Tune into digital radio.”
 
 
 **URLs**  
-See Links.
+See **Links**.
 
 
 **User Interface Elements**  
@@ -424,14 +421,14 @@ Use bold when referring to onscreen user interface elements such as names of men
 Because of the various possible input methods (onscreen user interface, physical hardware keys, touch screen), refer wherever possible to the operation/command being performed rather than the physical action that triggers it; for example, say “Press **Menu**” rather than “Press the **Menu** soft key.”
 
 
-See also Menus.
+See also **Menus**.
 
 
 **Versions**  
 Use *later* (not *newer, higher*, or *above*) and earlier (not *older, lower,* or *below*) when referring to versions—for example, “Make sure you have version 4.4.1 or later.”
 
 
-**web**
+**web**  
 Do not capitalize.
 
 
@@ -455,12 +452,12 @@ Note the capitalization.
 Avoid; *want* is preferred.
 
 
-**XML document**
+**XML document**  
 Not *XML file*. 
 
 
 **XS**
-Not lowercase xs.
+Not lowercase _xs_.
 
 
 **xsc**  
