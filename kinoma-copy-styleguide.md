@@ -5,6 +5,7 @@ This style sheet covers issues related to the editorial style used in Kinoma’s
 
 
 * _Marvell Technical Communication Style Guide_ 
+
 * _Marvell Acronyms, Abbreviations, and Terminology_ 
 
 
@@ -56,7 +57,9 @@ Use *cancelled* and *cancelling* (double /).
 **Capitalization**  
 When capitalizing titles and the like (called “title capitalization” in contrast with “sentence capitalization”), do not capitalize the following:
 * Articles (*a, the*)
+
 * Conjunctions (*and, or*)
+
 * Short prepositions (less than five characters long, such as *with, to*) except in the rare case when it is the last word of the text being capitalized.
 
 
