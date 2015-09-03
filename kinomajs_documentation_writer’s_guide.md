@@ -186,13 +186,13 @@ As much as possible, terms should be defined the same way in the glossaries of a
 Some final checks you’re strongly recommended to make before turning over a draft for editing:
 
 
-* Spelling/grammar check (if possible in the editor being used) — This can reveal much more than minor errors; it can uncover inconsistent terminology and even technical errors—and note, content that uses the formatting styles defined for showing code will by default not be spell-checked, so that will save time and bother. 
+* **Spelling/grammar check** (if possible in the editor being used) — This can reveal much more than minor errors; it can uncover inconsistent terminology and even technical errors—and note, content that uses the formatting styles defined for showing code will by default not be spell-checked, so that will save time and bother. 
 
-* Terminology check — For each term in the Glossary, or at least those that are used extensively, searching for the term throughout the document will help ensure that its usage is consistent. 
+* **Terminology check** — For each term in the Glossary, or at least those that are used extensively, searching for the term throughout the document will help ensure that its usage is consistent. 
 
-* Organization check — Reviewing the table of contents is an excellent way to check the organization of the document and the flow and consistency among its headings.
+* **Organization check** — Reviewing the table of contents is an excellent way to check the organization of the document and the flow and consistency among its headings.
 
-* Overall comprehension/consistency check — As the very last check, reading through the entire draft from beginning to end without interruption (even if you think you’ve already checked and fixed everything possible) often brings problems to light that you can’t see nearly as well if you’ve previously focused on only one section at a time.
+* **Overall comprehension/consistency check** — As the very last check, reading through the entire draft from beginning to end without interruption (even if you think you’ve already checked and fixed everything possible) often brings problems to light that you can’t see nearly as well if you’ve previously focused on only one section at a time.
 
 
 > *This is a good idea even for—in fact, especially for—previously existing parts of the draft that you didn’t touch at all on this pass. It helps ensure that the old and new material mesh well together.*
