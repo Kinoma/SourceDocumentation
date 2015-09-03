@@ -5,7 +5,6 @@ Draft version 0.2.1 (Preliminary)
 
 April 1, 2015
 
--- Chris change
 
 ## About This Document
 
