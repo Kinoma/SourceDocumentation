@@ -39,14 +39,14 @@ These properties of the KinomaJS global object can be used anywhere in an applic
 
 *The name of the environment variable*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns     | `string`    ||
 
 *The value of the specified environment variable, or `undefined` if it does not exist*
 
 #####`include(path)`
-|||
+||||
 | :--- | :--- | :--- |
 | `path`     | `string`    | required |
 
@@ -55,52 +55,52 @@ These properties of the KinomaJS global object can be used anywhere in an applic
 Executes the program referenced by the `path` string in the current scope
 
 #####`mergeURI(base, url)`
-|||
+||||
 | :--- | :--- | :--- |
 | `base`       | `string`    | required |
 
 *The base URL*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    |required|
 
 *The URL to merge with the base URL*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `string`    ||
 
 *The merged URL*
 
 #####`parseQuery(query)`
-|||
+||||
 | :--- | :--- | :--- |
 | `query`       | `string`    | required |
 
 *The query string to parse*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *A query object whose property names and values are the names and values of the specified query string*
 
 #####`parseURI(url)`
-|||
+||||
 | :--- | :--- | :--- |
 | `url`       | `string`    | required |
 
 *The URL to parse*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *An object with string properties corresponding to the parts of the URL: `scheme`, `user`, `password`, `authority`, `path`, `name`, `query`, or `fragment`*
                      
 #####`require(path)`
-|||
+||||
 | :--- | :--- | :--- |
 | `path`       | `string`    | required |
 
@@ -109,45 +109,45 @@ Executes the program referenced by the `path` string in the current scope
 Executes the script referenced by the `path` string and returns the exported programming interface of the module. For more information, see the specification at [wiki.commonjs.org/wiki/Modules/1.1](http://wiki.commonjs.org/wiki/Modules/1.1)
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `screenScale`    | `number`    |read only|
 The display scale, as 1, 1.5, or 2
 
 #####`serializeQuery(query)`
-|||
+||||
 | :--- | :--- | :--- |
 | `query`    | `object`    |required|
 
 *The query object to serialize*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `string`    ||
 
 *A query string whose names and values are the names and values of the properties of the specified query object*
 
 #####`serializeURI(parts)`
-|||
+||||
 | :--- | :--- | :--- |
 | `parts`    | `object`    |required|
 
 *The parts of the URL to serialize, as an object with `scheme`, `user`, `password`, `authority`, `path`, `name`, `query`, or `fragment` string properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `string`    ||
 
 *A URL built from properties of the `parts` parameter*
 
 #####`setEnvironmentVariable(name, value)`
-|||
+||||
 | :--- | :--- | :--- |
 | `name`    | `string`    |required|
 
 *The name of the environment variable*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `value`    | `string`    |required|
 
@@ -156,7 +156,7 @@ The display scale, as 1, 1.5, or 2
 Changes the value of the specified environment variable, creating it if it does not exist
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `touches`    | `object`    |read only|
 
@@ -208,7 +208,7 @@ Object inherits from `Container.prototype`.
 Object is sealed.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `application`    | `object`    |read only|
 
@@ -217,14 +217,14 @@ Object is sealed.
 *For shell scripts, there is no `application` object; the value of the `application` global property is `null`.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `application.di`    | `string`    |read only|
 
 *This application’s reverse identifier—for example, `com.kinoma.guide`*
 
 #####`application.discover(type)`
-|||
+||||
 | :--- | :--- | :--- |
 | `type`    | `string`    |required|
 
@@ -233,7 +233,7 @@ Object is sealed.
 Causes this application to trigger `onDiscovered` events when KinomaJS signals that services of the specified type have appeared or disappeared on the network.
 
 #####`application.forget(type)`
-|||
+||||
 | :--- | :--- | :--- |
 | `type`    | `string`    |required|
 
@@ -242,7 +242,7 @@ Causes this application to trigger `onDiscovered` events when KinomaJS signals t
 Causes this application not to trigger `onDiscovered` events when KinomaJS signals that services of the specified type have appeared or disappeared on the network
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `application.id`    | `string`    |read only|
 
@@ -253,21 +253,21 @@ Causes this application not to trigger `onDiscovered` events when KinomaJS signa
 Garbage-collects the virtual machine of this application
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `application.shared`    | `boolean`    ||
 
 *If `true`, this application is shared as a service on the network. Set to `true` or `false` to turn the service on or off.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `application.url`    | `string`    |read only|
 
 *The URL of this application’s main script*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `application.uuid`    | `string`    |read only|
  
@@ -278,7 +278,7 @@ Garbage-collects the virtual machine of this application
 Same as for `container` objects (see “Events” in section, “[Container Object](#kinomajs-reference-kinomajs-object-reference-container-object)”), plus:
 
 #####`onDiscovered(services)`
-|||
+||||
 | :--- | :--- | :--- |
 | `services`    | `object`    ||
 
@@ -287,7 +287,7 @@ Same as for `container` objects (see “Events” in section, “[Container Obje
 This event is triggered when KinomaJS determines that services the `application` object has requested to discover have appeared or disappeared on the network.
 
 #####`onLaunch(application)`
-|||
+||||
 | :--- | :--- | :--- |
 | `application`    | `object`    ||
 
@@ -296,7 +296,7 @@ This event is triggered when KinomaJS determines that services the `application`
 This event is triggered when the shell calls the `launch` function of the `host` object that hosts the application.
 
 #####`onQuit(application)`
-|||
+||||
 | :--- | :--- | :--- |
 | `application`    | `object`    ||
 
@@ -305,13 +305,13 @@ This event is triggered when the shell calls the `launch` function of the `host`
 This event is triggered when the shell calls the `quit` function of the `host` object that hosts the application.
 
 #####`onReceive(application, message)`
-|||
+||||
 | :--- | :--- | :--- |
 | `application`    | `object`    ||
 
 *The `application` object*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    ||
 
@@ -328,19 +328,19 @@ The `behavior` object contains functions corresponding to events triggered by a 
 This constructor is provided only to trigger the `onCreate` event; applications and shells can define their own constructors for `behavior` objects.
 
 #####`Behavior(trigger, `...`)`
-|||
+||||
 | :--- | :--- | :--- |
 | `trigger`    | `object`    |required|
 
 *The `content` or `handler` object that will reference the result*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `...`    | `*`    ||
 
 *Zero or more extra parameters*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||                    
 
@@ -353,13 +353,13 @@ Triggers the `onCreate` event
 Prototype inherits from `Object.prototype`.
 
 #####`Behavior.prototype.onCreate(trigger, `...`)`
-|||
+||||
 | :--- | :--- | :--- |
 | `trigger`    | `object`    |required|                    
 
 *The `content` or `handler` object that will reference the result*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `...`    | `*`    ||
 
@@ -377,13 +377,13 @@ The measured width and measured height of a `canvas` object are 0.
 #### Constructor Description
 
 #####`Canvas(coordinates)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -396,13 +396,13 @@ Prototype inherits from `Content.prototype`.
 Instances are sealed and volatile.
 
 #####`Canvas.prototype.getContext(id)`
-|||
+||||
 | :--- | :--- | :--- |
 | `id`    | `string`    |required|
 
 *The identifier of the rendering context; must be `2d`*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||                      
 
@@ -429,25 +429,25 @@ Horizontally, a `column` object measures itself and arranges its contents like a
 #### Constructor Description
 
 #####`Column(coordinates, skin, style)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `skin`    | `object`    ||
    
 *The skin of the result, as a `skin` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`    | `object`    ||
 
 *The style of the result, as a `style` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -496,25 +496,25 @@ Vertically, a `container` object arranges its content s according to their `top`
 #### Constructor Description
 
 #####`Container(coordinates, skin, style)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
                 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `skin`    | `object`    ||                            
 
 *The skin of the result, as a `skin` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`    | `object`    ||  
 
 *The style of the result, as a `style` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||  
 
@@ -527,7 +527,7 @@ Prototype inherits from `Content.prototype`.
 Instances are sealed and volatile.
 
 #####`Container.prototype.add(content)`
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    |required|
 
@@ -536,27 +536,27 @@ Instances are sealed and volatile.
 Adds the specified `content` object to this container. The `content` object becomes the last `content` object in this container.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Container.prototype.backgroundTouch`    | `boolean`   | |
 
 *If `true`, this container also receives any touch events that are received by its contents; that is, it will trigger touch events when one of its contents has been touched. If the container or any of its contents captures the touch events (by calling `captureTouch`), touch events will be delivered exclusively to the capturing object until after the corresponding `onTouchEnded` event is triggered.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Container.prototype.clip `    |  `boolean`  | |
 
 *If `true`, this container clips its contents.*
 
 #####`Container.prototype.distribute(id, ...)`
-|||
+||||
 | :--- | :--- | :--- |
 | `id`    | `string`    |required|
 
 *The name of the event to trigger*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `...`    | `*`    ||                             
 
@@ -565,13 +565,13 @@ Adds the specified `content` object to this container. The `content` object beco
 Causes this container and all `content` objects downward in the containment hierarchy to trigger an event named by the value of `id`. The order of traversal is depth first. Traversal halts when one of the triggered event-handling functions returns `true`. Note that the first parameter of a distributed event is the `content` object that triggers the event, not this container. Additional parameters, if any, of the event are the extra parameters of the `distribute` function.
 
 #####`Container.prototype.empty(start, stop)`
-|||
+||||
 | :--- | :--- | :--- |
 | `start`    | `number`    ||
                           
 *The starting index*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `stop`    | `number`    ||
 
@@ -580,18 +580,18 @@ Causes this container and all `content` objects downward in the containment hier
 Removes `content` objects from this container, starting at index `start` and stopping at index `stop`. If `start` or `stop` is less than 0, it is an offset from `this.length`.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Container.prototype.first`    |`object`    |read only |
 The first `content` object in this container, or `null` if this container is empty
 
 #####`Container.prototype.firstThat(id, ...)`
-|||
+||||
 | :--- | :--- | :--- |
 | `id`    | `string`    |required|
 *The name of the event to trigger*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `...`    | `*`    ||
 
@@ -600,13 +600,13 @@ The first `content` object in this container, or `null` if this container is emp
 Causes all `content` objects in this container to trigger an event named by the value of `id`. The order of traversal is from the first to the last. Traversal halts when a distributed event returns `true`. Note that the first parameter of a distributed event is the `content` object that triggers the event, not this container. Additional parameters, if any, of the event are the extra parameters of the `firstThat` function.
 
 #####`Container.prototype.insert(content, before)`
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    |required|
 
 *The `content` object to insert. Its container must be `null`.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `before`    | `object`    |required|
 
@@ -615,20 +615,20 @@ Causes all `content` objects in this container to trigger an event named by the 
 Inserts one `content` object before another in this container as specified by the parameters
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Container.prototype.last`    |`object`    |read only |
 
 *The last `content` object in this container, or `null` if this container is empty*
 
 #####`Container.prototype.lastThat(id, ...)`
-|||
+||||
 | :--- | :--- | :--- |
 | `id`    | `string`    |required|
 
 *The name of the event to trigger*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `... `    | `*`    ||
                             
@@ -637,14 +637,14 @@ Inserts one `content` object before another in this container as specified by th
 Causes all `content` objects in this container to trigger an event named by the value of `id`. The order of traversal is from the last to the first. Traversal halts when a distributed event returns `true`. Note that the first parameter of a distributed event is the `content` object that triggers the event, not this container. Additional parameters, if any, of the event are the extra parameters of the `lastThat` function.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Container.prototype.length`    |`number`    |read only |
 
 *The number of `content` objects in this container*
 
 #####`Container.prototype.remove(content)`
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    |required|
 
@@ -653,13 +653,13 @@ Causes all `content` objects in this container to trigger an event named by the 
 Removes the specified `content` object from this container
 
 #####`Container.prototype.replace(content, by)`
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    |required|
 
 *The `content` object to replace. Its container must be this container.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `by`    | `object`    |required|
 
@@ -668,13 +668,13 @@ Removes the specified `content` object from this container
 Replaces one `content` object with another in this container as specified by the parameters
 
 #####`Container.prototype.run(transition, ...)`
-|||
+||||
 | :--- | :--- | :--- |
 | `transition`    | `object`    |required|
 
 *The `transition` object to run*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `... `    | `*`    ||
                             
@@ -683,7 +683,7 @@ Replaces one `content` object with another in this container as specified by the
 Runs the specified `transition` object in this container, binding that object to this container for the duration of the transition. The extra parameters are passed to the `onBegin` and `onEnd` functions of the `transition` object. The container triggers the `onTransitionBeginning` event before the transition starts and the `onTransitionEnded` event after the transition ends.
 
 #####`Container.prototype.swap(content0, content1)`
-|||
+||||
 | :--- | :--- | :--- |
 | `content0, content1`    | `object`    |required|
 
@@ -692,7 +692,7 @@ Runs the specified `transition` object in this container, binding that object to
 Swaps the specified `content` objects in this container
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Container.prototype.transitioning` | `boolean`  |read only|
 *If `true`, this container is running a `transition` object.*
@@ -702,7 +702,7 @@ Swaps the specified `content` objects in this container
 Same as for `content` objects (see “Event” in section, “[Content Object](#kinomajs-reference-kinomajs-object-reference-content-object)”), plus:
 
 #####`onTransitionBeginning(container)`
-|||
+||||
 | :--- | :--- | :--- |
 | `container`    | `object`    ||
 
@@ -711,7 +711,7 @@ Same as for `content` objects (see “Event” in section, “[Content Object](#
 This event is triggered when a `transition` object starts in the specified `container` object.
 
 #####`onTransitionEnded(container)`
-|||
+||||
 | :--- | :--- | :--- |
 | `container`    | `object`    ||
 
@@ -730,25 +730,25 @@ If a `content` object has a skin that references a texture without using tiles, 
 #### Constructor Description
 
 #####`Content(coordinates, skin, style)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `skin`    | `object`    ||
 
 *The skin of the result, as a `skin` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`    | `object`    ||
 
 *The style of the result, as a `style` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 |  Returns    | `object`    ||
 
@@ -761,34 +761,34 @@ Prototype inherits from `Object.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.active`    | `boolean`    ||
 
 *If `true`, this content can be touched—that is, it triggers touch events.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.behavior`    | `object`    ||
 
 *This content’s `behavior` object or `null` (the default). When this content triggers an event, it calls the corresponding function property of its behavior, if any.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.bounds `    | `object`    ||
 
 *This content’s global position and size, as an object with `x`, `y`, `width`, and `height` number properties. If this content is unbound, the getter returns `undefined` and the setter is ignored.*
 
 #####`Content.prototype.bubble(id, ...)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `id  `    | `string`    |required|
 
 *The name of the event to trigger*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `...  `    | `*`    ||
         
@@ -800,19 +800,19 @@ Causes this content and all `container` objects upward in the containment hierar
 Cancels the messages invoked by this content, if any
 
 #####`Content.prototype.captureTouch(id, x, y, ticks)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `id`    | `number`    |required|
 
 *The identifier of the touch*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    |required|
                     
 *The global position of the touch*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `ticks`    | `number`    |required|
                    
@@ -821,27 +821,27 @@ Cancels the messages invoked by this content, if any
 Causes this content to capture the touch named `id`, meaning that only this content will trigger the remaining `onTouchMoved` and `onTouchEnded` events related to that touch. Other `content` objects concerned with the captured touch trigger the `onTouchCancelled` event when the `captureTouch` function is called.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.container`    | `object`    |read only|
 
 *This content’s container, or `null` if this content is unbound (that is, if it has no container)*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.coordinates`    | `object`    ||
 
 *This content’s coordinates, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
 #####`Content.prototype.delegate(id, ...)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `id`    | `string`    |required|
 
 *The name of the event to trigger*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `...`    | `*`    ||     
 
@@ -850,14 +850,14 @@ Causes this content to capture the touch named `id`, meaning that only this cont
 Causes this content to trigger an event named by the value of `id`. The first parameter of the delegated event is this content. Additional parameters, if any, of the delegated event are the extra parameters of the `delegate` function.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.duration`    | `number`    ||
 
 *This content’s duration in milliseconds. This content triggers the `onFinished` event when its clock is running and its time equals its duration.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.exclusiveTouch`    | `boolean`    ||
 
@@ -867,61 +867,61 @@ Causes this content to trigger an event named by the value of `id`. The first pa
 Focuses this content so that it triggers keyboard events. Only one `content` object at a time is focused.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.focused`    | `boolean`    |read only|
 
 *If `true`, this content is the current focus—that is, it triggers keyboard events. Note that keyboard events bubble. The default focus is the `application` object.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.fraction`    | `number`    ||
 
 *This content’s fraction—that is, the ratio of its time to its duration. If the duration is 0, the getter returns `undefined` and the setter is ignored. This content triggers the `onTimeChanged` event when its fraction is set.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.height`    | `number`    ||
 
 *This content’s height*
 
 #####`Content.prototype.hit(x, y)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y `    | `number`    |required|
 
 *The global position to test*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `boolean`    ||
 
 *If `true`, this content is bound and contains the position.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.index`    | `number`    |read only|
 
 *The index of this content in its container, or –1 if this content is unbound*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.interval`    | `number`    ||
 
 *The number of milliseconds between triggering the `onTimeChanged` events of the content’s behavior when its clock is running.*
 
 #####`Content.prototype.invoke(message, type)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    |required|
 
 *The `message` object to invoke*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `type`    | `string`    ||
 
@@ -930,7 +930,7 @@ Focuses this content so that it triggers keyboard events. Only one `content` obj
 Invokes the specified `message` object. If `type` is specified, this content will eventually trigger the `onComplete` event.
 
 #####`Content.prototype.moveBy(x, y)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    |required|
 
@@ -939,56 +939,56 @@ Invokes the specified `message` object. If `type` is specified, this content wil
 Moves this content as specified by the parameters. If the content’s coordinates constrain its position, the `moveBy` function ignores the corresponding horizontal or vertical deltas.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.multipleTouch`    | `boolean`    ||
 
 *If `true`, this content handles multiple touches. Note that `multipleTouch` is `false` by default.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.name`    | `string`    ||
 
 *This content’s name*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.next`    | `object`    |read only|
 
 *The next `content` object of this content’s container; `null` if this content is the last `content` object of this content’s container or if this content has no container*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.position`    | `object`    ||
 
 *This content’s global position, as an object with `x` and `y` number properties. If this content is unbound, the getter returns `undefined` and the setter is ignored.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.previous`    | `object`    |read only|
 
 *The previous `content` object in this content’s container; `null` if this content is the first `content` object of this content’s container or if this content has no container*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.running`    | `boolean`    |read only|
 
 *If `true`, this content’s clock is running.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.size`    | `object`    ||
 
 *This content’s size, as an object with `width` and `height` number properties*
 
 #####`Content.prototype.sizeBy(width, height)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `width, height`    | `number`    |required|
 
@@ -996,7 +996,7 @@ Moves this content as specified by the parameters. If the content’s coordinate
 
 Sizes this content as specified by the parameters. If this content’s coordinates constrain its size, the `sizeBy` function ignores the corresponding horizontal or vertical deltas.
 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.skin`    | `object`    ||
 
@@ -1006,7 +1006,7 @@ Sizes this content as specified by the parameters. If this content’s coordinat
 Starts this content’s clock
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.state`    | `number`    ||
 
@@ -1018,21 +1018,21 @@ Starts this content’s clock
 Stops this content’s clock
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.style`    | `object`    ||
 
 *This content’s style, as a `style` instance or `null` (the default)*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.time`    | `number`    ||
 
 *This content’s time in milliseconds. When its time is set, this content triggers the `onTimeChanged` event.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.variant`    | `number`    ||
 
@@ -1041,7 +1041,7 @@ Stops this content’s clock
 *A `content` object can change its `variant` property to match the data it represents. Applications and shells map symbolic variants (such as `on` or `off`) to `variant` numbers. The `skin` object uses such numbers to change the appearance of `content` objects.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.visible`    | `boolean`    ||
 
@@ -1049,7 +1049,7 @@ Stops this content’s clock
 
 
 #####`Content.prototype.wait(time)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `time`    | `number`    |required|
 
@@ -1058,14 +1058,14 @@ Stops this content’s clock
 When the specified time has elapsed, this content triggers the `onComplete` event.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.width`    | `number`    ||
 
 *This content’s width*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Content.prototype.x `    | `number`    ||
 | `Content.prototype.y `    | `number`    ||
@@ -1077,19 +1077,19 @@ When the specified time has elapsed, this content triggers the `onComplete` even
 The following standard events are triggered by `content` objects. Applications and shells can also trigger custom events using the `bubble`, `delegate`, `distribute`, `firstThat`, and `lastThat` functions.
 
 #####`onComplete(content, message, data)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
 *The `content` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    ||
 
 *The completed `message` object*  
 
-|||
+||||
 | :--- | :--- | :--- |
 | `data`    | `...`    ||
 
@@ -1098,13 +1098,13 @@ The following standard events are triggered by `content` objects. Applications a
 This event is triggered upon completion of the specified `message` object invoked by the specified `content` object.
 
 #####`onCreate(content, data, context)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
 *The `content` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `data, context  `    | `object`    ||
 
@@ -1113,7 +1113,7 @@ This event is triggered upon completion of the specified `message` object invoke
 This event is triggered when the behavior is constructed.
 
 #####`onDisplayed(content)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
@@ -1122,7 +1122,7 @@ This event is triggered when the behavior is constructed.
 This event is triggered when the specified `content` object becomes visible.
 
 #####`onDisplaying(content)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
@@ -1131,7 +1131,7 @@ This event is triggered when the specified `content` object becomes visible.
 This event is triggered after the specified `content` object is added to the containment hierarchy and has been measured and fitted, but before it is visible to the user. This is the first event the object receives after its coordinates have been computed.
 
 #####`onFinished(content)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
@@ -1140,7 +1140,7 @@ This event is triggered after the specified `content` object is added to the con
 This event is triggered when the specified `content` object is running and its time equals its duration.
 
 #####`onFocused(content)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
@@ -1149,31 +1149,31 @@ This event is triggered when the specified `content` object is running and its t
 This event is triggered when the specified `content` object becomes the focus.
 
 #####`onKeyDown(content, key, modifiers, count, ticks) onKeyUp(content, key, modifiers, count, ticks)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
 *The `content` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `key`    | `string`    ||
 
 *The typed character*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `modifiers`    | `number`    ||
 
 *The modifier key or keys pressed: 0 for none, 1 for the shift key, 2 for the control key, 4 for the option key. When more then one modifier key is pressed, the values are combined using logical OR.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `count`    | `number`    ||
 
 *How many times this key was pressed starting from the `onKeyDown` event: 1 for the initial key press, 2 for the first automatic repeat, and so on.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `ticks`    | `number`    ||
 
@@ -1182,7 +1182,7 @@ This event is triggered when the specified `content` object becomes the focus.
 These events are triggered when characters are typed and the `content` object is focused.
 
 #####`onTimeChanged(content)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
@@ -1194,25 +1194,25 @@ This event is triggered when the time of the specified `content` object changes.
 #####`onTouchCancelled(content, id)`
 #####`onTouchEnded(content, id, x, y, ticks) `
 #####`onTouchMoved(content, id, x, y, ticks)`
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    ||
 
 *The `content` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `id`    | `number`    ||
 
 *The identifier of the touch*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    ||
 
 *The global coordinates of the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `ticks`    | `number`    ||
 
@@ -1227,33 +1227,33 @@ The `DOM` object enables applications and shells to parse and serialize XML stri
 #### Object Description
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `DOM.implementation`    | `object`    |read only|
 
 *An object conforming to the `DOMImplementation` interface that enables creating XML document objects with the `createDocument` function*
 
 #####`DOM.parse(string)`
-|||
+||||
 | :--- | :--- | :--- |
 | `string`    | `string`    |required|
 
 *The string to parse*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *An XML document object*
 
 #####`DOM.serialize(document)`
-|||
+||||
 | :--- | :--- | :--- |
 | `document`    | `object`    |required|
 
 *The XML document object to serialize*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `string`    ||
 
@@ -1266,7 +1266,7 @@ Applications and shells assign effects to modify the appearance of images associ
 #### Constructor Description
 
 #####`Effect()`
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -1281,13 +1281,13 @@ Prototype inherits from `Object.prototype`.
 Instances are sealed and volatile.
 
 #####`Effect.prototype.colorize(color, opacity)`
-|||
+||||
 | :--- | :--- | :--- |
 | `color`    | `string`    ||
 
 *The colorization color, as a CSS color string (`gray` by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `opacity`    | `number`    ||
 
@@ -1296,7 +1296,7 @@ Instances are sealed and volatile.
 Colorizes the image
 
 #####`Effect.prototype.gaussianBlur(x, y)`
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    ||
 
@@ -1305,13 +1305,13 @@ Colorizes the image
 Blurs the image
 
 #####`Effect.prototype.gray(dark, lite)`
-|||
+||||
 | :--- | :--- | :--- |
 | `dark`    | `string`    ||
 
 *The dark color, as a CSS color string (`black` by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `lite`    | `string`    ||
 
@@ -1320,25 +1320,25 @@ Blurs the image
 Converts color in the image to monochrome. Pixels are converted to gray and the result is used to interpolate between the dark and light colors.
 
 #####`Effect.prototype.innerGlow(color, opacity, blur, radius)`
-|||
+||||
 | :--- | :--- | :--- |
 | `color`    | `string`    ||
 
 *The glow color, as a CSS color string (`white` by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `opacity`    | `number`    ||
 
 *The glow opacity, as a number between 0 (transparent) and 1 (opaque). The default value is 1.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `blur`    | `number`    ||
 
 *The glow softness (1 by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `radius`    | `number`    ||
 
@@ -1347,25 +1347,25 @@ Converts color in the image to monochrome. Pixels are converted to gray and the 
 Applies a glow to the inner boundary of the image
 
 #####`Effect.prototype.innerHilite(color, opacity, blur, x, y)`
-|||
+||||
 | :--- | :--- | :--- |
 | `color`    | `string`    ||
 
 *The highlight color, as a CSS color string (`white` by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `opacity`    | `number`    ||
 
 *The highlight opacity, as a number between 0 (transparent) and 1 (opaque). The default value is 1.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `blur`    | `number`    ||
 
 *The highlight softness (2 by default)*
-                           
-|||
+
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    ||
 
@@ -1374,25 +1374,25 @@ Applies a glow to the inner boundary of the image
 Applies a highlight to the inner boundary of the image
 
 #####`Effect.prototype.innerShadow(color, opacity, blur, x, y)`
-|||
+||||
 | :--- | :--- | :--- |
 | `color`    | `string`    ||
 
 *The shadow color, as a CSS color string (`black` by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `opacity`    | `number`    ||
 
 *The shadow opacity, as a number between 0 (transparent) and 1 (opaque). The default value is 1.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `blur`    | `number`    ||
 
 *The shadow softness (2 by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    ||
 
@@ -1401,61 +1401,61 @@ Applies a highlight to the inner boundary of the image
 Applies a shadow to the inner boundary of the image
 
 #####`Effect.prototype.mask(texture)`
-|||
+||||
 | :--- | :--- | :--- |
 | `texture`    | `object`    |required|
 
 *The mask, as a `texture` instance*
 
 Masks the image
-                           
+
 #####`Effect.prototype.outerGlow(color, opacity, blur, radius)`
-|||
+||||
 | :--- | :--- | :--- |
 | `color`    | `string`    ||
 
 *The glow color, as a CSS color string (`white` by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `opacity`    | `number`    ||
 
 *The glow opacity, as a number between 0 (transparent) and 1 (opaque). The default value is 1.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `blur`    | `number`    ||
 
 *The glow softness (1 by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `radius`    | `number`    ||
 
-*The glow radius outward from the boundary, in pixels (1 by default)*               
+*The glow radius outward from the boundary, in pixels (1 by default)*
 
 Applies a glow to the outer boundary of the image
 
 #####`Effect.prototype.outerHilite(color, opacity, blur, x, y)`
-|||
+||||
 | :--- | :--- | :--- |
 | `color`    | `string`    ||
 
 *The highlight color, as a CSS color string (`white` by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `opacity`    | `number`    ||
 
 *The highlight opacity, as a number between 0 (transparent) and 1 (opaque). The default value is 1.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `blur`    | `number`    ||
 
 *The highlight softness (2 by default)*
  
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    ||
 
@@ -1464,25 +1464,25 @@ Applies a glow to the outer boundary of the image
 Applies a highlight to the outer boundary of the image
 
 #####`Effect.prototype.outerShadow(color, opacity, blur, x, y)`
-|||
+||||
 | :--- | :--- | :--- |
 | `color`    | `string`    ||
 
 *The shadow color, as a CSS color string (`black` by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `opacity`    | `number`    ||
 
 *The shadow opacity, as a number between 0 (transparent) and 1 (opaque). The default value is 1.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `blur`    | `number`    ||
 
-*The shadow softness (2 by default)*                        
+*The shadow softness (2 by default)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    ||
 
@@ -1491,7 +1491,7 @@ Applies a highlight to the outer boundary of the image
 Applies a shadow to the outer boundary of the image
 
 #####`Effect.prototype.shade(texture)`
-|||
+||||
 | :--- | :--- | :--- |
 | `texture`    | `object`    |required|
 
@@ -1506,33 +1506,33 @@ Applications and shells have a set of active `handler` objects to respond to rec
 #### Constructor Description
 
 #####`Handler(path)`
-|||
+||||
 | :--- | :--- | :--- |
 | `path`    | `string`    ||
 
 *The path of the result*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *A `handler` instance, an object that inherits from `Handler.prototype`*
 
 #####`Handler.get(path)`
-|||
+||||
 | :--- | :--- | :--- |
 | `path`    | `string`    ||
 
 *The path of the `handler` object to get*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *The   `handler` object whose path matches the `path` string, if found in the set of active `handler` objects (or `undefined` if not found)*
                             
 #####`Handler.put(handler)`
-|||
+||||
 | :--- | :--- | :--- |
 | `handler`    | `object`    ||
 
@@ -1541,7 +1541,7 @@ Applications and shells have a set of active `handler` objects to respond to rec
 Puts the specified object into the set of active `handler` objects
 
 #####`Handler.remove(handler)`
-|||
+||||
 | :--- | :--- | :--- |
 | `handler`    | `object`    ||
 
@@ -1556,20 +1556,20 @@ Prototype inherits from `Object.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Handler.prototype.behavior`    | `object`    ||
 
 *This handler’s `behavior` object or `null` (the default). When this handler triggers an event, it calls the corresponding function property of its behavior, if any.*
 
 #####`Handler.prototype.invoke(message, type)`
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    |required|
 
 *The `message` object to invoke*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `type`    | `string`    ||
 
@@ -1578,27 +1578,27 @@ Instances are sealed and volatile.
 Invokes the specified `message` object. The message invoking this handler is suspended, and is resumed upon completion of the invoked message. If `type` is specified, this handler will eventually trigger the `onComplete` event; otherwise, this handler will never trigger the `onComplete` event, and the message invoking this handler will complete.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Handler.prototype.message`    | `object`    |read only|
 
 *The `message` object invoking this handler*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Handler.prototype.path`    | `string`    |read only|
 
 *This handler’s path*
 
 #####`Handler.prototype.redirect(url, mime)`
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    |required|
 
 *The URL to redirect to*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `mime`    | `string`    ||
 
@@ -1607,7 +1607,7 @@ Invokes the specified `message` object. The message invoking this handler is sus
 Redirects the invoking `message` object
 
 #####`Handler.prototype.wait(time)`
-|||
+||||
 | :--- | :--- | :--- |
 | `time`    | `number`    |required|
 
@@ -1620,13 +1620,13 @@ When the specified time has elapsed, this handler triggers the `onComplete` even
 The following standard events are triggered by `handler` objects. Applications and shells can also trigger custom events using the `bubble`, `delegate`, `distribute`, `firstThat`, and `lastThat` functions.
 
 #####`onCancel(handler, message)`
-|||
+||||
 | :--- | :--- | :--- |
 | `handler`    | `object`    ||
 
 *The `handler` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    ||
 
@@ -1635,19 +1635,19 @@ The following standard events are triggered by `handler` objects. Applications a
 This event is triggered when the `message` invoking the specified `handler` object is cancelled.
 
 #####`onComplete(handler, message, data)`
-|||
+||||
 | :--- | :--- | :--- |
 | `handler`    | `object`    ||
 
 *The `handler` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    ||
 
 *The completed `message` object*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `data`    | `...`    ||
 
@@ -1656,13 +1656,13 @@ This event is triggered when the `message` invoking the specified `handler` obje
 This event is triggered upon completion of the specified `message`    object invoked by the specified `handler` object.
 
 #####`onReceive(handler, message)`
-|||
+||||
 | :--- | :--- | :--- |
 | `handler`    | `object`    ||
 
 *The `handler` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    ||
 
@@ -1679,25 +1679,25 @@ Horizontally and vertically, a `host` object measures itself the way a `content`
 #### Constructor Description
 
 #####`Host(coordinates, url, id)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    ||
 
 *The URL of the application’s main script. It must be a file URL.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `id`    | `string`    ||
 
-*The identifier of the application*                 
+*The identifier of the application*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -1713,21 +1713,21 @@ Instances are sealed and volatile.
 Causes the virtual machine of the hosted application to break in the debugger
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Host.prototype.debugging`    | `boolean`    ||
 
 *If `true`, the virtual machine of the hosted application is debugging. Set to `true` or `false` to turn debugging on or off.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Host.prototype.di`    | `string`    |read only|
 
 *The reverse identifier of the hosted application—for example, `com.kinoma.guide`*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Host.prototype.id`    | `string`    |read only|
 
@@ -1737,7 +1737,7 @@ Causes the virtual machine of the hosted application to break in the debugger
 Launches the hosted application, which then triggers the `onLaunch` event
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Host.prototype.profiling`    | `boolean`    ||
 
@@ -1750,7 +1750,7 @@ Garbage-collects the virtual machine of the hosted application
 Quits the hosted application, which triggers the `onQuit` event
 
 #####`Host.prototype.trace(string)`
-|||
+||||
 | :--- | :--- | :--- |
 | `string`    | `string`    ||
 
@@ -1758,7 +1758,7 @@ Quits the hosted application, which triggers the `onQuit` event
 
 Traces the specified string in the virtual machine of the hosted application
 
-|||
+||||
 | :--- | :--- | :--- |
 | `Host.prototype.url`    | `string`    |read only|
 
@@ -1775,35 +1775,35 @@ The `label` object is a `content` object that renders a string on a single line 
 #### Coordinates
 
 The measured width and measured height of a `label` object are the width and height of the `label` object’s string rendered with its style.
-              
+ 
 #### Constructor Description
 
 #####`Label(coordinates, skin, style, string)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `skin`    | `object`    ||
 
 *The skin of the result, as a `skin` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`    | `object`    ||
 
 *The style of the result, as a `style` instance*                 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `string`    | `string`    ||
 
 *The string of the result*   
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -1816,34 +1816,34 @@ Prototype inherits from `Content.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Label.prototype.editable`    | `boolean`    ||
 
 *If `true`, users can edit this label’s string. KinomaJS will display a virtual keyboard as necessary.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Label.prototype.hidden`    | `boolean`    ||
 
 *If `true`, this label’s string is hidden to users, such as when a password is entered.*
 
 #####`Label.prototype.hitOffset(x, y)`
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    |required|
 
 *The local position to test*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `number`    ||
 
 *The offset of the character that contains the local position in this label’s string*
 
 #####`Label.prototype.insert(string)`
-|||
+||||
 | :--- | :--- | :--- |
 | `string`    | `string`    |required|
 
@@ -1852,20 +1852,20 @@ Instances are sealed and volatile.
 Replaces this label’s selection with the inserted string. It adds the inserted string length to the offset of this label’s selection and sets the length of this label’s selection to 0.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Label.prototype.length`    | `number`    |read only|
 
 *The number of characters in this label’s string*
-                               
+    
 #####`Label.prototype.select(offset, length)`
-|||
+||||
 | :--- | :--- | :--- |
 | `offset`    | `number`    |required|
 
 *The number of characters before the selection*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `length`    | `number`    |required|
 
@@ -1874,35 +1874,35 @@ Replaces this label’s selection with the inserted string. It adds the inserted
 Changes this label’s selection as specified by the parameters
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Label.prototype.selectable`    | `boolean`    ||
 
 *If `true`, users can select this label’s string.*
-   
+ 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Label.prototype.selectionBounds`    | `object`    |read only|
 
 *The local position and size of this label’s selection, as an object with `x`, `y`, `width`, and `height` number properties*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Label.prototype.selectionLength`    | `number`    |read only|
 
 *The number of characters in this label’s selection*
-                       
+    
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Label.prototype.selectionOffset`    | `number`    |read only|
 
 *The number of characters before this label’s selection*
-                     
+
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Label.prototype.string`    | `string`    ||
 
@@ -1925,13 +1925,13 @@ Horizontally and vertically, a `layer` object measures itself and fits its conte
 #### Constructor Description
 
 #####`Layer(coordinates)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -1944,7 +1944,7 @@ Prototype inherits from `Container.prototype`.
 Instances are sealed and volatile.
 
 #####`Layer.prototype.attach(content)`
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    |required|
 
@@ -1953,14 +1953,14 @@ Instances are sealed and volatile.
 Binds the layer to the content hierarchy by replacing the specified `content` object in the content’s container with this layer and adding the `content` object to this layer. The layer’s bitmap is updated with the `content` object and is updated whenever the content changes.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.blocking`    | `boolean`    ||
 
 *If `true` (the default), this layer blocks touch events.*
 
 #####`Layer.prototype.capture(content)`
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    |required|
 
@@ -1969,14 +1969,14 @@ Binds the layer to the content hierarchy by replacing the specified `content` ob
 Updates this layer’s bitmap with the specified `content` object. This layer must be unbound. The `capture` function is used to render a `content` object into a bitmap that is not part of the containment hierarchy—for example, to create a JPEG file of the `content` object’s image.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.corners`    | `object`    ||
 
 *This layer’s corners projection, as an array of four objects with `x` and `y` number properties*
 
 #####`Layer.prototype.detach()`
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -1985,35 +1985,35 @@ Updates this layer’s bitmap with the specified `content` object. This layer mu
 Unbinds this layer from the content hierarchy by removing the first `content` object from this layer and replacing this layer in its container with the removed `content` object.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.effect`    | `object`    ||
 
 *This layer’s effect, as an `effect` instance or `null` (the default)*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.opacity`    | `number`    ||
 
 *This layer’s opacity, as a number from 0 (transparent) to 1 (opaque)*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.origin`    | `object`    ||
 
 *This layer’s origin, as an object with `x` and `y` number properties*
                
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.rotation`    | `number`    ||
 
 *This layer’s rotation in radians*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.scale`    | `object`    ||
 | `Layer.prototype.skew`    | `object`    ||
@@ -2021,27 +2021,27 @@ Unbinds this layer from the content hierarchy by removing the first `content` ob
 *This layer’s scale or skew, as an object with `x` and `y` number properties* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.subPixel`    | `boolean`    ||
 
 *If `true`, this layer is rendered with sub-pixel precision.* 
 
 #####`Layer.prototype.transformTouch(x, y)`
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y `    | `number`    |required|
 
 *The global position to transform*      
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *The specified global position transformed by the inverse of this layer’s transformation matrix. It is an object with `x` and `y` number properties.*         
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Layer.prototype.translation`    | `object`    ||
 
@@ -2064,25 +2064,25 @@ When its height is measured, the `layout` object triggers the `onMeasureVertical
 #### Constructor Description
 
 #####`Layout(coordinates, skin, style)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*  
 
-|||
+||||
 | :--- | :--- | :--- |
 | `skin`    | `object`    ||
 
 *The skin of the result, as a `skin` instance*  
 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`    | `object`    ||
 
 *The style of the result, as a `style` instance*                
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -2099,44 +2099,44 @@ Instances are sealed and volatile.
 Same as for `container` objects (see “Events” in section, “[Container Object](#kinomajs-reference-kinomajs-object-reference-container-object)”), plus:
 
 #####`onMeasureHorizontally(layout, width)`
-|||
+||||
 | :--- | :--- | :--- |
 | `layout`    | `object`    ||
 
 *The `layout` object that triggered the event* 
                             
-|||
+||||
 | :--- | :--- | :--- |
 | `width`    | `number`    ||
 
 *The measured width of the `layout` object* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `number`    ||
 
-*The width of the `layout` object*                 
+*The width of the `layout` object*
 
 This event is triggered when the width of the `layout` object is measured.
 
 #####`onMeasureVertically(layout, height)`
-|||
+||||
 | :--- | :--- | :--- |
 | `layout`    | `object`    ||
 
 *The `layout` object that triggered the event* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `height`    | `number`    ||
 
 *The measured height of the `layout` object* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `number`    ||
 
-*The height of the `layout` object*            
+*The height of the `layout` object*
 
 This event is triggered when the height of the `layout` object is measured.
 
@@ -2157,29 +2157,29 @@ Vertically, a `line` object measures itself and arranges its contents like a `co
 #### Constructor Description
 
 #####`Line(coordinates, skin, style)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `skin`    | `object`    ||
 
 *The skin of the result, as a `skin` instance* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`    | `object`    ||
 
-*The style of the result, as a `style` instance*              
+*The style of the result, as a `style` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
-*A `line` instance, an object that inherits from `Line.prototype`*      
+*A `line` instance, an object that inherits from `Line.prototype`*
 
 #### Prototype Description
 
@@ -2202,58 +2202,58 @@ The measured width and measured height of a `media` object are the width and hei
 #### Constructor Description
 
 #####`Media(coordinates, url, mime)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    ||
 
 *The URL of the audio or video stream. If there is no `url` parameter, the object returned is a placeholder, waiting for its `load` function to be called or for its `url` property to be set.* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `mime`    | `string`    ||
 
-*The MIME type of the audio or video stream. If there is no `mime` parameter, the stream is sniffed to detect its MIME type.* 
-                     
-|||
+*The MIME type of the audio or video stream. If there is no `mime` parameter, the stream is sniffed to detect its MIME type.*
+
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *A `media` instance, an object that inherits from `Media.prototype`* 
 
 #####`Media.canPlayAudio(mime)`
-|||
+||||
 | :--- | :--- | :--- |
 | `mime`    | `string`    ||
 
-*A MIME type corresponding to an audio codec—for example, `x-audio-codec/aac`* 
+*A MIME type corresponding to an audio codec—for example, `x-audio-codec/aac`*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `boolean`    ||
 
-*If `true`, an audio codec is available for the specified MIME type.* 
+*If `true`, an audio codec is available for the specified MIME type.*
 
 #####`Media.canPlayVideo(mime)`
-|||
+||||
 | :--- | :--- | :--- |
 | `mime`    | `string`    ||
 
-*A MIME type corresponding to a video codec—for example, `x-video-codec/avc`* 
-                            
-|||
+*A MIME type corresponding to a video codec—for example, `x-video-codec/avc`*
+
+||||
 | :--- | :--- | :--- |
 | Returns    | `boolean`    ||
 
 *If `true`, a video codec is available for the specified MIME type.* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.FAILED`    | `number`    ||
 | `Media.PAUSED`    | `number`    ||                       
@@ -2269,48 +2269,48 @@ Prototype inherits from `Content.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.album`    | `string`    |read only|
 
 *This media’s album title*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.artist`    | `string`    |read only|
 
 *This media’s artist*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.aspect`    | `string`    ||
 
-*This media’s aspect, as `draw`, `fill`, `fit`, or `stretch`*                          
+*This media’s aspect, as `draw`, `fill`, `fit`, or `stretch`*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.bitRate`    | `number`    |read only|
 
 *This media’s bit rate*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.insufficientBandwidth`    | `boolean`    |read only|
 
 *If `true`, there is not enough bandwidth to play this media.*
 
 #####`Media.prototype.load(url, mime)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    |required|
 
 *The URL of the audio or video stream*
-              
-|||
+ 
+||||
 | :--- | :--- | :--- |
 | `mime`    | `string`    ||
 
@@ -2319,56 +2319,56 @@ Instances are sealed and volatile.
 Loads the audio or video stream referenced by the URL into this media
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.progress`    | `number`    |read only|
 
 *A number between 0 and 1 when this media is buffering*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.ready`    | `boolean`    |read only|
 
 *If `true`, this media is ready to be played.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.seekableFrom`    | `number`    |read only|
 
-*The time this media can be seeked from, in milliseconds*              
+*The time this media can be seeked from, in milliseconds*   
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.seekableTo`    | `number`    |read only|
 
 *The time this media can be seeked to, in milliseconds*   
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.seeking`    | `boolean`    ||
 
 *If `true`, this media is seeking.*          
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.title`    | `string`    |read only|
 
 *This media’s title*     
-                         
+
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.url`    | `string`    ||
 
 *This media’s URL. Setting the URL loads the audio or video stream referenced by the URL into this media; setting it to `null` unloads this media.*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Media.prototype.volume`    | `number`    ||
 
@@ -2379,7 +2379,7 @@ Loads the audio or video stream referenced by the URL into this media
 Same as for `content` objects (see “Events” in section, “[Content Object](#kinomajs-reference-kinomajs-object-reference-content-object)”), plus:
 
 #####`onLoaded(media)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `media`    | `object`    ||
 
@@ -2388,7 +2388,7 @@ Same as for `content` objects (see “Events” in section, “[Content Object](
 This event is triggered when the specified `media` object is ready to play its audio or video stream.
 
 #####`onMetadataChanged(media)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `media`    | `object`    ||
 
@@ -2397,7 +2397,7 @@ This event is triggered when the specified `media` object is ready to play its a
 This event is triggered when the specified `media` object’s metadata changes.
 
 #####`onStateChanged(media)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `media`    | `object`    ||
 
@@ -2414,13 +2414,13 @@ Message delivery is always asynchronous.
 #### Constructor Description
 
 #####`Message(url)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    |required|
 
 *The URL of the message* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -2429,7 +2429,7 @@ Message delivery is always asynchronous.
 The `url` parameter is merged with the default scheme and the default authority.
 
 #####`Message.broadcast(message)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    |required|
 
@@ -2438,7 +2438,7 @@ The `url` parameter is merged with the default scheme and the default authority.
 Broadcasts the specified `message` object to all applications and shells. The scheme of the `message` object’s URL must be `xkpr`.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.CHUNK`    | `string`    ||
 | `Message.DOM`    | `string`    ||
@@ -2448,13 +2448,13 @@ Broadcasts the specified `message` object to all applications and shells. The sc
 The values of the `type` parameter of the `invoke` function of `content` and `handler` objects
 
 #####`Message.URI(url)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    |required|
 
 *The URL to merge* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `Returns`    | `string`    ||
 
@@ -2467,14 +2467,14 @@ Prototype inherits from `Object.prototype`.
 Instances are sealed.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.authority`    | `string`    |read only|
 
 *The authority of this message’s URL* 
 
 #####`Message.prototype.clearRequestHeader(name)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `name`    | `string`    |required|
 
@@ -2483,7 +2483,7 @@ Instances are sealed.
 Removes the header named `name` from the headers of this message’s request, or does nothing if no such header exists
 
 #####`Message.prototype.clearResponseHeader(name)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `name`    | `string`    |required|
 
@@ -2492,54 +2492,54 @@ Removes the header named `name` from the headers of this message’s request, or
 Removes the header named `name` from the headers of this message’s response, or does nothing if no such header exists
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.error`    | `number`    ||
 
 *This message’s error, as a system code* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.fragment`    | `string`    |read only|
 
 *The fragment of this message’s URL* 
                                             
 #####`Message.prototype.getRequestHeader(name)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `name`    | `string`    |required|
 
 *The name of the header to get* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `string`    ||
 
 *The value of the header named `name` in the headers of this message’s request* 
 
 #####`Message.prototype.getResponseHeader(name)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `name`    | `string`    |required|
 
 *The name of the header to get* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `string`    ||
 
 *The value of the header named `name` in the headers of this message’s response* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.method`    | `string`    | |
 
 *This message’s method, as an HTTP method such as `GET`, `HEAD`, or `PUT`* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.name`    | `string`    | read only |
 | `Message.prototype.password`    | `string`    | read only |
@@ -2549,54 +2549,54 @@ Removes the header named `name` from the headers of this message’s response, o
 The name, password, path, and query of this message’s URL
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.requestChunk`    | `object`    | |
 
 *The body of this message’s request, as a chunk (or `undefined` if no body)* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.requestText`    | `string`    | |
 
 *The body of this message’s request, as a string* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.responseChunk`    | `object`    | |
 
 *The body of this message’s response, as a chunk (or `undefined` if no body)*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.responseText`    | `string`    | |
 
 *The body of this message’s response, as a string*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.scheme`    | `string`    |read only |
 
 *The scheme of this message’s URL*  
        
 #####`Message.prototype.setRequestCertificate()` 
-|||
+||||
 | :--- | :--- | :--- |
 |     | ||
 Description to come
 
 #####`Message.prototype.setRequestHeader(name, value)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `name`    | `string`    |required|
 
 *The name of the request header to set* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `value`    | `string`    |required|
 
@@ -2605,13 +2605,13 @@ Description to come
 Changes the value of the header named `name` in the headers of this message’s request, creating a header if no such header exists
 
 #####`Message.prototype.setResponseHeader(name, value)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `name`    | `string`    |required|
 
 *The name of the header to set* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `value`    | `string`    |required|
 
@@ -2620,21 +2620,21 @@ Changes the value of the header named `name` in the headers of this message’s 
 Changes the value of the header named `name` in the headers of this message’s response, creating a header if no such header exists
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.status`    | `number`    ||
 
 *This message’s status, as an HTTP status such as 200 or 404* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.url`    | `string`    |read only|
 
 *This message’s URL* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Message.prototype.user`    | `string`    |read only|
 
@@ -2653,25 +2653,25 @@ The measured width and measured height of a `picture` object are the width and h
 #### Constructor Description
 
 #####`Picture(coordinates, url, mime)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    ||
 
 *The URL of the image. If there is no `url` parameter, the object returned is a placeholder, waiting for its `load` function to be called or for its `url` property to be set.* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `mime`    | `string`    ||
 
 *The MIME type of the image. If there is no `mime` parameter, the image is sniffed to detect its MIME type.*                      
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -2684,41 +2684,41 @@ Prototype inherits from `Content.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.aspect`    | `string`    ||
 
 *This picture’s aspect, as `draw`, `fill`, `fit`, or `stretch`* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.corners`    | `object`    ||
 
 *This picture’s corners projection, as an array of four objects with `x` and `y` number properties* 
               
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.crop`    | `object`    ||
 
 *This picture’s crop, as an object with `x`, `y`, `width`, and `height` number properties or `null` (the default). The crop is the area of the image that this picture displays. The crop position and size are in physical pixels of the image.* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.effect`    | `object`    ||
 
 *This picture’s effect, as an `effect` instance or `null` (the default)*                 
 
 #####`Picture.prototype.load(url, mime)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    |required|
 
 *The URL of the image*    
 
-|||
+||||
 | :--- | :--- | :--- |
 | `mime`    | `string`    ||
 
@@ -2727,35 +2727,35 @@ Instances are sealed and volatile.
 Loads the image referenced by the specified URL into this picture. Loading an image is always asynchronous.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.opacity`    | `number`    ||
 
 *This picture’s opacity, as a number between 0 (transparent) and 1 (opaque). The default value is 1.*   
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.origin`    | `object`    ||
 
 *This picture’s origin, as an object with `x` and `y` number properties*  
              
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.ready`    | `boolean`    |read only|
 
 *If `true`, this picture is ready to be displayed.*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.rotation`    | `number`    ||
 
 *This picture’s rotation in radians*  
               
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.scale`    | `object`    ||
 | `Picture.prototype.skew`    | `object`    ||
@@ -2763,34 +2763,34 @@ Loads the image referenced by the specified URL into this picture. Loading an im
 This picture’s scale or skew, as an object with `x` and `y` number properties
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Picture.prototype.subPixel`    | `boolean`    ||
 
 *If `true`, this picture is rendered with sub-pixel precision.*  
 
 #####`Picture.prototype.transformTouch(x, y)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    |required|
 
 *The global position to transform* 
 
-|||
+||||
 | :--- | :--- | :--- |
 |  Returns     | `object`    ||
 
 *The global position transformed by the inverse of this picture’s transformation matrix, as an object with `x` and `y` number properties* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 |  `Picture.prototype.translation `     | `object`    ||
 
 *This picture’s translation, as an object with `x` and `y` number properties* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 |  `Picture.prototype.url `     | `string`    ||
 
@@ -2801,7 +2801,7 @@ This picture’s scale or skew, as an object with `x` and `y` number properties
 Same as for `content` objects (see “Events” in section, “[Content Object](#kinomajs-reference-kinomajs-object-reference-content-object)”), plus:
 
 #####`onLoaded(picture)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `picture`    | `object`    ||
 
@@ -2824,13 +2824,13 @@ The measured width and measured height of a `port` object are 0.
 #### Constructor Description
 
 #####`Port(coordinates)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
                             
@@ -2843,26 +2843,26 @@ Prototype inherits from `Content.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Port.prototype.corners`    | `object`    ||
 
 *This port’s current corners projection, as an array of four objects with `x` and `y` number properties*  
 
 #####`Port.prototype.drawImage(image, x, y, width, height, sx, sy, sw, sh)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `image`    | `object`    |required|
 
 *The image to draw, as a `picture` or `texture` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y, width, height`    | `number`    |required|
 
 *The local position and size of the area to copy pixels to (that is, the destination area)*                
 
-|||
+||||
 | :--- | :--- | :--- |
 | `sx, sy, sw, sh`    | `number`    ||
 
@@ -2871,13 +2871,13 @@ Instances are sealed and volatile.
 Draws the image. The source area of the image is stretched to cover the destination area.
 
 #####`Port.prototype.drawLabel(string, x, y, width, height)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `string`    | `string`    |required|
 
 *The string to draw*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y, width, height`    | `number`    |required|
 
@@ -2886,13 +2886,13 @@ Draws the image. The source area of the image is stretched to cover the destinat
 Draws the string the way a `label` instance would, with the style of this port
 
 #####`Port.prototype.drawText(string, x, y, width, height)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `string`    | `string`    |required|
 
 *The string to draw*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y, width, height`    | `number`    |required|
 
@@ -2901,13 +2901,13 @@ Draws the string the way a `label` instance would, with the style of this port
 Draws the string the way a `text` instance would, with the style of this port
 
 #####`Port.prototype.fillColor(color, x, y, width, height)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `color`    | `string`    |required|
 
 *The filling color, as a CSS color string*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y, width, height`    | `number`    |required|
 
@@ -2916,19 +2916,19 @@ Draws the string the way a `text` instance would, with the style of this port
 Fills the area with the color
 
 #####`Port.prototype.fillImage(image, x, y, width, height, sx, sy, sw, sh)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `image`    | `object`    |required|
 
 *The filling image, as a `picture` or `texture` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y, width, height`    | `number`    |required|
 
 *The local position and size of the area to copy pixels to (that is, the destination area)*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `sx, sy, sw, sh `    | `number`    ||
 
@@ -2937,7 +2937,7 @@ Fills the area with the color
 Fills the area with the image. The source area of the image is repeated to cover the destination area.
 
 #####`Port.prototype.intersectClip(x, y, width, height)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y, width, height`    | `number`    |required|
 
@@ -2949,20 +2949,20 @@ Intersects the current clip rectangle with the area
 Invalidates this port, which triggers the `onDraw` event
 
 #####`Port.prototype.measureImage(image)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `image`    | `object`    |required|
 
 *The image to measure, as a `picture` or `texture` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *The size of the image, as an object with `width` and `height` number properties*
 
 #####`Port.prototype.measureLabel(string)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `string`    | `string`    |required|
 
@@ -2971,13 +2971,13 @@ Invalidates this port, which triggers the `onDraw` event
 Measures the string the way a `label` instance would, with the style of this port
 
 #####`Port.prototype.measureText(string, width)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `string`    | `string`    |required|
 
 *The string to measure*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `width`    | `number`    |required|
 
@@ -2986,14 +2986,14 @@ Measures the string the way a `label` instance would, with the style of this por
 Measures the string the way a `text` instance would, with the style of this port
 
 #####  
-|||
+||||
 | :--- | :--- | :--- |
 | `Port.prototype.opacity`    | `number`    ||
 
 *This port’s current opacity, as a number between 0 (transparent) and 1 (opaque)*
 
 #####  
-|||
+||||
 | :--- | :--- | :--- |
 | `Port.prototype.origin`    | `object`    ||
 
@@ -3008,14 +3008,14 @@ Restores the current clip rectangle from this port’s clip rectangles stack
 Saves this port’s current clip rectangle to this port’s clip rectangles stack
 
 #####  
-|||
+||||
 | :--- | :--- | :--- |
 | `Port.prototype.rotation`    | `number`    ||
 
 *This port’s current rotation, as a number in radians*
 
 #####  
-|||
+||||
 | :--- | :--- | :--- |
 | `Port.prototype.scale `    | `object`    ||
 | `Port.prototype.skew `    | `object`    ||
@@ -3023,20 +3023,20 @@ Saves this port’s current clip rectangle to this port’s clip rectangles stac
 This port’s current scale or skew, as an object with `x` and `y` number properties
                
 #####`Port.prototype.transformTouch(x, y)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y `    | `number`    |required|
 
 *The global position to transform*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
 *The global position transformed by the inverse of this port’s current transformation matrix, as an object with `x` and `y` number properties*            
 
 #####  
-|||
+||||
 | :--- | :--- | :--- |
 | `Port.prototype.translation`    | `object`    ||
 
@@ -3047,13 +3047,13 @@ This port’s current scale or skew, as an object with `x` and `y` number proper
 Same as for `content` objects (see “Events” in section, “[Content Object](#kinomajs-reference-kinomajs-object-reference-content-object)”), plus:
 
 #####`onDraw(port, x, y, width, height)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `port`    | `object`    ||
 
 *The `port` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y, width, height`    | `number`    ||
 
@@ -3073,25 +3073,25 @@ The measured width and measured height of a `scroller` object are the horizontal
 #### Constructor Description
 
 #####`Scroller(coordinates, skin, style)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`    | `object`    ||
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `skin`    | `object`    ||
 
 *The skin of the result, as a `skin` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`    | `object`    ||
 
 *The style of the result, as a `style` instance*             
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    ||
 
@@ -3104,21 +3104,21 @@ Prototype inherits from `Container.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Scroller.prototype.constraint`    | `object`    |read only|
 
 *The constrained scroll offsets of this scroller, as an object with `x` and `y` number properties. The scroll offsets when this scroller is tracking may be different from the constrained scroll offsets.*   
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Scroller.prototype.loop`    | `boolean`    ||
 
 *If `true`, this scroller loops its first `content` object—for example, to display credits or tickers.*              
 
 #####`Scroller.prototype.reveal(bounds)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `bounds`    | `object`    |required|
 
@@ -3127,14 +3127,14 @@ Instances are sealed and volatile.
 Scrolls this scroller to reveal the specified area
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Scroller.prototype.scroll`    | `object`    ||
 
 *The scroll offsets of this scroller, as an object with `x` and `y` number properties*     
 
 #####`Scroller.prototype.scrollBy(dx, dy)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `dx, dy`    | `number`    |required|
 
@@ -3143,7 +3143,7 @@ Scrolls this scroller to reveal the specified area
 Adds the deltas to the scroll offsets of this scroller
 
 #####`Scroller.prototype.scrollTo(x, y)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y`    | `number`    |required|
 
@@ -3152,7 +3152,7 @@ Adds the deltas to the scroll offsets of this scroller
 Changes the scroll offsets of this scroller
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Scroller.prototype.tracking`    | `boolean`    ||
 
@@ -3163,7 +3163,7 @@ Changes the scroll offsets of this scroller
 Same as for `container` objects (see “Events” in section, “[Container Object](#kinomajs-reference-kinomajs-object-reference-container-object)”), plus:
 
 #####`onScrolled(scroller)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `scroller`    | `object`    ||
 
@@ -3189,7 +3189,7 @@ Object inherits from `Container.prototype`.
 Object is sealed.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell`    | `object`    |read only|
 
@@ -3198,35 +3198,35 @@ Object is sealed.
 *For application scripts, there are no `shell` objects; the value of the `shell` global property is `null`.*
 
 #####`shell.alert(icon, title, message)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `icon`    | `string`    | |
 
 *The icon of the alert box to display, as `about`, `note`, or `stop`*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `title`    | `string`    | |
 
 *The title of the alert box*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `string`    | |
 
 *The message of the alert box*
 
 Displays an alert box (desktop mockup shells only)
-                           
+
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.debugging`    | `boolean`    | |
 
 *If `true`, the virtual machine of this shell is connected to the debugger. Set to `true` or `false` to turn debugging on or off.*
 
 #####`shell.discover(type)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `type`    | `string`    | required|
 
@@ -3235,7 +3235,7 @@ Displays an alert box (desktop mockup shells only)
 Causes this shell to trigger `onDiscovered` events when KinomaJS signals that services of the specified type have appeared or disappeared on the local network
 
 #####`shell.forget(type)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `type`    | `string`    | required|
 
@@ -3244,32 +3244,32 @@ Causes this shell to trigger `onDiscovered` events when KinomaJS signals that se
 Causes this shell not to trigger `onDiscovered` events when KinomaJS signals that services of the specified type have appeared or disappeared on the local network
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.id`    | `string`    |read only |
 
 *This shell’s identifier: `shell`. It is used as the authority in a URL with the   `xkpr` scheme.*
 
 #####`shell.keyDown(key, modifiers, count, ticks) shell.keyUp(key, modifiers, count, ticks)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`    | `object`    | |
 
 *The `content` object that triggered the event*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `key`    | `string`    | |
 
 *The typed character*
-                             
-|||
+
+||||
 | :--- | :--- | :--- |
 | `modifiers`    | `number`    | |
 
 *The modifier key or keys pressed: 0 for none, 1 for the shift key, 2 for the control key, 4 for the option key*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `count`    | `number`    | |
 
@@ -3278,14 +3278,14 @@ Causes this shell not to trigger `onDiscovered` events when KinomaJS signals tha
 Simulates a key-down or key-up event; used by desktop mockup shells to implement virtual keyboards.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.menus`    | `object`    | |
 
 *This shell’s menus (desktop mockup shells only)*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.profiling`    | `boolean`    | |
 
@@ -3296,16 +3296,16 @@ Garbage-collects the virtual machine of this shell
 
 #####`shell.quit()` 
 Quits the runtime
-                           
+
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.shared`    | `boolean`    | |
 
 *If `true`, this shell is shared as a service on the local network. Set to `true` or `false` to turn the service on or off.*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.touchMode`    | `boolean`    | |
 
@@ -3315,28 +3315,28 @@ Quits the runtime
 Updates this shell’s menus (desktop mockup shells only)
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.url`    | `string`    | read only|
 
 *The URL of this shell’s script*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.uuid`    | `string`    | read only|
 
 *This shell’s persistent universal unique identifier (UUID); used as a service UUID for SSDP*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.windowState`    | `object`    |  |
 
 *The state of this shell’s window (desktop mockup shells only)*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell.windowTitle`    | `string`    |  |
 
@@ -3347,7 +3347,7 @@ Updates this shell’s menus (desktop mockup shells only)
 Same as for `container` objects (see “Events” in section, “[Container Object](#kinomajs-reference-kinomajs-object-reference-container-object)", plus:
 
 #####`onDiscovered(services)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `services`    | `object`    | |
 
@@ -3356,7 +3356,7 @@ Same as for `container` objects (see “Events” in section, “[Container Obje
 This event is triggered when KinomaJS signals that services that the `shell` object has requested to discover have appeared or disappeared on the network.
 
 #####`onQuit(shell)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell`    | `object`    | |
 
@@ -3365,13 +3365,13 @@ This event is triggered when KinomaJS signals that services that the `shell` obj
 This event is triggered when the runtime quits. A shell implementation typically calls the `quit` function of the `host` objects in its containment hierarchy, so that active applications will receive the `onQuit` event.
 
 #####`onReceive(shell, message)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `shell`    | `object`    | |
 
 *The `shell` object*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `message`    | `object`    | |
 
@@ -3386,25 +3386,25 @@ The `skin` object defines the appearance of `content` objects. It can fill or st
 #### Constructor Description
 
 #####`Skin(fillColors, borders, strokeColors)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `fillColors`    | `...`    | |
 
 *The colors to fill `content` objects with, as one string or an array of strings that define colors as in CSS. The default is `transparent`.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `borders`    | `object`    | |
 
 *An object with `left`, `right`, `top`, or `bottom` number properties, specifying the borders to stroke `content` objects with. The default is no borders.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `strokeColors`    | `...`    | |
 
 *The colors to stroke `content` objects with, as one string or an array of strings that define colors as in CSS. The default is `transparent`.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    | |
 
@@ -3413,43 +3413,43 @@ The `skin` object defines the appearance of `content` objects. It can fill or st
 When the `fillColors` or `strokeColors` parameter is an array, each color corresponds to a state.
 
 #####`Skin(texture, bounds, variants, states, tiles, margins)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `texture`    | `object`    | required|
 
 *The texture of the result, as a `texture` object*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `bounds`    | `object`    | required|
 
 *The portion of the `texture` object to extract, as an object with `x`, `y`, `width`, and `height` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `variants`    | `number`    | |
 
 *The horizontal offset between variants*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `states`    | `number`    | |
 
 *The vertical offset between states*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `tiles`    | `object`    | |
 
 *An object with `left`, `right`, `top`, or `bottom` number properties. If defined, the result is a 1-part, 3-part, or 9-part pattern. The default is no tiles.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `margins`    | `object`    | |
 
 *An object with `left`, `right`, `top` or `bottom` number properties. If defined, margins are rendered outside the `content` objects. The default is no margins.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `object`    | |
 
@@ -3462,77 +3462,77 @@ Prototype inherits from `Object.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.borders`    | `object`    |read only |
 
 *This skin’s borders, as an object with `left`, `right`, `top`, and `bottom` number properties*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.bounds `    | `object`    |read only |
 
 *This skin’s borders, as an object with `left`, `right`, `top`, and `bottom` number properties*                                
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.fillColors`    | `object`    |read only |
 
 *This skin’s fill colors, as an array of strings that define colors as in CSS (or `null` if this skin uses a `texture` object)* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.height`    | `number`    |read only |
 
 *This skin’s height* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.margins`    | `object`    |read only |
 
 *This skin’s margins, as an object with `left`, `right`, `top`, and `bottom` number properties* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.states`    | `number`    |read only |
 
 *This skin’s vertical offset between states*                           
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.strokeColors`    | `object`    |read only |
 
 *This skin’s stroke colors, as an array of strings that define colors as in CSS (or `null` if this skin uses a `texture` object)*  
  
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.texture`    | `object`    |read only |
 
 *This skin’s texture, as a `texture` object (  or `null` if this skin uses colors)*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.tiles`    | `object`    |read only |
 
 *This skin’s tiles, as an object with `left`, `right`, `top`, and `bottom` number properties*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.variants`    | `number`    |read only |
 
 *This skin’s horizontal offset between variants*    
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Skin.prototype.width`    | `number`    |read only |
 
@@ -3545,13 +3545,13 @@ The `sound` object is an asset that references an audio file, used to play a sho
 #### Constructor Description
 
 #####`Sound(url)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`    | `string`    | required|
 
 *The URL of the audio file. It must be a file URL.*
 
-|||
+||||
 | :--- | :--- | :--- |
 |  Returns    | `object`    | |
 
@@ -3576,19 +3576,19 @@ The `style` object defines the appearance of strings in `label` and `text` objec
 #### Constructor Description
 
 #####`Style(colors, ...)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `colors`    | `object`    | |
 
 *This style’s colors, as an array of strings that define colors as in CSS*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `<other parameters to come>`    | `<type>`    | |
 
 *<Explanation>*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns     | `object`    | |
 
@@ -3601,76 +3601,76 @@ Prototype inherits from `Object.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.colors`     | `object`    | read only |
 
 *This style’s colors, as an array of strings that define colors as in CSS*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.font`     | `string`    |  |
 
 *This style’s font, as a string that defines a font as in CSS*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.horizontalAlignment`     | `string`    |  |
 
 *This style’s horizontal alignment, as `left`, `center`, `right`, or `justify`*                                
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.indentation`     | `number`    |  |
 
 *This style’s indentation: the indentation of the first line of a block*  
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.lineCount`     | `number`    |  |
 
 *This style’s line count: the maximum number of lines in a block* 
            
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.lineHeight`     | `number`    |  |
 
 *This style’s line height: the distance between lines of a block* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.margins`     | `object`    |  |
 
 *This style’s margins, as an object with `left`, `right`, `top`, and `bottom` number properties* 
              
 #####`Style.prototype.measure(string)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `string`     | `string`    | required |
 
 *The string to measure*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns     | `object`    |  |
 
 *The size of the string rendered with this style, as an object with `width` and `height` properties*
             
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.size`     | `number`    |  |
 
 *This style’s font size* 
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Style.prototype.verticalAlignment`     | `string`    |  |
 
@@ -3693,31 +3693,31 @@ The measured width of a `text` object is 0\. The measured height is the height o
 #### Constructor Description
 
 #####`Text(coordinates, skin, style, string)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`     | `object`    |  |
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `skin`     | `object`    |  |
 
 *The skin of the result, as a `skin` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`     | `object`    |  |
 
 *The style of the result, as a `style` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `string`     | `string`    |  |
 
 *The string of the result*                     
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns     | `object`    |  |
 
@@ -3735,13 +3735,13 @@ Instances are sealed and volatile.
 Starts the process of defining the string and styles of this text using blocks and spans. The string is reset to empty. The `begin` function must be called before `beginBlock` or `beginSpan`. After defining the string and styles, call `end`.
 
 #####`Text.prototype.beginBlock(style, behavior)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`     | `object`    | required |
 
 *The style of the block, as a `style` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `behavior`     | `object`    |  |
 
@@ -3750,13 +3750,13 @@ Starts the process of defining the string and styles of this text using blocks a
 Creates and opens a new block. The `begin` function must have been already called without a corresponding `end`. There cannot be another block already open.
 
 #####`Text.prototype.beginSpan(style, behavior)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `style`     | `object`    | required |
 
 *The style of the span, as a `style` instance*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `behavior`     | `object`    |  |
 
@@ -3765,19 +3765,19 @@ Creates and opens a new block. The `begin` function must have been already calle
 Creates and opens a new span. There must be an open block. There cannot be another open span.
 
 #####`Text.prototype.concat(string) Text.prototype.concat(content, align)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `string`     | `string`    | required |
 
 *The string to concatenate*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `content`     | `object`    | required |
 
 *The `content` object to concatenate*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `align`     | `string`    |  |
 
@@ -3786,7 +3786,7 @@ Creates and opens a new span. There must be an open block. There cannot be anoth
 Concatenates the specified string or `content` object to this text. There must be an open span.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Text.prototype.editable`     | `boolean`    |  |
 
@@ -3802,7 +3802,7 @@ Closes the open block
 Closes the open span
 
 #####`Text.prototype.format(description)`
-|||
+||||
 | :--- | :--- | :--- |
 | `description`     | `object`    | required  |
 
@@ -3811,20 +3811,20 @@ Closes the open span
 Creates a structure based on the `description` parameter. When this text is bound, it formats the newly created structure.
 
 #####`Text.prototype.hitOffset(x, y)`
-|||
+||||
 | :--- | :--- | :--- |
 | `x, y `     | `number`    | required  |
 
 *The local position to test*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns     | `number`    |   |
 
 *The offset of the character in this text that contains the local position*
 
 #####`Text.prototype.insert(text)`
-|||
+||||
 | :--- | :--- | :--- |
 | `string`     | `string`    | required  |
 
@@ -3833,20 +3833,20 @@ Creates a structure based on the `description` parameter. When this text is boun
 Replaces this text’s selection with the inserted string. It adds the inserted string length to the selection’s offset and sets the selection’s length to 0.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Text.prototype.length`     | `number`    | read only |
 
 *The number of characters in this text’s string*
 
 #####`Text.prototype.select(offset, length)`
-|||
+||||
 | :--- | :--- | :--- |
 | `offset`     | `number`    | required  |
 
 *The number of characters before the selection*                                          
 
-|||
+||||
 | :--- | :--- | :--- |
 | `length`     | `number`    | required  |
 
@@ -3855,35 +3855,35 @@ Replaces this text’s selection with the inserted string. It adds the inserted 
 Changes this text’s selection as specified by the parameters
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Text.prototype.selectable`     | `boolean`    | |
 
 *If `true`, users can select this text’s string*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Text.prototype.selectionBounds`     | `object`    |read only |
 
 *The local position and size of this text’s selection, as an object with `x`, `y`, `width`, and `height` number properties*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Text.prototype.selectionLength`     | `number`    |read only |
 
 *The number of characters in this text’s selection*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Text.prototype.selectionOffset`     | `number`    |read only |
 
 *The number of characters before this text’s selection*
                        
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Text.prototype.string`     | `string`    | |
 
@@ -3900,19 +3900,19 @@ The `texture` object is an asset that references an image file. Applications and
 #### Constructor Description
 
 #####`Texture(url, scale)`
-|||
+||||
 | :--- | :--- | :--- |
 | `url`     | `string`    | required  |
 
 *The URL of the image file. It must be a file URL.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `scale`     | `number`    |   |
 
 *The display scale of the image file, as 1 (the default), 1.5, or 2*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns     | `object`    |   |
 
@@ -3925,35 +3925,35 @@ Prototype inherits from `Object.prototype`.
 Instances are sealed and volatile.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Texture.prototype.effect`     | `object`    | |
 
 *This texture’s effect, as an `effect` instance or `null` (the default)*
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Texture.prototype.height`     | `number`    | read only |
 
 *This texture’s height, in physical pixels*              
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Texture.prototype.scale`     | `number`    | read only |
 
 *This texture’s scale, as 1, 1.5, or 2*   
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Texture.prototype.size`     | `object`    | read only |
 
 *This texture’s size in physical pixels, as an object with `width` and `height` number properties*                                
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Texture.prototype.width`     | `number`    | read only |
 
@@ -3970,32 +3970,32 @@ The measured width and measured height of a `thumbnail` object are the width and
 #### Constructor Description
 
 #####`Thumbnail(coordinates, url, mime)`
-|||
+||||
 | :--- | :--- | :--- |
 | `coordinates`     | `object`    |   |
 
 *The coordinates of the result, as an object with `left`, `width`, `right`, `top`, `height`, or `bottom` number properties*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `url`     | `string`    |   |
 
 *The URL of the image. If there is no `url` parameter, the object returned is a placeholder, waiting for its `load` function to be called or for its `url` property to be set.*
 
-|||
+||||
 | :--- | :--- | :--- |
 | `mime`     | `string`    |   |
 
 *The MIME type of the image. If there is no `mime` parameter, the image is sniffed to detect its MIME type.*
                      
-|||
+||||
 | :--- | :--- | :--- |
 | Returns     | `object`    |   |
 
 *A `thumbnail` instance, an object that inherits from `Thumbnail.prototype`*
 
 #####`Thumbnail.clear(url)`
-|||
+||||
 | :--- | :--- | :--- |
 | `url`     | `string`    |   |
 
@@ -4014,7 +4014,7 @@ Instances are sealed and volatile.
 Same as for `content` objects (see “Events” in section, “[Content Object](#kinomajs-reference-kinomajs-object-reference-content-object_1)”), plus:
 
 #####`onLoaded(thumbnail)`
-|||
+||||
 | :--- | :--- | :--- |
 | `thumbnail`     | `object`    |   |
 
@@ -4029,13 +4029,13 @@ The `transition` object is used to animate modifications of the containment hier
 #### Constructor Description
 
 #####`Transition(duration)`
-|||
+||||
 | :--- | :--- | :--- |
 | `duration`     | `number`    |   |
 
 *The duration of the result in milliseconds (250 by default)*                            
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns     | `object`    |   |
 
@@ -4046,20 +4046,20 @@ The `transition` object is used to animate modifications of the containment hier
 Prototype inherits from `Object.prototype`.
 
 ##### 
-|||
+||||
 | :--- | :--- | :--- |
 | `Transition.prototype.duration`     | `number`    | read only |
 
 *The duration of the transition in milliseconds* 
 
 #####`Transition.prototype.onBegin(container, ...)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `container`     | `object`    | required |
 
 *The `container` object that is running the transition* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `...`     | `*`    |  |
 
@@ -4068,13 +4068,13 @@ Prototype inherits from `Object.prototype`.
 Invoked when this transition starts. The extra parameters are the extra parameters of the call to the `run` function that bound this transition to the specified `container` object.
 
 #####`Transition.prototype.onEnd(container, ...)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `container`     | `object`    | required |
 
 *The `container` object that is running the transition* 
 
-|||
+||||
 | :--- | :--- | :--- |
 | `...`     | `*`    |  |
 
@@ -4083,7 +4083,7 @@ Invoked when this transition starts. The extra parameters are the extra paramete
 Invoked when this transition ends. The extra parameters are the extra parameters of the call to the `run` function that bound this transition to the specified `container` object.
 
 #####`Transition.prototype.onStep(fraction)` 
-|||
+||||
 | :--- | :--- | :--- |
 | `fraction`     | `number`    | required |
 
