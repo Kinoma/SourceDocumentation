@@ -26,14 +26,14 @@ These properties of the KinomaJS global object can be used anywhere in an applic
 
 *The string to encode*
 
-|||
+||||
 | :--- | :--- | :--- |
 | Returns    | `string`    | |
 
 *The encoded string*
 
 #####`getEnvironmentVariable(name)`
-|||
+||||
 | :--- | :--- | :--- |
 | `name`     | `string`    | required |
 
