@@ -109,7 +109,7 @@ The behavior element defines a `Behavior` constructor and its prototype. Applica
 
 |     |     |     |
 |-----|-----|-----|
-| `id` | `identifier` |  `required *` | 
+| `id` | `identifier` |`required *` | 
 
 
 *The identifier of this `Behavior` constructor.  A `behavior` element nested in a template cannot have an `id` attribute.*
