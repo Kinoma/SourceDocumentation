@@ -22,7 +22,7 @@ These properties of the KinomaJS global object can be used anywhere in an applic
 #####`encodeBase64(string)`
 |||
 | :--- | :--- | :--- |
-| `string`     | `string`    | required |
+| `string`| `string`| required |
 
 *The string to encode*
 
