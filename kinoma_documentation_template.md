@@ -260,6 +260,7 @@ where the two headings and the heading number are Word cross-references.
 | `param2` | `type`|  |
 
 > Parameter details  
+
 Event description, as:  
 This event happens when ….
 
