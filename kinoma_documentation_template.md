@@ -144,7 +144,7 @@ Here are some general rules for what not to do when writing descriptions in this
 •	Do not include graphics or code examples. 
 
 
-###3.1.1	Object-Name Object
+####3.1.1	Object-Name Object
 [Optional] Full sentences *briefly* describing the object and/or providing other details about the object. If what the object represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the *KinomaJS Overview* document). Try to keep it no longer than one short paragraph.
 
 
@@ -265,112 +265,170 @@ Event description, as:
 This event happens when ….
 
 ###3.2	KinomaJS XML API Reference: XML Element Reference
-The KinomaJS XML API Reference document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
-3.2.1	Element-Name Element
-[Optional] Full sentences briefly describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the KinomaJS Overview document). Try to keep it no longer than one short paragraph.
+The *KinomaJS XML* API Reference document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
+
+####3.2.1	Element-Name Element
+[Optional] Full sentences *briefly* describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the *KinomaJS Overview* document). Try to keep it no longer than one short paragraph.
+
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable.
-Tag
-name
-Attributes
-name	type	[comment]
-where type can be any of the allowed attribute types, followed by “(n or more, separated by commas)” if applicable (where n is the appropriate starting number), and the optional comment can be one of the following:
-required
-required *
-0 or more
-0 or 1
-End with an explanation in this format: 
-Sentence fragment[. Optional additional sentences.]
-Exception: Whenever possible, describe a boolean with a complete sentence of the form “If true, …”
-If “required *” (which indicates that a related note follows), add a line beginning with “* ” that provides the note.
+
+**Tag** 
+`name`
+
+**Attributes**  
+||||
+| --- | --- | --- |
+| `name` | `type`| [comment] |
+> where `type` can be any of the allowed attribute types, followed by “(*n* or more, separated by commas)” if applicable (where *n* is the appropriate starting number), and the optional comment can be one of the following:  
+> required  
+> required *  
+> 0 or more  
+> 0 or 1  
+End with an explanation in this format:   
+Sentence fragment[. Optional additional sentences.]  
+Exception: Whenever possible, describe a boolean with a complete sentence of the form “If `true,` …”  
+If “required \*” (which indicates that a related note follows), add a line beginning with “* ” that provides the note.  
 List attribute names in alphabetical order.
-Elements
-name	comment
-where the comment indicates how many of this element. For example:
-0 or more
-0 or 1
-1
-Follow with an explanation (unless none is needed) in this format where feasible: 
-Sentence fragment[. Optional additional sentences.]
-List element names in alphabetical order (one per line).
-Several elements that have the same explanation may be grouped together, with only that one explanation following all of them.
-CDATA
+
+**Elements**
+||||
+| --- | --- | --- |
+| `name` | comment|  |
+> where the comment indicates how many of this element. For example:  
+> 0 or more  
+> 0 or 1  
+> 1  
+> Follow with an explanation (unless none is needed) in this format where feasible:   
+> Sentence fragment[. Optional additional sentences.]
+> List element names in alphabetical order (one per line).
+> Several elements that have the same explanation may be grouped together, with only that one explanation following all of them.
+
+**CDATA**
 The words “JavaScript code” [optionally followed by further description]
-3.3	XS: XS Elements
-In the XS document, XS elements are typically first discussed in a tutorial manner, with usage guidance and examples, and then described in a manner appropriate for later reference. The formatting used for each of these presentation types is discussed here.
+
+###3.3	XS: XS Elements
+In the *XS* document, XS elements are typically first discussed in a tutorial manner, with usage guidance and examples, and then described in a manner appropriate for later reference. The formatting used for each of these presentation types is discussed here.
+
 To the extent reasonable, the section heading for a tutorial discussion should be explanatory (such as “Defining Build Targets”), whereas the heading for a reference section should be the element name (as in “xs:target”).
-3.3.1	Discussing XS Elements
+
+####3.3.1	Discussing XS Elements
 In sections discussing XS property elements and the like (including patterns), examples are organized under the following Heading 5 heads:
-•	Grammar — The grammar itself.
-•	Prototype — The ECMAScript instructions corresponding to what the grammar prototypes. This and the grammar take the form of code in XML and ECMAScript. For the sake of terseness, the XML declarations and the package elements are omitted.
-•	XML document — An XML document that conforms to the grammar (present only if applicable).
-•	Instance — The ECMAScript expression corresponding to what the grammar instantiates from the XML document when the document is parsed (present only if applicable). This and the XML document are provided only to explain what the grammar prototypes and instantiates. They are not examples of code; sometimes they are just comments because ECMAScript has no corresponding instructions or expressions.
+
+- **Grammar** — The grammar itself.
+- **Prototype** — The ECMAScript instructions corresponding to what the grammar prototypes. This and the grammar take the form of code in XML and ECMAScript. For the sake of terseness, the XML declarations and the `package` elements are omitted.
+- **XML document** — An XML document that conforms to the grammar (present only if applicable).
+- **Instance** — The ECMAScript expression corresponding to what the grammar instantiates from the XML document when the document is parsed (present only if applicable). This and the XML document are provided only to explain what the grammar prototypes and instantiates. They are not examples of code; sometimes they are just comments because ECMAScript has no corresponding instructions or expressions.
+
 An example follows.
-Grammar
-<object name="colorIO">
+
+**Grammar**
+
+```<object name="colorIO">
    <function name="parse" params="text" c="colorIOParse"/>
    <function name="serialize" params="color" c="colorIOSerialize"/>
 </object>
 <custom name="color" value="#000000" pattern="/color" io="colorIO"/>
-Prototype
-color = { r: 0, g: 0, b: 0 }
-XML document
-<color>#FF8000</color>
-Instance
-{ r: 255, g: 128, b: 0 }
-3.3.2	XS Element Reference
+```
+
+**Prototype**
+
+`color = { r: 0, g: 0, b: 0 }`
+
+**XML document**
+
+`<color>#FF8000</color>`
+
+**Instance**
+
+`{ r: 255, g: 128, b: 0 }`
+
+####3.3.2	 XS Element Reference
 In sections in the XS document that describe XS elements and the like for reference purposes, a brief description of the element is followed by information under the following Heading 5 heads:
-•	Attributes — All the attributes of the element along with an indication of whether they are required, optional, or inherited from the prototype of the instance that owns the property. If optional and a default value applies, or if inherited but there is no prototype, the default value is shown.
-•	Elements — Which elements, if any, this element can contain.
-•	Text — What text, if any, the element can (or must) contain.
+
+- Attributes — All the attributes of the element along with an indication of whether they are required, optional, or inherited from the prototype of the instance that owns the property. If optional and a default value applies, or if inherited but there is no prototype, the default value is shown.
+
+- Elements — Which elements, if any, this element can contain.
+
+- Text — What text, if any, the element can (or must) contain.
+
 The information below these heads is formatted as illustrated below.
-Attributes
-attribute1, required
-Explanation here. (The line above has the Code Entry paragraph style; the Body Text Char style is used to change characters in such lines to the body text font where needed.)
-attribute2, optional, default=""
-Explanation here.
-attribute2, inherited, default=""
-Explanation here.
-Elements
+
+**Attributes**
+
+`attribute1,` required  
+> Explanation here. (The line above has the Code Entry paragraph style; the Body Text Char style is used to change characters in such lines to the body text font where needed.)
+
+`attribute2,` optional, default=""  
+> Explanation here.
+
+`attribute2,` inherited, default=""
+> Explanation here.
+
+**Elements**
+
 None (or enter a description if applicable)
-Text
+
+**Text**
+
 None (or enter a description if applicable)
-3.4	XS Chunks: ECMAScript Objects
-In the XS Chunks document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in section 3.4, “XS: XS Elements”; the constructor and prototype are documented as shown here. 
-Note: A more advisable format has since evolved for describing constructors and prototypes; see section 3.1, “KinomaJS Reference: KinomaJS Object Reference.”
-3.4.1	Constructor Description
+
+###3.4	*XS Chunks:* ECMAScript Objects
+In the *XS Chunks* document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in section 3.4, “*XS*: XS Elements”; the constructor and prototype are documented as shown here. 
+
+Note: A more advisable format has since evolved for describing constructors and prototypes; see section 3.1, “*KinomaJS Reference*: KinomaJS Object Reference.”
+
+####3.4.1	Constructor Description
 After a brief introduction to the constructor, all forms of the constructor are listed and described as illustrated below.
-Object()
-Explanation.
-Object(param)
-Explanation of the function and its parameter(s).
-Example
-/* An example (or examples) if applicable. */
-3.4.2	Prototype Description
+
+`Object()`  
+> Explanation.
+
+`Object(param)`  
+> Explanation of the function and its parameter(s).
+
+**Example**  
+`/* An example (or examples) if applicable. \*/`
+
+####3.4.2	Prototype Description
 After a brief introduction to the prototype, all properties of the prototype are listed and described as illustrated below.
-Object.prototype.value-property
-Explanation.
-Object.prototype.function-property(param)
-Explanation of the function and its parameter(s).
-Example
-/* An example (or examples) if applicable. */
-3.5	XS in C: C API
+
+`Object.prototype.value-property`  
+> Explanation.
+
+`Object.prototype.function-property(param)`  
+> Explanation of the function and its parameter(s).
+
+**Example**  
+`/* An example (or examples) if applicable. \*/`
+
+###3.5	*XS in C:* C API
 This section describes the formatting used to present C macros in the document XS in C.
+
 After a brief introduction to the macro, parameters of the macro (if any) are listed and described as shown below.
-xsType xsMacro(xsType param1, xsType param2)  /* Code Entry style */
-      /* Use the Code Line style for any additional lines (like these) */
-      /* in the the macro syntax. */
-param1	Brief parameter description (Parameter Def style)
-param2	Brief parameter description (potentially, though rarely,  more than one line long)
-Returns	Brief return value description
+
+`xsType xsMacro(xsType param1, xsType param2)  /* Code Entry style */`
+> `/* Use the Code Line style for any additional lines (like these) */`
+> `/* in the the macro syntax. */`
+
+||||
+| --- | --- | --- |
+| `param1` | Brief parameter description (Parameter Def style)|  |
+| `param2` | Brief parameter description (potentially, though rarely, more than one line long)|  |
+| Returns | Brief return value description |  |
+
 In cases where the first column in the Parameter Def style is not wide enough, the indents or tabs are adjusted accordingly in those lists.
+
 Additional discussion of the macro sometimes follows (in the Normal style), and an example formatted as shown below may also be provided.
-Example
-/* Include example if applicable. */
+
+**Example**
+`/* Include example if applicable. */`
+
 If this structure needs to be extended for other C API documentation, consider adding Heading 5 heads (such as a “See also” head) to introduce additional types of information.
-4	Glossary
+
+##4	Glossary
 In any document where reasonable, end with a Glossary section in which each item has the following format. (No introductory text is needed, so delete this paragraph in the actual document.)
-glossary item (Heading 5)
-Definition. (Explanation style)
+#####glossary item (Heading 5)
+> Definition. (Explanation style)
  
 Copyright © 2015 Marvell. All rights reserved.
 Marvell and Kinoma are registered trademarks of Marvell. All other products and company names mentioned in this document may be trademarks of their respective owners.
