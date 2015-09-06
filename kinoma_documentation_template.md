@@ -167,20 +167,30 @@ The **Object Description** section is currently used only for the application, D
 
 **Constructor Description**  
 Object-name(param1, param2)
-param1	type	[required]
-Parameter details, as:
-Sentence fragment[. Optional additional sentences.]
-List parameter names in order of their appearance.
-param2	type	[required]
-Parameter details
-Returns	type
-Return value details
+||||
+| --- | --- | --- |
+| `param1`| `type`| [required] |
+> Parameter details, as:
+> Sentence fragment[. Optional additional sentences.]
+> List parameter names in order of their appearance.
+Returns  
+||||
+| --- | --- | --- |
+| `param2`| `type`| [required] |
+> Parameter details
+> 
+||||
+| --- | --- | --- |
+| Returns| `type`||
+> Return value details
+
 Optionally describe what the function does, using this format whenever feasible:
 [Sentence fragment[. Optional additional sentences.]
 Omit this description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
 The style used for lines showing parameters (and any return value) is called Parameter; its default font is the computer voice font, so the Body Text Char is used for the comment (or for “Returns”). The style used for parameter details and return value details is called Details.
 Some Constructor Description subsections also describe value properties; see Prototype Description, next, for the format of value property descriptions.
-Prototype Description
+
+**Prototype Description**
 Prototype inherits from Other-object-name.protoype. 
 [Instances are sealed [and volatile].]
 After the text shown above, describe all the value properties and function properties (combined, in alphabetical order). Multiple properties that have the same explanation may be grouped together, with only that one explanation following all of them.
