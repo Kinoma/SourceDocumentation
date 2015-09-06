@@ -224,33 +224,45 @@ Describe function properties in this format:
 ||||
 | --- | --- | --- |
 | `param2` | `type`| [required] |
+
 > Parameter details
 
 ||||
 | --- | --- | --- |
 | Returns | `type`|  |
 
-Returns	type  
 > Return value details
 
-Optionally describe what the function does, using this format whenever feasible:
-[Sentence fragment[. Optional additional sentences.]
-Omit the description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
-Events
-[Same events as for other-object-name instances (cross-reference)[, plus:]]
+> Optionally describe what the function does, using this format whenever feasible:
+> [Sentence fragment[. Optional additional sentences.]
+> Omit the description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
+
+**Events**  
+[Same events as for other-object-name instances (cross-reference)[, plus:]]  
 The cross-reference in parentheses above has this format:
-see “Events” in the section “Other-object-name Object”
+
+> see “Events” in the section “Other-object-name Object”
+
 where the two headings and the heading number are Word cross-references.
-name(param1, param2)
-param1	type
-Parameter details, as:
-Sentence fragment[. Optional additional sentences.]
-List parameter names in order of their appearance in the function.
-param2	type
-Parameter details
-Event description, as:
-This event happens when ….
-3.2	KinomaJS XML API Reference: XML Element Reference
+`name(param1, param2)`
+
+||||
+| --- | --- | --- |
+| `param1` | `type`|  |
+
+> Parameter details, as:  
+> Sentence fragment[. Optional additional sentences.]  
+> List parameter names in order of their appearance in the function.  
+
+||||
+| --- | --- | --- |
+| `param2` | `type`|  |
+
+> Parameter details
+> Event description, as:
+> This event happens when ….
+
+###3.2	KinomaJS XML API Reference: XML Element Reference
 The KinomaJS XML API Reference document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
 3.2.1	Element-Name Element
 [Optional] Full sentences briefly describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the KinomaJS Overview document). Try to keep it no longer than one short paragraph.
