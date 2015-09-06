@@ -7,7 +7,7 @@ There are 16 pins on the front-facing header, divided into left and right groups
 
 ![](http://www.kinoma.com/create/img/front-pinmap.png)
 
-There are another 50 pins on the back (Figure 2). The majority of the back pins are fixed-function, with eight of them mirroring the pin configuration on the front-Left pins. Specifically, front-facing pins 51 to 58 are mirrored on the back pins; the mirrored pins are labeled “Front-Left” in Figure 2. The back pins operate at 3.3 volts, except as noted.
+There are another 50 pins on the back (Figure 2). The majority of the back pins are fixed-function, with eight of them mirroring the pin configuration on the front-left pins. Specifically, front-facing pins 51 to 58 are mirrored on the back pins; the mirrored pins are labeled “Front-Left” in Figure 2. The back pins operate at 3.3 volts, except as noted.
  
 **Figure 2.** Back Pins  
 
@@ -15,11 +15,11 @@ There are another 50 pins on the back (Figure 2). The majority of the back pins 
 
 ***
 ## Introducing BLL Modules
-All hardware pin programming is done in JavaScript. The non-blocking style of JavaScript programming used in HTML5 client development and `node.js` server development is applied to hardware pins by KinomaJS. KinomaJS separates application code from code that interacts with hardware pins by running the hardware pins code in a separate thread inside its own JavaScript virtual machine called the Hardware Pins Service. The code for each hardware module (sensor, LED, button, motor, and so on) is contained in a JavaScript module called a BLL. The application communicates with the BLL using KinomaJS messages.
+All hardware pin programming is done in JavaScript. The non-blocking style of JavaScript programming used in HTML5 client development and `node.js` server development is applied to hardware pins by KinomaJS. KinomaJS separates application code from code that interacts with hardware pins by running the hardware pins code in a separate thread inside its own JavaScript virtual machine, called the Hardware Pins Service. The code for each hardware module (sensor, LED, button, motor, and so on) is contained in a JavaScript module called a BLL. The application communicates with the BLL using KinomaJS messages.
 
 Developers either implement their own BLL to support the hardware modules they have connected to Kinoma Create or use a preexisting BLL implementation. Sample BLL implementations for common hardware modules are available on the Kinoma Create website.
 
-**Note:** BLL is an acronym for Blinking Light Library, but a BLL is not limited to blinking an LED. A BLL can be used to interact with all kinds of hardware modules.
+**Note:** BLL is an acronym for Blinking Light Library, but a BLL is not limited to blinking an LED; a BLL can be used to interact with all kinds of hardware modules.
 ***
 ## Application Programming with Pins
 
@@ -54,7 +54,7 @@ While not evident from the application code, the button BLL uses a Digital Input
 
 The LED BLL is bound to pin 21 and the button BLL to pin 23, as defined in the `pins` object.
 
-Once configured, an application sends KinomaJS messages to the module. The following commands turn the LED on and off:
+Once the pins are configured, an application sends KinomaJS messages to the module. The following commands turn the LED on and off:
 
 	application.invoke(new MessageWithObject("pins:/redLED/write", 1));
 	application.invoke(new MessageWithObject("pins:/redLED/write", 0));
@@ -81,7 +81,7 @@ Applications establish repeated polling of a hardware module at a specified inte
 		</behavior>
 	</handler>
 	
-To stop a repeat, send a message with repeat=off with the same callback and interval query parameters:
+To stop a repeat, send a message with `repeat=off` with the same `callback` and `interval` query parameters, as follows:
 
 	application.invoke(new MessageWithObject("pins:/greenButton/get?repeat=off&interval=50&callback=/gotButton"));
 	
@@ -99,7 +99,7 @@ Some types of pin, such as Audio, support an interrupt-style callback, which use
 
 	application.invoke(new MessageWithObject("pins:/microphone/read?repeat=on&timer=audio&callback=/gotAudio"));
 	
-**Note:** When creating a message to send to the `pins`: service, the `referrer` header must be set to the application URL. This is done automatically by `new MessageWithObject`, so applications that use the `MessageWithObject` constructor do not need to set the referrer. An application also can use `new Message` to create the message, as follows:
+**Note:** When a message to send to the `pins:` service is being created, the `referrer` header must be set to the application URL. This is done automatically by `new MessageWithObject`, so applications that use the `MessageWithObject` constructor do not need to set the referrer. An application also can use `new Message` to create the message, as follows:
 
 	var message = new Message("pins:...");
 	message.requestObject = { parameters };
@@ -142,7 +142,7 @@ Once the objects are instantiated and bound, the Hardware Pins Service invokes t
 		this.button.init();
 	}
 	
-The BLL also defines a `close` function, which is called automatically when the host application exits. The `close` function typically closes the objects used to communicate with pins:
+The BLL also defines a `close` function, which is called automatically when the host application exits. The `close` function typically closes the objects used to communicate with pins, as follows:
 
 	exports.close = function() {
 		this.led.close();
@@ -179,11 +179,11 @@ This reference section describes the pins data format that an application uses t
 	{type: "Digital", pin: 2, direction: "input"};
 	{type: "Digital", pin: 3, direction: "output"};
 	
-`digital.read()` — Returns 0 or 1, or `undefined` if the read fails. This is used to retrieve either the value of an input pin or the value being output on an output pin.
+`digital.read()` — Returns 0 or 1, or `undefined` if the read fails. This function is used to retrieve either the value of an input pin or the value being output on an output pin.
 
-`digital.write(value)` — Value is either 0 or 1
+`digital.write(value)` — Value is either 0 or 1.
 
-`digital.direction` — Value is either “`input`” or “`output`”. Note `direction` is a property, not a function.
+`digital.direction` — Value is either `input` or `output`. Note that `direction` is a property, not a function.
 
 ### A2D
 	{type: "A2D", pin: 3};
@@ -196,13 +196,13 @@ This reference section describes the pins data format that an application uses t
 ### Serial
 	{type: "Serial", rx: 33, tx: 31, baud: 38400};
 	
-`serial.read(type)` — Reads data from the serial input. Pass `"Chunk"` for the `type` parameter to return the data in a chunk, `"String"` to return a string, `"Array"` to return an array of integer character codes between 0 and 255, and `“charCode”` to return a single character code as an integer. Note that the data returned in a `String` must be valid UTF-8 data; if the data read is not valid UTF-8, an exception is thrown. All types of read except `charCode` return all data that is immediately available on the input.
+`serial.read(type)` — Reads data from the serial input. Pass `Chunk` for the `type` parameter to return the data in a chunk, `String` to return a string, `Array` to return an array of integer character codes between 0 and 255, and `charCode` to return a single character code as an integer. Note that the data returned in a `String` must be valid UTF-8 data; if the data read is not valid UTF-8, an exception is thrown. All types of read except `charCode` return all data that is immediately available on the input.
 
 `serial.read(type, maximumBytes)` — Same as `serial.read(type)` but no more than `maximumBytes` are read. This call does not block, so only immediately available bytes are returned. This is not supported for type `charCode`, which returns either 1 or 0 bytes.
 
 `serial.read(type, maximumBytes, msToWait)` — Same as `serial.read(type, maximumBytes)` but waits up to `msToWait` milliseconds for `maximumBytes` to arrive.
 
-`serial.write(value, …)` — Writes all arguments to the output. Values can be of type `Chunk`, `String`, `Array` of character codes, or numbers (character codes from 0 to 255). The following code writes a message, followed by a carriage return, line feed, and null:
+`serial.write(value, ...)` — Writes all arguments to the output. Values can be of type `Chunk`, `String`, `Array` of character codes, or numbers (character codes from 0 to 255). The following code writes a message, followed by a carriage return, line feed, and null:
 
 	var crlf = new Chunk(2);
 	crlf[0] = 13;
@@ -217,33 +217,33 @@ This reference section describes the pins data format that an application uses t
 
 `i2c.readByte()` — Reads one byte (Linux: `read`)
 
-`i2c.readBlock(count, format)` — Reads the number of bytes specified by `count`. Pass `“Chunk”` for the type parameter to return the data in a chunk, or `“Array”` to return an array of integer character codes between 0 and 255. (Linux: `read`)
+`i2c.readBlock(count, format)` — Reads the number of bytes specified by `count`. Pass `Chunk` for the type parameter to return the data in a chunk, or `Array` to return an array of integer character codes between 0 and 255. (Linux: `read`)
 
 `i2c.readByteDataSMB(register)` — Reads one byte from the specified register (Linux: `i2c_smbus_read_byte_data`)
 
 `i2c.readWordDataSMB(register)` — Reads two bytes from the specified register (Linux: `i2c_smbus_read_word_data`)
 
-`i2c.readBlockDataSMB(register, count, type)` — Reads `count` bytes starting at the specified register. Pass `"Chunk"` for the `type` parameter to return the data in a chunk, or `"Array"` to return an array of integer character codes between 0 and 255. (Linux: `i2c_smbus_read_i2c_block_data`)
+`i2c.readBlockDataSMB(register, count, type)` — Reads `count` bytes starting at the specified register. Pass `Chunk` for the `type` parameter to return the data in a chunk, or `Array` to return an array of integer character codes between 0 and 255. (Linux: `i2c_smbus_read_i2c_block_data`)
 
 `i2c.writeByte(value)` — Writes one byte (Linux: `write`)
 
-`i2c.writeBlock(value...)` — Writes the values provided. The value(s) are treated in the same way as by `serial.write()`. (Linux: `write`)
+`i2c.writeBlock(value, ...)` — Writes the values provided. The value(s) are treated in the same way as by `serial.write()`. (Linux: `write`)
 
 `i2c.writeByteDataSMB(register, value)` — Writes one byte to the specified register (Linux: `i2c_smbus_write_byte_data`)
 
 `i2c.writeWordDataSMB(register, value)` — Writes two bytes to specified register (Linux: `i2c_smbus_write_word_data`)
 
-`i2c.writeBlockDataSMB(register, value...)` — Writes up to 32 bytes starting at the specified register. The value(s) are treated in the same way as by `serial.write()`. (Linux: `i2c_smbus_write_i2c_block_data)`
+`i2c.writeBlockDataSMB(register, value, ...)` — Writes up to 32 bytes starting at the specified register. The value(s) are treated in the same way as by `serial.write()`. (Linux: `i2c_smbus_write_i2c_block_data)`
 
 `i2c.writeQuickSMB(value)` — Sends the low bit of value using the I2C `write_quick` command (Linux: `i2c_smbus_write_quick`)
 
-`i2c.processCallSMB(register, value)` — Writes two bytes to the specified register; after the write completes, reads two bytes and returns the resulting data word.
+`i2c.processCallSMB(register, value)` — Writes two bytes to the specified register and, after the write completes, reads two bytes and returns the resulting data word
 
 **Note:** Kinoma Create has up to three separate I2C buses. The primary I2C bus corresponds to pins 27 and 29 on the Back Pins connector. The Front-Left and Front-Right Pin headers can be configured to have I2C pins using the Front Pins app. When configured to have I2C pins, each Front Pin header is a separate I2C bus. Having multiple I2C buses is very convenient when you have more than one component in a project that share the same I2C slave address.
 
 ### Audio
 	{type: "Audio", sampleRate: 8000, channels: 1, direction: "input"};
-`audio.read()` — Reads all available audio input, and returns it in a chunk
+`audio.read()` — Reads all available audio input and returns it in a chunk
 
 `audio.write(chunk)` — Writes `chunk` to the queue for audio output
 
