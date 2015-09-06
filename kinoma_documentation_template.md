@@ -282,9 +282,10 @@ Next, include only whichever of the following lower-level sections apply. Square
 | `name` | `type`| [comment] |
 > where `type` can be any of the allowed attribute types, followed by “(*n* or more, separated by commas)” if applicable (where *n* is the appropriate starting number), and the optional comment can be one of the following:  
 > required  
-> required *  
+> required \*  
 > 0 or more  
 > 0 or 1  
+
 End with an explanation in this format:   
 Sentence fragment[. Optional additional sentences.]  
 Exception: Whenever possible, describe a boolean with a complete sentence of the form “If `true,` …”  
