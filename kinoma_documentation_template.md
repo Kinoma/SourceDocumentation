@@ -276,6 +276,7 @@ Next, include only whichever of the following lower-level sections apply. Square
 `name`
 
 **Attributes**  
+
 ||||
 | --- | --- | --- |
 | `name` | `type`| [comment] |
@@ -291,6 +292,7 @@ If “required \*” (which indicates that a related note follows), add a line b
 List attribute names in alphabetical order.
 
 **Elements**
+
 ||||
 | --- | --- | --- |
 | `name` | comment|  |
