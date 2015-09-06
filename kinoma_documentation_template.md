@@ -184,7 +184,7 @@ Returns
 
 ||||
 | --- | --- | --- |
-| Returns| `type`||
+| Returns| `type`| &nbsp; |
 
 > Return value details  
 
