@@ -167,6 +167,7 @@ The **Object Description** section is currently used only for the application, D
 
 **Constructor Description**  
 Object-name(param1, param2)  
+
 ||||
 | --- | --- | --- |
 | `param1`| `type`| [required] |
@@ -175,12 +176,13 @@ Object-name(param1, param2)
 > Sentence fragment[. Optional additional sentences.]
 > List parameter names in order of their appearance.
 Returns  
+
 ||||
 | --- | --- | --- |
 | `param2`| `type`| [required] |
 
 > Parameter details
->  
+
 ||||
 | --- | --- | --- |
 | Returns| `type`||
