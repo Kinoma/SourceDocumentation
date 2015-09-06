@@ -281,6 +281,7 @@ Next, include only whichever of the following lower-level sections apply. Square
 | --- | --- | --- |
 | `name` | `type`| [comment] |
 > where `type` can be any of the allowed attribute types, followed by “(*n* or more, separated by commas)” if applicable (where *n* is the appropriate starting number), and the optional comment can be one of the following:  
+
 > required  
 > required \*  
 > 0 or more  
@@ -297,10 +298,12 @@ List attribute names in alphabetical order.
 ||||
 | --- | --- | --- |
 | `name` | comment|  |
-> where the comment indicates how many of this element. For example:  
+> where the comment indicates how many of this element. For example: 
+
 > 0 or more  
 > 0 or 1  
 > 1  
+
 > Follow with an explanation (unless none is needed) in this format where feasible:   
 > Sentence fragment[. Optional additional sentences.]
 > List element names in alphabetical order (one per line).
