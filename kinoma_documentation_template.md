@@ -113,7 +113,7 @@ To create a table, use the following as a starting point. In (relatively rare) c
 | ------------ | ------------- |
 | Table entry	 | Table entry	  |
 | Table entry	 | Table entry	  |
-| Table entry	 | Table entry	  |
+| Table entry	 | Table entry	  |  
 
 
 When adding a table, remember to also update the numbering of any figures past that point in the document.
