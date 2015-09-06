@@ -258,9 +258,9 @@ where the two headings and the heading number are Word cross-references.
 | --- | --- | --- |
 | `param2` | `type`|  |
 
-> Parameter details
-> Event description, as:
-> This event happens when ….
+> Parameter details  
+Event description, as:  
+This event happens when ….
 
 ###3.2	KinomaJS XML API Reference: XML Element Reference
 The KinomaJS XML API Reference document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
