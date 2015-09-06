@@ -190,9 +190,13 @@ Returns
 > Return value details  
 
 > Optionally describe what the function does, using this format whenever feasible:  
+
 > [Sentence fragment[. Optional additional sentences.]  
+
 > Omit this description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).  
+
 > The style used for lines showing parameters (and any return value) is called Parameter; its default font is the computer voice font, so the Body Text Char is used for the comment (or for “Returns”). The style used for parameter details and return value details is called Details.  
+
 > Some Constructor Description subsections also describe value properties; see Prototype Description, next, for the format of value property descriptions.
 
 **Prototype Description**  
@@ -219,8 +223,10 @@ Describe function properties in this format:
 ||||
 | --- | --- | --- |
 | `param1` | `type`| [required] |
-> Parameter details (similar to value property details, above)  
+> Parameter details (similar to value property details, above)
+
 > Show optional extra parameters as “...” with type * and description “Zero or more extra parameters”.  
+
 > List parameter names in order of their appearance in the function.
 
 ||||
@@ -236,7 +242,9 @@ Describe function properties in this format:
 > Return value details
 
 > Optionally describe what the function does, using this format whenever feasible:
+
 > [Sentence fragment[. Optional additional sentences.]
+
 > Omit the description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
 
 **Events**  
@@ -253,7 +261,9 @@ where the two headings and the heading number are Word cross-references.
 | `param1` | `type`|  |
 
 > Parameter details, as:  
+
 > Sentence fragment[. Optional additional sentences.]  
+
 > List parameter names in order of their appearance in the function.  
 
 ||||
@@ -289,9 +299,13 @@ Next, include only whichever of the following lower-level sections apply. Square
 > 0 or 1  
 
 End with an explanation in this format:   
-Sentence fragment[. Optional additional sentences.]  
+
+Sentence fragment[. Optional additional sentences.] 
+
 Exception: Whenever possible, describe a boolean with a complete sentence of the form “If `true,` …”  
+
 If “required \*” (which indicates that a related note follows), add a line beginning with “* ” that provides the note.  
+
 List attribute names in alphabetical order.
 
 **Elements**
@@ -305,9 +319,12 @@ List attribute names in alphabetical order.
 > 0 or 1  
 > 1  
 
-> Follow with an explanation (unless none is needed) in this format where feasible:   
+> Follow with an explanation (unless none is needed) in this format where feasible:  
+
 > Sentence fragment[. Optional additional sentences.]
+
 > List element names in alphabetical order (one per line).
+
 > Several elements that have the same explanation may be grouped together, with only that one explanation following all of them.
 
 **CDATA**
@@ -330,7 +347,8 @@ An example follows.
 
 **Grammar**
 
-```<object name="colorIO">
+```
+<object name="colorIO">
    <function name="parse" params="text" c="colorIOParse"/>
    <function name="serialize" params="color" c="colorIOSerialize"/>
 </object>
@@ -436,6 +454,7 @@ If this structure needs to be extended for other C API documentation, consider a
 In any document where reasonable, end with a Glossary section in which each item has the following format. (No introductory text is needed, so delete this paragraph in the actual document.)
 #####glossary item (Heading 5)
 > Definition. (Explanation style)
- 
+
+---
 Copyright © 2015 Marvell. All rights reserved.
 Marvell and Kinoma are registered trademarks of Marvell. All other products and company names mentioned in this document may be trademarks of their respective owners.
