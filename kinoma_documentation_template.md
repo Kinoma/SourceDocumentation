@@ -173,7 +173,9 @@ Object-name(param1, param2)
 | `param1`| `type`| [required] |
 
 > Parameter details, as:
+
 > Sentence fragment[. Optional additional sentences.]
+
 > List parameter names in order of their appearance.
 Returns  
 
@@ -212,8 +214,11 @@ Describe value properties in this format:
 | --- | --- | --- |
 | `Object-name.prototype.property-name` | `type`| [read only] |
 > Follow with property details, as:  
-> Sentence fragment[. Optional additional sentences.]  
+
+> Sentence fragment[. Optional additional sentences.] 
+
 > Exception: Whenever possible, describe a boolean with a complete sentence beginning with “If `true`,”  
+
 > The style used for the value property details is called Function Description (originally its sole use, but now used here for consistent alignment with descriptions of function properties).
 
 Describe function properties in this format:
