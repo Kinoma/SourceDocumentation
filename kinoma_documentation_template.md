@@ -193,7 +193,7 @@ Returns
 > The style used for lines showing parameters (and any return value) is called Parameter; its default font is the computer voice font, so the Body Text Char is used for the comment (or for “Returns”). The style used for parameter details and return value details is called Details.  
 > Some Constructor Description subsections also describe value properties; see Prototype Description, next, for the format of value property descriptions.
 
-**Prototype Description**
+**Prototype Description**  
 Prototype inherits from `Other-object-name.protoype.`
 
 [Instances are sealed [and volatile].]
