@@ -1,15 +1,6 @@
-
-
-
-
-
-
-
-
 #Kinoma Documentation Template
 
 
----
 ##1	About This Document
 This document provides a starting point for creating drafts of Kinoma technical documentation in the proper Markdown format.
 
@@ -25,22 +16,21 @@ If starting from scratch, you should work from a copy of this document, retainin
 
 This document assumes you already know how to use Markdown.
 
----
+
 ##2	Section Header (##)
 Since # (level-1 header) is used for the title of the document, the headers within the document start at level 2.
 
----
+
 ###2.1	Subsection Header (###)
 Content of subsection follows here.
 
----
+
 ####2.1.1	Sub-subsection Heading (####)
 
 <!-- Last sentence in this paragraph needs reexamining/updating for Markdown. -->
 Unless absolutely necessary, subsections should not go lower than this level. The style for the next level down, level 5, is intended for other purposes, such as for headings on examples and glossary entries (see later).
 
 
----
 
 ###2.2	Body Text
 Paragraphs within sections have no special formatting. To create bulleted and numbered lists, use Markdown’s list syntax, including * for an unordered list and 1., 2., etc., for a numbered list (where order matters).
@@ -58,7 +48,7 @@ Format characters within body text as follows where necessary:
 > •	Use double asterisks for bold, including in Notes (as above) and when referring to a user interface element, as in “Press **Menu**.”
 
 
----
+
 ###2.2.1	Cross-References and Links
 For cross-references to section headers and titles or figures or tables, use the format shown in this example:
 
@@ -74,7 +64,6 @@ For external links, show the link separately, as in this example:
 
 > A module in KinomaJS is a JavaScript module as specified by CommonJS (wiki.commonjs.org/wiki/Modules/1.1).
 
----
 ###2.3	Code
 For the “computer voice” font within body text, use back-ticks (\`). For example, refer to an element named foo as “the `foo` element.”
 
@@ -103,7 +92,7 @@ Where code appears with a heading above it (as shown below, for instance), use C
          
 Reference sections typically describe many different code entities, using special context-specific formats that are too numerous to describe here; for more information, see the section “Applying the Formats.”
 
----
+
 ###2.4	Figures
 Format figures and their captions as shown below. Create (or crop) all figures so that there’s no blank space on any of the four sides.
 
@@ -113,7 +102,7 @@ Format figures and their captions as shown below. Create (or crop) all figures s
    
 When adding a figure, remember to also update the numbering of any figures past that point in the document.
 
----
+
 ###2.5	Tables
 To create a table, use the following as a starting point. In (relatively rare) cases where a caption is not appropriate, precede the table with a blank paragraph in the Normal style.
 
@@ -129,7 +118,7 @@ To create a table, use the following as a starting point. In (relatively rare) c
 
 When adding a table, remember to also update the numbering of any figures past that point in the document.
 
----
+
 ##3	Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
 
@@ -137,7 +126,7 @@ This section shows how the aforementioned styles (plus some others) are applied 
 ###Document Title: Context
 These examples from existing documents may also help with figuring out how to apply the styles in other, similar contexts.
 
----
+
 ###3.1	*KinomaJS JavaScript API Reference:* Object Reference
 The *KinomaJS JavaScript API Reference* document describes JavaScript objects in subsections like those shown here (although with different-level heads).
 
@@ -154,7 +143,7 @@ Here are some general rules for what not to do when writing descriptions in this
 
 •	Do not include graphics or code examples. 
 
----
+
 ###3.1.1	Object-Name Object
 [Optional] Full sentences *briefly* describing the object and/or providing other details about the object. If what the object represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the *KinomaJS Overview* document). Try to keep it no longer than one short paragraph.
 
@@ -338,4 +327,3 @@ Definition. (Explanation style)
  
 Copyright © 2015 Marvell. All rights reserved.
 Marvell and Kinoma are registered trademarks of Marvell. All other products and company names mentioned in this document may be trademarks of their respective owners.
-
