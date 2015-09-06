@@ -164,7 +164,6 @@ Object inherits from Other-object-name.protoype.
 
 The **Object Description** section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for **Prototype Description**, later, but without the `.prototype.`
 
-
 **Constructor Description**  
 Object-name(param1, param2)  
 
@@ -186,8 +185,8 @@ Returns
 ||||
 | --- | --- | --- |
 | Returns| `type`||
-> Return value details
 
+> Return value details  
 > Optionally describe what the function does, using this format whenever feasible:  
 > [Sentence fragment[. Optional additional sentences.]  
 > Omit this description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).  
@@ -195,25 +194,45 @@ Returns
 > Some Constructor Description subsections also describe value properties; see Prototype Description, next, for the format of value property descriptions.
 
 **Prototype Description**
-Prototype inherits from Other-object-name.protoype. 
+Prototype inherits from `Other-object-name.protoype.`
+
 [Instances are sealed [and volatile].]
+
 After the text shown above, describe all the value properties and function properties (combined, in alphabetical order). Multiple properties that have the same explanation may be grouped together, with only that one explanation following all of them.
+
 Describe value properties in this format:
-Object-name.prototype.property-name	type	[read only]
-Follow with property details, as:
-Sentence fragment[. Optional additional sentences.]
-Exception: Whenever possible, describe a boolean with a complete sentence beginning with “If true,”
-The style used for the value property details is called Function Description (originally its sole use, but now used here for consistent alignment with descriptions of function properties).
+
+||||
+| --- | --- | --- |
+| `Object-name.prototype.property-name` | `type`| [read only] |
+> Follow with property details, as:  
+> Sentence fragment[. Optional additional sentences.]  
+> Exception: Whenever possible, describe a boolean with a complete sentence beginning with “If `true`,”  
+> The style used for the value property details is called Function Description (originally its sole use, but now used here for consistent alignment with descriptions of function properties).
+
 Describe function properties in this format:
-Object-name.prototype.function-name(param1, param2)
-param1	type	[required]
-Parameter details (similar to value property details, above)
-Show optional extra parameters as “...” with type * and description “Zero or more extra parameters”.
-List parameter names in order of their appearance in the function.
-param2	type	[required]
-Parameter details
-Returns	type
-Return value details
+
+`Object-name.prototype.function-name(param1, param2)`
+
+||||
+| --- | --- | --- |
+| `param1` | `type`| [required] |
+> Parameter details (similar to value property details, above)  
+> Show optional extra parameters as “...” with type * and description “Zero or more extra parameters”.  
+> List parameter names in order of their appearance in the function.
+
+||||
+| --- | --- | --- |
+| `param2` | `type`| [required] |
+> Parameter details
+
+||||
+| --- | --- | --- |
+| Returns | `type`|  |
+
+Returns	type  
+> Return value details
+
 Optionally describe what the function does, using this format whenever feasible:
 [Sentence fragment[. Optional additional sentences.]
 Omit the description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
