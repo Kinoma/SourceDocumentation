@@ -87,7 +87,7 @@ Where code appears with a heading above it (as shown below, for instance), use C
 **Example (Heading 5)**  
 
 `xsResult = xsParse(aFile, fgetc, aPath, aLine /* Code Line */`   
-`sSourceFlag | xsNoErrorFlag | xsNoWarningFlag); /* Code Line */`   
+> `sSourceFlag | xsNoErrorFlag | xsNoWarningFlag); /* Code Line */`   
 
          
 Reference sections typically describe many different code entities, using special context-specific formats that are too numerous to describe here; for more information, see the section “Applying the Formats.”
