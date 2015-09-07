@@ -168,11 +168,12 @@ Do not capitalize, except in “Internet of Things.”
 Two words, no hyphen.
 
 **Kinoma Create**  
-Do not precede with *the* (but OK to precede with *your.*)
+Do not precede with *the* (but OK to precede with *your* or *this*).
 
 **Kinoma Forum**  
 Capitalize *Forum*, and precede with *the*.
 
+<!--From CR: Is the following entry obsolete, or if not, is it correct? It doesn't semm so, based on my research.-->
 **Kinoma Guide**  
 Not *Kinoma Media Guide*, and not preceded by *the*.
 
