@@ -50,6 +50,8 @@ When capitalizing titles and the like (called “title capitalization” in cont
 * Conjunctions (*and, or*)
 
 * Short prepositions (less than five characters long, such as *with, to*) except in the rare case when it is the last word of the text being capitalized.
+ 
+Do not capitalize physical button names (like "power button") unless the button is labeled as such (with that capitalization) on the device.
 
 **Captions**  
 Per Marvell’s preferred style, use title capitalization rather than sentence capitalization for figure and table captions (as in “Parts of the User Interface”). However, use special conventions, such as for code terms, the same as you would in body text (as in “The `fillImage` Operation”).
@@ -165,6 +167,9 @@ Do not capitalize, except in “Internet of Things.”
 **kid cam**  
 Two words, no hyphen.
 
+**Kinoma Create**  
+Do not precede with *the* (but OK to precede with *your.*)
+
 **Kinoma Forum**  
 Capitalize *Forum*, and precede with *the*.
 
@@ -176,6 +181,9 @@ Do not abbreviate to *KP*.
 
 **Labels in Forms**  
 For labels on fields in forms, use sentence capitalization, as in “Your email address:”.
+
+**Li-ion**  
+Capitalize only "Li," not "ion."
 
 **Links**  
 For links to web pages, explicitly show the corresponding URL (but without the leading <http://>, if any); for example, “See our support page, [kinoma.com/support/](http://www.kinoma.com/support/).” If the URL ends in “.com”, dispense with the trailing slash; otherwise, follow the usual convention of ending in a slash unless the URL leads to a file rather than a folder.
@@ -194,11 +202,17 @@ Users *choose from* menus. This is contrary to the Marvell (and Microsoft) guide
 
 See also **User Interface Elements**.
 
+**Micro USB**
+Not hyphenated. Always capitalize "Micro."
+
 **microSD**  
-Always cap this way (never initial cap, so avoid using at beginning of sentence).
+Always capitalize this way (never initial cap, so avoid using at beginning of sentence).
 
 **MIME type**  
 Note the capitalization.
+
+**Mini USB**
+Not hyphenated. Always capitalize "Mini."
 
 **Modes**  
 Capitalize the picture viewer modes Browse, Zoom & Rotate, and Pan.
