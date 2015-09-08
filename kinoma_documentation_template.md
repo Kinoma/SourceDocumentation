@@ -78,7 +78,7 @@ Links to Kinoma documents do not need to be explicitly shown; for example, [Kino
 
 For external links, show the link separately, as in this example:
 
-> A module in KinomaJS is a JavaScript module as specified by CommonJS (wiki.commonjs.org/wiki/Modules/1.1).
+> A module in KinomaJS is a JavaScript module as specified by CommonJS ([wiki.commonjs.org/wiki/Modules/1.1]).
 
 ###Code
 For the “computer voice” font within body text, use back-ticks (\`). For example, refer to an element named foo as “the `foo` element.”
