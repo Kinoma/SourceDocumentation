@@ -19,7 +19,6 @@ Content of subsection follows here.
 
 ####Sub-subsection Heading (####)
 
-<!-- From CR: Last sentence in this paragraph needs reexamining/updating for Markdown. -->
 Unless absolutely necessary, subsections should not go lower than this level. 
 
 #####Special Low-Level Heading (#####)
