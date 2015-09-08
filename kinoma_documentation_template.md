@@ -4,7 +4,7 @@
 This document provides a starting point for creating drafts of Kinoma technical documentation in the proper Markdown format.
 The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts.
 
-If starting from scratch, please work from a copy of this document, retaining the original for later reference; in the copy, delete whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
+If starting from scratch, please work from a copy of this document, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
 
 <!--From CR: The doc titles in the next paragaph should be links—but what are the appropriate URLs?-->
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or ediytorial style.
@@ -25,7 +25,9 @@ Unless absolutely necessary, subsections should not go lower than this level.
 Use a level-5 heading for occasional headings on code examples, terms in the glossary, and the like. (Examples follow later.)
 
 ###Body Text
-Paragraphs within sections have no special formatting. 
+Paragraphs within sections have no special formatting. Formatting for certains characters within text are described in the sections below.
+
+Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), go with the basic ASCII character set—that is, what you get by default in Markdown. This means, for example, using "straight" quotation marks (" and ') rather than the "curly" kind (“” and ‘’) that were the default in Mirosoft Word. One exception is the em dash (—, typed with Option-Shift-hyphen), as you'll see in numerous places in this template.
 
 ####Italic (_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example:
@@ -33,7 +35,7 @@ For emphasis and other uses of italic (including document titles), use underscor
 >A _host object_ is a special kind of object with data that can be directly accessed only in C.
 
 ####Bold (**)
-Use double asterisks for bold—for example, when referring to a user interface element as in “Press **Menu**.”
+Use double asterisks for bold—for example, when referring to a user interface element as in "Press **Menu**."
 
 ####Escape Character (\\)
 To prevent Markdown from processing a character as a command, precede it with backslash (as done in the heading above).
@@ -53,13 +55,13 @@ To emphasize important, critical information, use the format illustrated below (
 <!-- From CR: I had trouble making just "Important:" show up in red. Can you help?-->
 >**_Important:_** To emphasize important, critical information, use this format.
 
-###Lists (* and N.)
-Precede each item in a bulleted list with an asterisk (followed by a space) and in an ordered (numbered) list with "N. ", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
+###Lists (- and N.)
+Precede each item in a bulleted list with a hyphen (followed by a space) and in an ordered (numbered) list with "N. ", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
 
 If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
 
-* First short item  
-* Second short item  
+- First short item  
+- Second short item  
 
 If all or most of the listed items are long, separate them with blank lines.
  
@@ -69,7 +71,7 @@ If all or most of the listed items are long, separate them with blank lines.
 
 Items in a list would ideally be only one paragraph long, but in some cases an item will need to run to two paragraphs of text, or may be followed by a figure (or something else) before the next item in the list; in those cases, precede the continuation of the item with three space, as illustrated here:
 
-* List item
+- List item
 
    Continuation of list item above (preceded by three spaces in Markdown)
 
@@ -82,12 +84,12 @@ If the title of any Kinoma document changes, check for references to it in other
 
 For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading (except not case-sensitive) with dashes where any spaces were. It will link to the first heading with that exact name.
 
-> See the section “[Applying the Formats](#applying-the-formats).” 
+> See the section "[Applying the Formats](#applying-the-formats)." 
 
 When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
 
 ###Code (`)
-For the “computer voice” font within body text, use back-ticks (\`). For example, refer to an element named `foo` as “the `foo` element.”
+For the "computer voice" font within body text, use back-ticks (\`). For example, refer to an element named `foo` as "the `foo` element."
 
 For code blocks—that is, one or more code lines that are separate from body text—place a line of three back ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per “tab.” An example (using the tab character) follows.
 
@@ -102,8 +104,8 @@ Show missing code (omitted for brevity) with `...`; this notation is acceptable 
 ```
 <header> ... </header>
 ```
-<!--From CR: This next bit needs reexamining/updating for Markdown. -->
-Code will occasionally have a heading above it (for example, to distinguish its context from that of a similar example that follows immediately. Make such headings level 5 (as illustrated below).
+
+Code will occasionally have a heading above it—for example, to distinguish its context from that of a similar example that follows immediately. Make such headings level 5, as illustrated below.
 
 #####AppBehaviors.js  
 ```
@@ -111,17 +113,17 @@ Code will occasionally have a heading above it (for example, to distinguish its 
 var CB = require("SharedBehaviors");
 ```
 
-Reference sections typically describe many different code entities, using special context-specific formats that are too numerous to describe here; for more information, see the section “[Applying the Formats](#applying-the-formats).”
+Reference sections typically describe many different code entities, using special context-specific formats; for more information, see the section "[Applying the Formats](#applying-the-formats)."
 
 ###Figures
-Format figures and their captions as shown below. It's not necessary to include numbers and captions where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step just described. 
+Format figures with numbered captions as shown below. Numbers and captions need not be included where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step above it described. 
 
 **Figure 1.** Figure Caption Goes Here  
 ![](http://kinoma.com/create/img/open-sensor-illus.png)
    
 Create (or crop) all figures so that there’s no blank space on any of the four sides.
 
-When adding a figure, remember to also update the numbering of any figures past that point in the document.
+When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
 ###Tables
 To create a table, use the following as a starting point.
@@ -134,7 +136,7 @@ To create a table, use the following as a starting point.
 | Table entry	 | Table entry	  |
 | Table entry	 | Table entry	  |  
 
-When adding a table, remember to also update the numbering of any tables past that point in the document.
+When adding, deleting, or moving a table, remember to also update the numbering of any other affected tables.
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
@@ -150,40 +152,39 @@ The [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentatio
 
 Here are some general rules for what not to do when writing descriptions in this Reference document:
 
-* Do not refer to the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document; all the basic information (without much elaboration) should be in the reference subsection itself. 
+- Do not refer to the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document; all the basic information (without much elaboration) should be in the reference subsection itself. 
 
-* Do not state any default that’s being assumed per the introduction to the Reference section (see in particular **Default values** and **Pixels** in the introduction). 
+- Do not state any default that’s being assumed per the introduction to the Reference section (see in particular **Default values** and **Pixels** in the introduction). 
 
-* Do not include graphics or code examples. 
+- Do not include graphics or code examples. 
 
 ####Object-Name Object
-[Optional] Full sentences *briefly* describing the object and/or providing other details about the object. If what the object represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
+[Optional] Full sentences _briefly_ describing the object and/or providing other details about the object. If what the object represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
 
-Next, include only whichever of the following lower-level sections apply. The style of the first paragraph after every heading below is called Reference; names of other styles not previously introduced are explicitly noted. Square brackets indicate optional parts within subsections, to include only if applicable.
+Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable.
 
 #####Coordinates  
 Full sentences providing coordinates information.
 
 #####Object Description  
-Object inherits from Other-object-name.protoype.
+Object inherits from `Other-object-name.protoype`.
 
 [Object is sealed.]
 
-The **Object Description** section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for **Prototype Description**, later, but without the `.prototype.`
+The **Object Description** section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for **Prototype Description**, later, but without the `.prototype`.
 
 #####Constructor Description  
-Object-name(param1, param2)  
+`Object-name(param1, param2)`  
 
 ||||
 | --- | --- | --- |
 | `param1`| `type`| [required] |
 
-> Parameter details, as:
+> Indented (blockquoted) parameter details, as:
 
 > Sentence fragment[. Optional additional sentences.]
 
 > List parameter names in order of their appearance.
-Returns  
 
 ||||
 | --- | --- | --- |
@@ -197,18 +198,16 @@ Returns
 
 > Return value details  
 
-> Optionally describe what the function does, using this format whenever feasible:  
+Optionally describe (without indentation) what the function does, using this format whenever feasible:  
 
-> [Sentence fragment[. Optional additional sentences.]  
+[Sentence fragment[. Optional additional sentences.]  
 
-> Omit this description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).  
+Omit this description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).  
 
-> The style used for lines showing parameters (and any return value) is called Parameter; its default font is the computer voice font, so the Body Text Char is used for the comment (or for “Returns”). The style used for parameter details and return value details is called Details.  
-
-> Some Constructor Description subsections also describe value properties; see Prototype Description, next, for the format of value property descriptions.
+Some **Constructor Description** subsections also describe value properties; see **Prototype Description**, next, for the format of value property descriptions.
 
 #####Prototype Description  
-Prototype inherits from `Other-object-name.prototype.`
+Prototype inherits from `Other-object-name.prototype`.
 
 [Instances are sealed [and volatile].]
 
@@ -223,9 +222,7 @@ Describe value properties in this format:
 
 > Sentence fragment[. Optional additional sentences.] 
 
-> Exception: Whenever possible, describe a boolean with a complete sentence beginning with “If `true`,”  
-
-> The style used for the value property details is called Function Description (originally its sole use, but now used here for consistent alignment with descriptions of function properties).
+> Exception: Whenever possible, describe a boolean with a complete sentence beginning with "If `true`,"  
 
 Describe function properties in this format:
 
@@ -236,7 +233,7 @@ Describe function properties in this format:
 | `param1` | `type`| [required] |
 > Parameter details (similar to value property details, above)
 
-> Show optional extra parameters as “...” with type * and description “Zero or more extra parameters”.  
+> Show optional extra parameters as `...` with type * and description "Zero or more extra parameters".  
 
 > List parameter names in order of their appearance in the function.
 
@@ -252,20 +249,21 @@ Describe function properties in this format:
 
 > Return value details
 
-> Optionally describe what the function does, using this format whenever feasible:
+Optionally describe (without indentation) what the function does, using this format whenever feasible:
 
-> [Sentence fragment[. Optional additional sentences.]
+[Sentence fragment[. Optional additional sentences.]
 
-> Omit the description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
+Omit the description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
 
 #####Events  
-[Same events as for other-object-name instances (cross-reference)[, plus:]]
+[Same events as for `other-object-name` instances (cross-reference)[, plus:]]
 
 The cross-reference in parentheses above has this format:
 
-> see “Events” in the section “[Other-object-name Object](#other-object-name-object).”
+see "Events" in the section "[Other-object-name Object](#other-object-name-object)."
 
-where the two headings and the heading number are Word cross-references.
+where the section heading in the cross-reference is a link.
+
 `name(param1, param2)`
 
 ||||
@@ -284,14 +282,15 @@ where the two headings and the heading number are Word cross-references.
 
 > Parameter details  
 
-Event description, as:  
-This event happens when ….
+Event description (without indentation), as:
+
+This event happens when ....
 
 ###_KinomaJS XML API Reference:_ XML Element Reference
 The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/) document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
 
 ####Element-Name Element
-[Optional] Full sentences *briefly* describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
+[Optional] Full sentences _briefly_ describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
 
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable.
 
@@ -303,7 +302,7 @@ Next, include only whichever of the following lower-level sections apply. Square
 ||||
 | --- | --- | --- |
 | `name` | `type`| [comment] |
-> where `type` can be any of the allowed attribute types, followed by “(*n* or more, separated by commas)” if applicable (where *n* is the appropriate starting number), and the optional comment can be one of the following:  
+> where `type` can be any of the allowed attribute types, followed by "(_n_ or more, separated by commas)" if applicable (where _n_ is the appropriate starting number), and the optional comment can be one of the following:  
 
 > required  
 > required \*  
@@ -314,9 +313,9 @@ End with an explanation in this format:
 
 Sentence fragment[. Optional additional sentences.] 
 
-Exception: Whenever possible, describe a boolean with a complete sentence of the form “If `true,` …”  
+Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true,` ..."  
 
-If “required \*” (which indicates that a related note follows), add a line beginning with “* ” that provides the note.  
+If "required \*" (which indicates that a related note follows), add a line beginning with "* " that provides the note.  
 
 List attribute names in alphabetical order.
 
@@ -346,18 +345,18 @@ The words “JavaScript code” [optionally followed by further description]
 <!--From CR: Make refs to _XS_ doc in this section be links?-->
 In the _XS_ document, XS elements are typically first discussed in a tutorial manner, with usage guidance and examples, and then described in a manner appropriate for later reference. The formatting used for each of these presentation types is discussed here.
 
-To the extent reasonable, the section heading for a tutorial discussion should be explanatory (such as “Defining Build Targets”), whereas the heading for a reference section should be the element name (as in “xs:target”).
+To the extent reasonable, the section heading for a tutorial discussion should be explanatory (such as "Defining Build Targets"), whereas the heading for a reference section should be the element name (as in "xs:target").
 
 ####Discussing XS Elements
 In sections discussing XS property elements and the like (including patterns), examples are organized under the following level 5 headings:
 
-* **Grammar** — The grammar itself.
+- **Grammar** — The grammar itself.
 
-* **Prototype** — The ECMAScript instructions corresponding to what the grammar prototypes. This and the grammar take the form of code in XML and ECMAScript. For the sake of terseness, the XML declarations and the `package` elements are omitted.
+- **Prototype** — The ECMAScript instructions corresponding to what the grammar prototypes. This and the grammar take the form of code in XML and ECMAScript. For the sake of terseness, the XML declarations and the `package` elements are omitted.
 
-* **XML document** — An XML document that conforms to the grammar (present only if applicable).
+- **XML document** — An XML document that conforms to the grammar (present only if applicable).
 
-* **Instance** — The ECMAScript expression corresponding to what the grammar instantiates from the XML document when the document is parsed (present only if applicable). This and the XML document are provided only to explain what the grammar prototypes and instantiates. They are not examples of code; sometimes they are just comments because ECMAScript has no corresponding instructions or expressions.
+- **Instance** — The ECMAScript expression corresponding to what the grammar instantiates from the XML document when the document is parsed (present only if applicable). This and the XML document are provided only to explain what the grammar prototypes and instantiates. They are not examples of code; sometimes they are just comments because ECMAScript has no corresponding instructions or expressions.
 
 An example follows.
 
@@ -392,23 +391,23 @@ color = { r: 0, g: 0, b: 0 }`
 ####XS Element Reference
 In sections in the _XS_ document that describe XS elements and the like for reference purposes, a brief description of the element is followed by information under the following level 5 headings:
 
-* **Attributes** — All the attributes of the element along with an indication of whether they are required, optional, or inherited from the prototype of the instance that owns the property. If optional and a default value applies, or if inherited but there is no prototype, the default value is shown.
+- **Attributes** — All the attributes of the element along with an indication of whether they are required, optional, or inherited from the prototype of the instance that owns the property. If optional and a default value applies, or if inherited but there is no prototype, the default value is shown.
 
-* **Elements** — Which elements, if any, this element can contain.
+- **Elements** — Which elements, if any, this element can contain.
 
-* **Text** — What text, if any, the element can (or must) contain.
+- **Text** — What text, if any, the element can (or must) contain.
 
-The information below these heads is formatted as illustrated below.
+The information below these headings is formatted as illustrated below.
 
 #####Attributes
 
-`attribute1,` required  
-> Explanation here. (The line above has the Code Entry paragraph style; the Body Text Char style is used to change characters in such lines to the body text font where needed.)
-
-`attribute2,` optional, default=""  
+`attribute1`, required  
 > Explanation here.
 
-`attribute2,` inherited, default=""
+`attribute2`, optional, default=""  
+> Explanation here.
+
+`attribute2`, inherited, default=""
 > Explanation here.
 
 #####Elements
@@ -420,7 +419,7 @@ None (or enter a description if applicable)
 None (or enter a description if applicable)
 
 ###_XS Chunks:_ ECMAScript Objects
-In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section “*XS*: XS Elements”; the constructor and prototype are documented as shown here. 
+In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "_XS_: XS Elements"; the constructor and prototype are documented as shown here. 
 
 <!--Link below not working; to be explored/fixed.-->
 **Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section “[_KinomaJS Reference_: KinomaJS Object Reference](KinomaJS-Reference-:-KinomaJS-Object Reference).”
@@ -454,13 +453,13 @@ This section describes the formatting used to present C macros in the document _
 
 After a brief introduction to the macro, parameters of the macro (if any) are listed and described as shown below.
 
-`xsType xsMacro(xsType param1, xsType param2)  /* Code Entry style */`
-> `/* Use the Code Line style for any additional lines (like these) */`
-> `/* in the the macro syntax. */`
+```
+xsType xsMacro(xsType param1, xsType param2)
+```
 
 ||||
 | --- | --- | --- |
-| `param1` | Brief parameter description (Parameter Def style)|  |
+| `param1` | Brief parameter description |  |
 | `param2` | Brief parameter description (potentially, though rarely, more than one line long)|  |
 | Returns | Brief return value description |  |
 
@@ -471,7 +470,7 @@ Additional discussion of the macro sometimes follows (in the normal body text st
 #####Example
 `/* Include example if applicable. */`
 
-If this structure needs to be extended for other C API documentation, consider adding level 5 headings (such as a “See also” heading) to introduce additional types of information.
+If this structure needs to be extended for other C API documentation, consider adding level 5 headings (such as a "See also" heading) to introduce additional types of information.
 
 ##Glossary
 In any document where reasonable, end with a Glossary section in which each item has the following format. (No introductory text is needed, so delete this paragraph in the actual document.)
