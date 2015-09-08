@@ -3,7 +3,6 @@
 ##About This Document
 This document provides a starting point for creating drafts of Kinoma technical documentation in the proper Markdown format.
 
-<!--From CR: Cross-ref in next two paragraphs shpuld be a link.-->
 The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts, such as in the Object Reference section of the _KinomaJS JavaScript API Reference_ document.
 
 **Note:** Writers of documents in the KinomaJS documentation suite should be sure to also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format.
