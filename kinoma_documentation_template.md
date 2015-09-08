@@ -32,7 +32,7 @@ Except where indicated otherwise in this document (or any of the other support d
 ####Italic (_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example:
 
->A _host object_ is a special kind of object with data that can be directly accessed only in C.
+> A _host object_ is a special kind of object with data that can be directly accessed only in C.
 
 ####Bold (**)
 Use double asterisks for bold—for example, when referring to a user interface element as in "Press **Menu**."
@@ -45,15 +45,17 @@ Use blockquote for indentation, as done here:
 
 > Markdown's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
 
+Adding a space after the angle bracket makes the text stand out better as a blockquote (that is, in color) in Markdown.
+
 ###Special Notes
 Use Notes formatted like the one below (including the indentation) for incidental, noncritical information.
 
->**Note:** This is how incidental, noncritical Notes should be formatted.
+> **Note:** This is how incidental, noncritical Notes should be formatted.
 
 To emphasize important, critical information, use the format illustrated below (again including the indentation).
 
 <!-- From CR: I had trouble making just "Important:" show up in red. Can you help?-->
-><span style="color: red">**_Important:_**</span> To emphasize important, critical information, use this format.  
+> <span style="color: red">**_Important:_**</span> To emphasize important, critical information, use this format.  
 
 ###Lists (- and N.)
 Precede each item in a bulleted list with a hyphen (followed by a space) and in an ordered (numbered) list with "N. ", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
@@ -148,7 +150,7 @@ These examples from existing documents may also help with figuring out how to ap
 ###_KinomaJS JavaScript API Reference:_ Object Reference
 The [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document describes JavaScript objects in subsections like those shown here (although with different-level heads).
 
->**_Important:_** Before creating subsections like these, be sure to read the current introduction to the object reference section of the [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document; the content of your descriptions should be consistent with what it says.
+> **_Important:_** Before creating subsections like these, be sure to read the current introduction to the object reference section of the [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document; the content of your descriptions should be consistent with what it says.
 
 Here are some general rules for what not to do when writing descriptions in this Reference document:
 
@@ -218,6 +220,7 @@ Describe value properties in this format:
 ||||
 | --- | --- | --- |
 | `Object-name.prototype.property-name` | `type`| [read only] |
+
 > Follow with property details, as:  
 
 > Sentence fragment[. Optional additional sentences.] 
@@ -231,6 +234,7 @@ Describe function properties in this format:
 ||||
 | --- | --- | --- |
 | `param1` | `type`| [required] |
+
 > Parameter details (similar to value property details, above)
 
 > Show optional extra parameters as `...` with type * and description "Zero or more extra parameters".  
@@ -292,7 +296,7 @@ The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/)
 ####Element-Name Element
 [Optional] Full sentences _briefly_ describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
 
-Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable.
+Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable. (Also note the special "Same as..." format currently used in some **Attributes** and **Elements** section in the document.)
 
 #####Tag 
 `name`
@@ -302,20 +306,21 @@ Next, include only whichever of the following lower-level sections apply. Square
 ||||
 | --- | --- | --- |
 | `name` | `type`| [comment] |
+
 > where `type` can be any of the allowed attribute types, followed by "(_n_ or more, separated by commas)" if applicable (where _n_ is the appropriate starting number), and the optional comment can be one of the following:  
 
 > required  
-> required \*  
+> required *  
 > 0 or more  
 > 0 or 1  
 
-End with an explanation in this format:   
+> End with an (indented) explanation in this format:   
 
-Sentence fragment[. Optional additional sentences.] 
+> Sentence fragment[. Optional additional sentences.] 
 
-Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true,` ..."  
+> Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true,` ..."  
 
-If "required \*" (which indicates that a related note follows), add a line beginning with "* " that provides the note.  
+> If "required \*" (which indicates that a related note follows), add a paragraph beginning with "* " that provides the note.  
 
 List attribute names in alphabetical order.
 
@@ -334,9 +339,9 @@ List attribute names in alphabetical order.
 
 > Sentence fragment[. Optional additional sentences.]
 
-> List element names in alphabetical order (one per line).
+List element names in alphabetical order (one per line).
 
-> Several elements that have the same explanation may be grouped together, with only that one explanation following all of them.
+Several elements that have the same explanation may be grouped together, with only that one explanation following all of them.
 
 #####CDATA
 The words “JavaScript code” [optionally followed by further description]
@@ -401,13 +406,22 @@ The information below these headings is formatted as illustrated below.
 
 #####Attributes
 
-`attribute1`, required  
+||||
+| --- | --- | --- |
+| `attribute1` | required | |
+  
 > Explanation here.
 
-`attribute2`, optional, default=""  
+||||
+| --- | --- | --- |
+| `attribute2` | optional | default="" |
+
 > Explanation here.
 
-`attribute2`, inherited, default=""
+||||
+| --- | --- | --- |
+| `attribute3` | inherited | default="" |
+
 > Explanation here.
 
 #####Elements
@@ -434,7 +448,9 @@ After a brief introduction to the constructor, all forms of the constructor are 
 > Explanation of the function and its parameter(s).
 
 #####Example  
-`/* An example (or examples) if applicable. \*/`
+```
+An example (or examples) if applicable.
+```
 
 ####Prototype Description
 After a brief introduction to the prototype, all properties of the prototype are listed and described as illustrated below.
@@ -457,18 +473,19 @@ After a brief introduction to the macro, parameters of the macro (if any) are li
 xsType xsMacro(xsType param1, xsType param2)
 ```
 
-||||
-| --- | --- | --- |
-| `param1` | Brief parameter description |  |
-| `param2` | Brief parameter description (potentially, though rarely, more than one line long)|  |
-| Returns | Brief return value description |  |
+|||
+| --- | --- |
+| `param1` | Brief parameter description (potentially, though rarely, more than one line long) |
+| `param2` | Brief parameter description|
+| Returns | Brief return value description |
 
-In cases where the first column in the Parameter Def style is not wide enough, the indents or tabs are adjusted accordingly in those lists.
 
 Additional discussion of the macro sometimes follows (in the normal body text style), and an example formatted as shown below may also be provided.
 
 #####Example
-`/* Include example if applicable. */`
+```
+Include example if applicable.
+````
 
 If this structure needs to be extended for other C API documentation, consider adding level 5 headings (such as a "See also" heading) to introduce additional types of information.
 
