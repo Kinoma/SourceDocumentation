@@ -6,6 +6,7 @@ The formatting conventions are first described in general and then presented in 
 
 If starting from scratch, please work from a copy of this document, retaining the original for later reference; in the copy, delete whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
 
+<!--From CR: The doc titles in the next paragaph should be links—but what are the appropriate URLs?-->
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or ediytorial style.
 
 For more details about Markdown, see its documentation on the web. Note that there are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
@@ -21,18 +22,21 @@ Content of subsection follows here.
 Unless absolutely necessary, subsections should not go lower than this level. 
 
 #####Special Low-Level Heading (#####)
-Use the style for a level-5 heading for headings on code examples, glossary entries, and the like.
+Use a level-5 heading for occasional headings on code examples, terms in the glossary, and the like. (Examples follow later.)
 
 ###Body Text
 Paragraphs within sections have no special formatting. 
 
 ####Italic (_)
-For emphasis and other uses of italic (including document titles), use underscores, as in this example.
+For emphasis and other uses of italic (including document titles), use underscores, as in this example:
 
 >A _host object_ is a special kind of object with data that can be directly accessed only in C.
 
 ####Bold (**)
 Use double asterisks for bold—for example, when referring to a user interface element as in “Press **Menu**.”
+
+####Escape Character (\\)
+To prevent Markdown from processing a character as a command, precede it with backslash (as done in the heading above).
 
 ###Indentation (>)
 Use blockquote for indentation, as done here:  
@@ -40,16 +44,17 @@ Use blockquote for indentation, as done here:
 > Markdown's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
 
 ###Special Notes
-Use Notes like the one below for incidental, noncritical information.
+Use Notes formatted like the one below (including the indentation) for incidental, noncritical information.
 
-**Note:** This is how incidental, non critical Notes should be formatted.
+>**Note:** This is how incidental, noncritical Notes should be formatted.
 
-To emphasize important, critical information, use the following format:
+To emphasize important, critical information, use the format illustrated below (again including the indentation).
 
-**_Important:_** To emphasize important, critical information, use this format.
+<!-- From CR: I had trouble making just "Important:" show up in red. Can you help?-->
+>**_Important:_** To emphasize important, critical information, use this format.
 
 ###Lists (* and N.)
-Precede each item in a bulleted list with an asterisk, and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
+Precede each item in a bulleted list with an asterisk (followed by a space) and in an ordered (numbered) list with "N. ", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
 
 If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
 
@@ -58,33 +63,33 @@ If all or most of the listed items are very short, don't separate them with blan
 
 If all or most of the listed items are long, separate them with blank lines.
  
-* First long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
+1. First long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
  
-* Second long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
+2. Second long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
 
 Items in a list would ideally be only one paragraph long, but in some cases an item will need to run to two paragraphs of text, or may be followed by a figure (or something else) before the next item in the list; in those cases, precede the continuation of the item with three space, as illustrated here:
 
-* EXAMPLE TO COME: CR TO RESUME EDITING HERE
+* List item
 
+   Continuation of list item above (preceded by three spaces in Markdown)
 
 ###Cross-References and Links
-For cross-references to section headings and titles or figures or tables, use the format shown in this example:
+When referring to another Kinoma document (or any Kinoma web page), do not explicitly show the link; for example, [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/), [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/), and [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/). When referring to anything else on the web, show the link explicitly, as in this example:
 
-<!-- Anchor links (links on the same page) can easily be made to any header items (items with one or more # in front). All headers are possible targets. The format is [the text you show as linkable](#the-header). The words after the pound sign are the exact header with dashes where any spaces were. Link is not case sensitive. It will link to the first header with that exact name -->
+> A _module_ in KinomaJS is a JavaScript module as specified by CommonJS ([wiki.commonjs.org/wiki/Modules/1.1](http://wiki.commonjs.org/wiki/Modules/1.1)).
+
+If the title of any Kinoma document changes, check for references to it in other documents and update them.
+
+For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading (except not case-sensitive) with dashes where any spaces were. It will link to the first heading with that exact name.
+
 > See the section “[Applying the Formats](#applying-the-formats).” 
 
-When changing the wording of any heading, be sure to check for and change any cross-references to it.
+When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
 
-Links to Kinoma documents do not need to be explicitly shown; for example, [KinomaJS Overview](http://kinoma.com/develop/documentation/overview/), [KinomaJS JavaScript API Reference](http://kinoma.com/develop/documentation/javascript/), and [KinomaJS XML API Reference](http://kinoma.com/develop/documentation/xml/).
+###Code (`)
+For the “computer voice” font within body text, use back-ticks (\`). For example, refer to an element named `foo` as “the `foo` element.”
 
-For external links, show the link separately, as in this example:
-
-> A module in KinomaJS is a JavaScript module as specified by CommonJS (http://wiki.commonjs.org/wiki/Modules/1.1).
-
-###Code
-For the “computer voice” font within body text, use back-ticks (\`). For example, refer to an element named foo as “the `foo` element.”
-
-For code blocks—that is, one or more code lines that are separate from body text—place a line of three back ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per “tab.” An example follows.
+For code blocks—that is, one or more code lines that are separate from body text—place a line of three back ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per “tab.” An example (using the tab character) follows.
 
 ```
 src = new File(argv[2], "r");
@@ -109,16 +114,17 @@ var CB = require("SharedBehaviors");
 Reference sections typically describe many different code entities, using special context-specific formats that are too numerous to describe here; for more information, see the section “Applying the Formats.”
 
 ###Figures
-Format figures and their captions as shown below. Create (or crop) all figures so that there’s no blank space on any of the four sides.
+Format figures and their captions as shown below. It's not necessary to include numbers and captions where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step just described. 
 
 **Figure 1.** Figure Caption Goes Here  
 ![](http://kinoma.com/create/img/open-sensor-illus.png)
    
+Create (or crop) all figures so that there’s no blank space on any of the four sides.
+
 When adding a figure, remember to also update the numbering of any figures past that point in the document.
 
 ###Tables
-To create a table, use the following as a starting point. In (relatively rare) cases where a caption is not appropriate, precede the table with a blank paragraph in the Normal style.
-
+To create a table, use the following as a starting point.
 
 **Table 1.** Table Caption Goes Here
 
@@ -128,29 +134,30 @@ To create a table, use the following as a starting point. In (relatively rare) c
 | Table entry	 | Table entry	  |
 | Table entry	 | Table entry	  |  
 
-When adding a table, remember to also update the numbering of any figures past that point in the document.
+When adding a table, remember to also update the numbering of any tables past that point in the document.
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
 
-**Document Title: Context**
+**_Document Title:_ Context**
 
 These examples from existing documents may also help with figuring out how to apply the styles in other, similar contexts.
 
-###*KinomaJS JavaScript API Reference:* Object Reference
-The *KinomaJS JavaScript API Reference* document describes JavaScript objects in subsections like those shown here (although with different-level heads).
+###_KinomaJS JavaScript API Reference:_ Object Reference
+The [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document describes JavaScript objects in subsections like those shown here (although with different-level heads).
 
-**_Important:_** Before creating subsections like these, be sure to read the current introduction to the object reference section of *KinomaJS* JavaScipt API *Reference*; the content of your descriptions should be consistent with what it says.
+>**_Important:_** Before creating subsections like these, be sure to read the current introduction to the object reference section of the [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document; the content of your descriptions should be consistent with what it says.
+
 Here are some general rules for what not to do when writing descriptions in this Reference document:
 
-* Do not refer to the *KinomaJS Overview* document; all the basic information (without much elaboration) should be in the reference subsection itself. 
+* Do not refer to the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document; all the basic information (without much elaboration) should be in the reference subsection itself. 
 
 * Do not state any default that’s being assumed per the introduction to the Reference section (see in particular **Default values** and **Pixels** in the introduction). 
 
 * Do not include graphics or code examples. 
 
 ####Object-Name Object
-[Optional] Full sentences *briefly* describing the object and/or providing other details about the object. If what the object represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the *KinomaJS Overview* document). Try to keep it no longer than one short paragraph.
+[Optional] Full sentences *briefly* describing the object and/or providing other details about the object. If what the object represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
 
 Next, include only whichever of the following lower-level sections apply. The style of the first paragraph after every heading below is called Reference; names of other styles not previously introduced are explicitly noted. Square brackets indicate optional parts within subsections, to include only if applicable.
 
@@ -279,11 +286,11 @@ where the two headings and the heading number are Word cross-references.
 Event description, as:  
 This event happens when ….
 
-###KinomaJS XML API Reference: XML Element Reference
-The *KinomaJS XML* API Reference document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
+###_KinomaJS XML API Reference:_ XML Element Reference
+The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/) document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
 
 ####Element-Name Element
-[Optional] Full sentences *briefly* describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the *KinomaJS Overview* document). Try to keep it no longer than one short paragraph.
+[Optional] Full sentences *briefly* describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
 
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable.
 
