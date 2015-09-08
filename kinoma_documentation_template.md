@@ -1,109 +1,121 @@
 #Kinoma Documentation Template
 
-
-##1	About This Document
+##About This Document
 This document provides a starting point for creating drafts of Kinoma technical documentation in the proper Markdown format.
 
+<!--From CR: Cross-ref in next two paragraphs shpuld be a link.-->
+The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts, such as in the Object Reference section of the _KinomaJS JavaScript API Reference_ document.
 
-The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts, such as in the Object Reference section of the *KinomaJS JavaScript API Reference* document.
-
-
-**Note:** Writers of documents in the KinomaJS documentation suite should be sure to also read the *KinomaJS Documentation Writer’s Guide*, which focuses on the process and content rather than the format.
-
+**Note:** Writers of documents in the KinomaJS documentation suite should be sure to also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format.
 
 If starting from scratch, you should work from a copy of this document, retaining the original for later reference. In the copy, delete whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
 
-
 This document assumes you already know how to use Markdown.
 
+##Section Heading (##)
+Since # (level-1 heading) is used for the title of the document, the headings within the document start at level 2.
 
-##2	Section Header (##)
-Since # (level-1 header) is used for the title of the document, the headers within the document start at level 2.
-
-
-###2.1	Subsection Header (###)
+###Subsection Heading (###)
 Content of subsection follows here.
 
+####Sub-subsection Heading (####)
 
-####2.1.1	Sub-subsection Heading (####)
+<!-- From CR: Last sentence in this paragraph needs reexamining/updating for Markdown. -->
+Unless absolutely necessary, subsections should not go lower than this level. 
 
-<!-- Last sentence in this paragraph needs reexamining/updating for Markdown. -->
-Unless absolutely necessary, subsections should not go lower than this level. The style for the next level down, level 5, is intended for other purposes, such as for headings on examples and glossary entries (see later).
+#####Special Low-Level Heading (#####)
+Use the style for a level-5 heading for headings on code examples, glossary entries, and the like.
+
+###Body Text
+Paragraphs within sections have no special formatting. 
+
+####Indentation (>)
+Use blockquote for indentation, as done here:  
+
+> Markdown's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
+
+####Italic (_)
+For emphasis and other uses of italic (including document titles), use underscores, as in this example.
+
+>A _host object_ is a special kind of object with data that can be directly accessed only in C.
+
+####Bold (**)
+Use double asterisks for bold, including in Notes (as shown below) and when referring to a user interface element, as in “Press **Menu**.”
+
+**Note:** This is how Notes should be formatted.
+
+Use Notes like the one above for incidental, noncritical information; to emphasize important, critical information, use the following format:
+
+**_Important:_** To emphasize important, critical information, use this format.
+
+###Lists
+Precede each item in a bulleted list with an asterisk, and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
+
+If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
+
+* First short item  
+* Second short item  
+
+If all or most of the listed items are long, separate them with blank lines.
+ 
+* First long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
+ 
+* Second long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
+
+Items in a list would ideally be only one paragraph long, but in some cases an item will need to run to two paragraphs of text, or may be followed by a figure (or something else) before the next item in the list; in those cases, precede the continuation of the item with three space, as illustrated here:
+
+* EXAMPLE TO COME: CR TO RESUME EDITING HERE
 
 
-
-###2.2	Body Text
-Paragraphs within sections have no special formatting. To create bulleted and numbered lists, use Markdown’s list syntax, including * for an unordered list and 1., 2., etc., for a numbered list (where order matters).
-
-
-Format characters within body text as follows where necessary:
-
-
-> •	For emphasis and most other uses of italic, use underscores (as in the next sentence). For example: A *host object* is a special kind of object with data that can be directly accessed only in C.
-
-
-> **Note:** Note that bulleted items should ideally be only one paragraph long, but in the few cases where an item needs to run longer, just manually format the additional paragraphs as illustrated here.
-
-
-> •	Use double asterisks for bold, including in Notes (as above) and when referring to a user interface element, as in “Press **Menu**.”
-
-
-
-###2.2.1	Cross-References and Links
-For cross-references to section headers and titles or figures or tables, use the format shown in this example:
+###Cross-References and Links
+For cross-references to section headings and titles or figures or tables, use the format shown in this example:
 
 > See the section “Applying the Formats.”
 
-When changing the wording of any header, be sure to check for and change any cross-references to it.
+When changing the wording of any heading, be sure to check for and change any cross-references to it.
 
 Links to Kinoma documents do not need to be explicitly shown; for example, [KinomaJS Overview](http://kinoma.com/develop/documentation/overview/), [KinomaJS JavaScript API Reference](http://kinoma.com/develop/documentation/javascript/), and [KinomaJS XML API Reference](http://kinoma.com/develop/documentation/xml/).
 
-
 For external links, show the link separately, as in this example:
-
 
 > A module in KinomaJS is a JavaScript module as specified by CommonJS (wiki.commonjs.org/wiki/Modules/1.1).
 
-###2.3	Code
+###Code
 For the “computer voice” font within body text, use back-ticks (\`). For example, refer to an element named foo as “the `foo` element.”
 
+For code blocks—that is, one or more code lines that are separate from body text—place a line of three back ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per “tab.” An example follows.
 
-For blocks of code, use three back ticks (```). Do not use tab characters in code; instead, enter three spaces per “tab.” An example follows.
+```
+src = new File(argv[2], "r");
+dst = new File(argv[3], "w");
+while (buf = src.getLine())
+	dst.putLine(buf.toLowercase());
+```  
+Show missing code (omitted for brevity) with `...`; this notation is acceptable on a line by itself (appropriately indented) or within a line, as in the following example.
 
+```
+<header> ... </header>
+```
+<!--From CR: This next bit needs reexamining/updating for Markdown. -->
+Code will occasionally have a heading above it (for example, to distinguish its context from that of a similar example that follows immediately. Make such headings level 5 (as illustrated below).
 
-	src = new File(argv[2], "r");
-	dst = new File(argv[3], "w");
-	while (buf = src.getLine())
-      dst.putLine(buf.toLowercase());
+#####AppBehaviors.js  
+```
+//@module   
+var CB = require("SharedBehaviors");
+```
 
-   
-Show missing code (omitted for brevity) with “...”; this notation is acceptable on a line by itself (appropriately indented) or within a line, as in the following example.
-
-	<header> ... </header>
-
-<!-- This next bit needs reexamining/updating for Markdown. -->
-Where code appears with a heading above it (as shown below, for instance), use Code Line for all code lines, even the first line.
-
-**Example (Heading 5)**  
-
-`xsResult = xsParse(aFile, fgetc, aPath, aLine /* Code Line */`   
-> `sSourceFlag | xsNoErrorFlag | xsNoWarningFlag); /* Code Line */`   
-
-         
 Reference sections typically describe many different code entities, using special context-specific formats that are too numerous to describe here; for more information, see the section “Applying the Formats.”
 
-
-###2.4	Figures
+###Figures
 Format figures and their captions as shown below. Create (or crop) all figures so that there’s no blank space on any of the four sides.
-
 
 **Figure 1.** Figure Caption Goes Here  
 ![](http://kinoma.com/create/img/open-sensor-illus.png)
    
 When adding a figure, remember to also update the numbering of any figures past that point in the document.
 
-
-###2.5	Tables
+###Tables
 To create a table, use the following as a starting point. In (relatively rare) cases where a caption is not appropriate, precede the table with a blank paragraph in the Normal style.
 
 
@@ -115,53 +127,39 @@ To create a table, use the following as a starting point. In (relatively rare) c
 | Table entry	 | Table entry	  |
 | Table entry	 | Table entry	  |  
 
-
-
 When adding a table, remember to also update the numbering of any figures past that point in the document.
 
-
-##3	Applying the Formats
+##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
 
+**Document Title: Context**
 
-###Document Title: Context
 These examples from existing documents may also help with figuring out how to apply the styles in other, similar contexts.
 
-
-###3.1	*KinomaJS JavaScript API Reference:* Object Reference
+###*KinomaJS JavaScript API Reference:* Object Reference
 The *KinomaJS JavaScript API Reference* document describes JavaScript objects in subsections like those shown here (although with different-level heads).
 
-
-**Important:** Before creating subsections like these, be sure to read the current introduction to the object reference section of *KinomaJS* JavaScipt API *Reference*; the content of your descriptions should be consistent with what it says.
+**_Important:_** Before creating subsections like these, be sure to read the current introduction to the object reference section of *KinomaJS* JavaScipt API *Reference*; the content of your descriptions should be consistent with what it says.
 Here are some general rules for what not to do when writing descriptions in this Reference document:
 
+* Do not refer to the *KinomaJS Overview* document; all the basic information (without much elaboration) should be in the reference subsection itself. 
 
-•	Do not refer to the *KinomaJS Overview* document; all the basic information (without much elaboration) should be in the reference subsection itself. 
+* Do not state any default that’s being assumed per the introduction to the Reference section (see in particular **Default values** and **Pixels** in the introduction). 
 
+* Do not include graphics or code examples. 
 
-•	Do not state any default that’s being assumed per the introduction to the Reference section (see in particular **Default values** and **Pixels** in the introduction). 
-
-
-•	Do not include graphics or code examples. 
-
-
-####3.1.1	Object-Name Object
+####Object-Name Object
 [Optional] Full sentences *briefly* describing the object and/or providing other details about the object. If what the object represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the *KinomaJS Overview* document). Try to keep it no longer than one short paragraph.
 
-
 Next, include only whichever of the following lower-level sections apply. The style of the first paragraph after every heading below is called Reference; names of other styles not previously introduced are explicitly noted. Square brackets indicate optional parts within subsections, to include only if applicable.
-
 
 **Coordinates**  
 Full sentences providing coordinates information.
 
-
 **Object Description**  
 Object inherits from Other-object-name.protoype.
 
-
 [Object is sealed.]
-
 
 The **Object Description** section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for **Prototype Description**, later, but without the `.prototype.`
 
@@ -202,7 +200,7 @@ Returns
 > Some Constructor Description subsections also describe value properties; see Prototype Description, next, for the format of value property descriptions.
 
 **Prototype Description**  
-Prototype inherits from `Other-object-name.protoype.`
+Prototype inherits from `Other-object-name.prototype.`
 
 [Instances are sealed [and volatile].]
 
@@ -280,10 +278,10 @@ where the two headings and the heading number are Word cross-references.
 Event description, as:  
 This event happens when ….
 
-###3.2	KinomaJS XML API Reference: XML Element Reference
+###KinomaJS XML API Reference: XML Element Reference
 The *KinomaJS XML* API Reference document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
 
-####3.2.1	Element-Name Element
+####Element-Name Element
 [Optional] Full sentences *briefly* describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the *KinomaJS Overview* document). Try to keep it no longer than one short paragraph.
 
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable.
@@ -335,12 +333,12 @@ List attribute names in alphabetical order.
 **CDATA**
 The words “JavaScript code” [optionally followed by further description]
 
-###3.3	XS: XS Elements
+###XS: XS Elements
 In the *XS* document, XS elements are typically first discussed in a tutorial manner, with usage guidance and examples, and then described in a manner appropriate for later reference. The formatting used for each of these presentation types is discussed here.
 
 To the extent reasonable, the section heading for a tutorial discussion should be explanatory (such as “Defining Build Targets”), whereas the heading for a reference section should be the element name (as in “xs:target”).
 
-####3.3.1	Discussing XS Elements
+####Discussing XS Elements
 In sections discussing XS property elements and the like (including patterns), examples are organized under the following Heading 5 heads:
 
 - **Grammar** — The grammar itself.
@@ -372,7 +370,7 @@ An example follows.
 
 `{ r: 255, g: 128, b: 0 }`
 
-####3.3.2	 XS Element Reference
+#### XS: Element Reference
 In sections in the XS document that describe XS elements and the like for reference purposes, a brief description of the element is followed by information under the following Heading 5 heads:
 
 - Attributes — All the attributes of the element along with an indication of whether they are required, optional, or inherited from the prototype of the instance that owns the property. If optional and a default value applies, or if inherited but there is no prototype, the default value is shown.
@@ -402,12 +400,12 @@ None (or enter a description if applicable)
 
 None (or enter a description if applicable)
 
-###3.4	*XS Chunks:* ECMAScript Objects
+###*XS Chunks:* ECMAScript Objects
 In the *XS Chunks* document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in section 3.4, “*XS*: XS Elements”; the constructor and prototype are documented as shown here. 
 
-Note: A more advisable format has since evolved for describing constructors and prototypes; see section 3.1, “*KinomaJS Reference*: KinomaJS Object Reference.”
+**Note:** A more advisable format has since evolved for describing constructors and prototypes; see section 3.1, “*KinomaJS Reference*: KinomaJS Object Reference.”
 
-####3.4.1	Constructor Description
+####3Constructor Description
 After a brief introduction to the constructor, all forms of the constructor are listed and described as illustrated below.
 
 `Object()`  
@@ -419,7 +417,7 @@ After a brief introduction to the constructor, all forms of the constructor are 
 **Example**  
 `/* An example (or examples) if applicable. \*/`
 
-####3.4.2	Prototype Description
+####Prototype Description
 After a brief introduction to the prototype, all properties of the prototype are listed and described as illustrated below.
 
 `Object.prototype.value-property`  
@@ -431,7 +429,7 @@ After a brief introduction to the prototype, all properties of the prototype are
 **Example**  
 `/* An example (or examples) if applicable. \*/`
 
-###3.5	*XS in C:* C API
+###*XS in C:* C API
 This section describes the formatting used to present C macros in the document XS in C.
 
 After a brief introduction to the macro, parameters of the macro (if any) are listed and described as shown below.
@@ -455,10 +453,10 @@ Additional discussion of the macro sometimes follows (in the Normal style), and 
 
 If this structure needs to be extended for other C API documentation, consider adding Heading 5 heads (such as a “See also” head) to introduce additional types of information.
 
-##4	Glossary
+##Glossary
 In any document where reasonable, end with a Glossary section in which each item has the following format. (No introductory text is needed, so delete this paragraph in the actual document.)
-#####glossary item (Heading 5)
-> Definition. (Explanation style)
+#####glossary item (#####)
+> Definition. (>)
 
 ---
 Copyright © 2015 Marvell. All rights reserved.
