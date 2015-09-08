@@ -2,14 +2,13 @@
 
 ##About This Document
 This document provides a starting point for creating drafts of Kinoma technical documentation in the proper Markdown format.
+The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts.
 
-The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts, such as in the Object Reference section of the _KinomaJS JavaScript API Reference_ document.
+If starting from scratch, please work from a copy of this document, retaining the original for later reference; in the copy, delete whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
 
-**Note:** Writers of documents in the KinomaJS documentation suite should be sure to also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format.
+See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or ediytorial style.
 
-If starting from scratch, you should work from a copy of this document, retaining the original for later reference. In the copy, delete whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
-
-This document assumes you already know how to use Markdown.
+For more details about Markdown, see its documentation on the web. Note that there are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
 
 ##Section Heading (##)
 Since # (level-1 heading) is used for the title of the document, the headings within the document start at level 2.
@@ -27,26 +26,29 @@ Use the style for a level-5 heading for headings on code examples, glossary entr
 ###Body Text
 Paragraphs within sections have no special formatting. 
 
-####Indentation (>)
-Use blockquote for indentation, as done here:  
-
-> Markdown's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
-
 ####Italic (_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example.
 
 >A _host object_ is a special kind of object with data that can be directly accessed only in C.
 
 ####Bold (**)
-Use double asterisks for bold, including in Notes (as shown below) and when referring to a user interface element, as in “Press **Menu**.”
+Use double asterisks for bold—for example, when referring to a user interface element as in “Press **Menu**.”
 
-**Note:** This is how Notes should be formatted.
+###Indentation (>)
+Use blockquote for indentation, as done here:  
 
-Use Notes like the one above for incidental, noncritical information; to emphasize important, critical information, use the following format:
+> Markdown's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
+
+###Special Notes
+Use Notes like the one below for incidental, noncritical information.
+
+**Note:** This is how incidental, non critical Notes should be formatted.
+
+To emphasize important, critical information, use the following format:
 
 **_Important:_** To emphasize important, critical information, use this format.
 
-###Lists
+###Lists (* and N.)
 Precede each item in a bulleted list with an asterisk, and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
 
 If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
