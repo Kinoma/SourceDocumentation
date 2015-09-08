@@ -111,7 +111,7 @@ Code will occasionally have a heading above it (for example, to distinguish its 
 var CB = require("SharedBehaviors");
 ```
 
-Reference sections typically describe many different code entities, using special context-specific formats that are too numerous to describe here; for more information, see the section “Applying the Formats.”
+Reference sections typically describe many different code entities, using special context-specific formats that are too numerous to describe here; for more information, see the section “[Applying the Formats](#applying-the-formats).”
 
 ###Figures
 Format figures and their captions as shown below. It's not necessary to include numbers and captions where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step just described. 
@@ -161,17 +161,17 @@ Here are some general rules for what not to do when writing descriptions in this
 
 Next, include only whichever of the following lower-level sections apply. The style of the first paragraph after every heading below is called Reference; names of other styles not previously introduced are explicitly noted. Square brackets indicate optional parts within subsections, to include only if applicable.
 
-**Coordinates**  
+#####Coordinates  
 Full sentences providing coordinates information.
 
-**Object Description**  
+#####Object Description  
 Object inherits from Other-object-name.protoype.
 
 [Object is sealed.]
 
 The **Object Description** section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for **Prototype Description**, later, but without the `.prototype.`
 
-**Constructor Description**  
+#####Constructor Description  
 Object-name(param1, param2)  
 
 ||||
@@ -207,7 +207,7 @@ Returns
 
 > Some Constructor Description subsections also describe value properties; see Prototype Description, next, for the format of value property descriptions.
 
-**Prototype Description**  
+#####Prototype Description  
 Prototype inherits from `Other-object-name.prototype.`
 
 [Instances are sealed [and volatile].]
@@ -258,11 +258,12 @@ Describe function properties in this format:
 
 > Omit the description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
 
-**Events**  
-[Same events as for other-object-name instances (cross-reference)[, plus:]]  
+#####Events  
+[Same events as for other-object-name instances (cross-reference)[, plus:]]
+
 The cross-reference in parentheses above has this format:
 
-> see “Events” in the section “Other-object-name Object”
+> see “Events” in the section “[Other-object-name Object](#other-object-name-object).”
 
 where the two headings and the heading number are Word cross-references.
 `name(param1, param2)`
@@ -294,10 +295,10 @@ The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/)
 
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable.
 
-**Tag** 
+#####Tag 
 `name`
 
-**Attributes**  
+#####Attributes  
 
 ||||
 | --- | --- | --- |
@@ -319,7 +320,7 @@ If “required \*” (which indicates that a related note follows), add a line b
 
 List attribute names in alphabetical order.
 
-**Elements**
+#####Elements
 
 ||||
 | --- | --- | --- |
@@ -338,25 +339,29 @@ List attribute names in alphabetical order.
 
 > Several elements that have the same explanation may be grouped together, with only that one explanation following all of them.
 
-**CDATA**
+#####CDATA
 The words “JavaScript code” [optionally followed by further description]
 
-###XS: XS Elements
-In the *XS* document, XS elements are typically first discussed in a tutorial manner, with usage guidance and examples, and then described in a manner appropriate for later reference. The formatting used for each of these presentation types is discussed here.
+###_XS_: XS Elements
+<!--From CR: Make refs to _XS_ doc in this section be links?-->
+In the _XS_ document, XS elements are typically first discussed in a tutorial manner, with usage guidance and examples, and then described in a manner appropriate for later reference. The formatting used for each of these presentation types is discussed here.
 
 To the extent reasonable, the section heading for a tutorial discussion should be explanatory (such as “Defining Build Targets”), whereas the heading for a reference section should be the element name (as in “xs:target”).
 
 ####Discussing XS Elements
-In sections discussing XS property elements and the like (including patterns), examples are organized under the following Heading 5 heads:
+In sections discussing XS property elements and the like (including patterns), examples are organized under the following level 5 headings:
 
-- **Grammar** — The grammar itself.
-- **Prototype** — The ECMAScript instructions corresponding to what the grammar prototypes. This and the grammar take the form of code in XML and ECMAScript. For the sake of terseness, the XML declarations and the `package` elements are omitted.
-- **XML document** — An XML document that conforms to the grammar (present only if applicable).
-- **Instance** — The ECMAScript expression corresponding to what the grammar instantiates from the XML document when the document is parsed (present only if applicable). This and the XML document are provided only to explain what the grammar prototypes and instantiates. They are not examples of code; sometimes they are just comments because ECMAScript has no corresponding instructions or expressions.
+* **Grammar** — The grammar itself.
+
+* **Prototype** — The ECMAScript instructions corresponding to what the grammar prototypes. This and the grammar take the form of code in XML and ECMAScript. For the sake of terseness, the XML declarations and the `package` elements are omitted.
+
+* **XML document** — An XML document that conforms to the grammar (present only if applicable).
+
+* **Instance** — The ECMAScript expression corresponding to what the grammar instantiates from the XML document when the document is parsed (present only if applicable). This and the XML document are provided only to explain what the grammar prototypes and instantiates. They are not examples of code; sometimes they are just comments because ECMAScript has no corresponding instructions or expressions.
 
 An example follows.
 
-**Grammar**
+#####Grammar
 
 ```
 <object name="colorIO">
@@ -366,30 +371,36 @@ An example follows.
 <custom name="color" value="#000000" pattern="/color" io="colorIO"/>
 ```
 
-**Prototype**
+#####Prototype
 
-`color = { r: 0, g: 0, b: 0 }`
+```
+color = { r: 0, g: 0, b: 0 }`
+```
 
-**XML document**
+#####XML document
 
-`<color>#FF8000</color>`
+```
+<color>#FF8000</color>`
+```
 
 **Instance**
 
-`{ r: 255, g: 128, b: 0 }`
+```
+{ r: 255, g: 128, b: 0 }`
+```
 
-#### XS: Element Reference
-In sections in the XS document that describe XS elements and the like for reference purposes, a brief description of the element is followed by information under the following Heading 5 heads:
+####XS Element Reference
+In sections in the _XS_ document that describe XS elements and the like for reference purposes, a brief description of the element is followed by information under the following level 5 headings:
 
-- Attributes — All the attributes of the element along with an indication of whether they are required, optional, or inherited from the prototype of the instance that owns the property. If optional and a default value applies, or if inherited but there is no prototype, the default value is shown.
+* **Attributes** — All the attributes of the element along with an indication of whether they are required, optional, or inherited from the prototype of the instance that owns the property. If optional and a default value applies, or if inherited but there is no prototype, the default value is shown.
 
-- Elements — Which elements, if any, this element can contain.
+* **Elements** — Which elements, if any, this element can contain.
 
-- Text — What text, if any, the element can (or must) contain.
+* **Text** — What text, if any, the element can (or must) contain.
 
 The information below these heads is formatted as illustrated below.
 
-**Attributes**
+#####Attributes
 
 `attribute1,` required  
 > Explanation here. (The line above has the Code Entry paragraph style; the Body Text Char style is used to change characters in such lines to the body text font where needed.)
@@ -400,20 +411,21 @@ The information below these heads is formatted as illustrated below.
 `attribute2,` inherited, default=""
 > Explanation here.
 
-**Elements**
+#####Elements
 
 None (or enter a description if applicable)
 
-**Text**
+#####Text
 
 None (or enter a description if applicable)
 
-###*XS Chunks:* ECMAScript Objects
-In the *XS Chunks* document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in section 3.4, “*XS*: XS Elements”; the constructor and prototype are documented as shown here. 
+###_XS Chunks:_ ECMAScript Objects
+In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section “*XS*: XS Elements”; the constructor and prototype are documented as shown here. 
 
-**Note:** A more advisable format has since evolved for describing constructors and prototypes; see section 3.1, “*KinomaJS Reference*: KinomaJS Object Reference.”
+<!--Link below not working; to be explored/fixed.-->
+**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section “[_KinomaJS Reference_: KinomaJS Object Reference](KinomaJS-Reference-:-KinomaJS-Object Reference).”
 
-####3Constructor Description
+####Constructor Description
 After a brief introduction to the constructor, all forms of the constructor are listed and described as illustrated below.
 
 `Object()`  
@@ -422,7 +434,7 @@ After a brief introduction to the constructor, all forms of the constructor are 
 `Object(param)`  
 > Explanation of the function and its parameter(s).
 
-**Example**  
+#####Example  
 `/* An example (or examples) if applicable. \*/`
 
 ####Prototype Description
@@ -434,11 +446,11 @@ After a brief introduction to the prototype, all properties of the prototype are
 `Object.prototype.function-property(param)`  
 > Explanation of the function and its parameter(s).
 
-**Example**  
+#####Example  
 `/* An example (or examples) if applicable. \*/`
 
-###*XS in C:* C API
-This section describes the formatting used to present C macros in the document XS in C.
+###_XS in C:_ C API
+This section describes the formatting used to present C macros in the document _XS in C._
 
 After a brief introduction to the macro, parameters of the macro (if any) are listed and described as shown below.
 
@@ -454,15 +466,16 @@ After a brief introduction to the macro, parameters of the macro (if any) are li
 
 In cases where the first column in the Parameter Def style is not wide enough, the indents or tabs are adjusted accordingly in those lists.
 
-Additional discussion of the macro sometimes follows (in the Normal style), and an example formatted as shown below may also be provided.
+Additional discussion of the macro sometimes follows (in the normal body text style), and an example formatted as shown below may also be provided.
 
-**Example**
+#####Example
 `/* Include example if applicable. */`
 
-If this structure needs to be extended for other C API documentation, consider adding Heading 5 heads (such as a “See also” head) to introduce additional types of information.
+If this structure needs to be extended for other C API documentation, consider adding level 5 headings (such as a “See also” heading) to introduce additional types of information.
 
 ##Glossary
 In any document where reasonable, end with a Glossary section in which each item has the following format. (No introductory text is needed, so delete this paragraph in the actual document.)
+
 #####glossary item (#####)
 > Definition. (>)
 
