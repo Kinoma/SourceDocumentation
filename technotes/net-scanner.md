@@ -52,4 +52,4 @@ Having explored the services available on your Wi-Fi network using Net Scanner, 
 
 [**zeroconf**](https://github.com/Kinoma/KPR-examples/tree/master/zeroconf) This application shows how to use Zeroconf to discover network services, such as web servers, available on your local network. It also shows how to use Zeroconf to advertise a simple http server available inside your project.
 
-**Note**: If you don’t have two Kinoma Create devices available yet to run these client server samples, you can run one of them on your Kinoma Create and the other on the Kinoma Create simulator in Kinoma Studio. Just make sure they are both on the same Wi-Fi network and there is no firewall on your computer shielding the Kinoma Create simulator.
+> Note: If you don’t have two Kinoma Create devices available yet to run these client server samples, you can run one of them on your Kinoma Create and the other on the Kinoma Create simulator in Kinoma Studio. Just make sure they are both on the same Wi-Fi network and there is no firewall on your computer shielding the Kinoma Create simulator.
