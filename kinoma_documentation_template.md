@@ -70,7 +70,8 @@ Items in a list would ideally be only one paragraph long, but in some cases an i
 ###Cross-References and Links
 For cross-references to section headings and titles or figures or tables, use the format shown in this example:
 
-> See the section “Applying the Formats.”
+<!-- Anchor links (links on the same page) can easily be made to any header items (items with one or more # in front). All headers are possible targets. The format is [the text you show as linkable](#the-header). The words after the pound sign are the exact header with dashes where any spaces were. Link is not case sensitive. It will link to the first header with that exact name -->
+> See the section “[Applying the Formats](#applying-the-formats).” 
 
 When changing the wording of any heading, be sure to check for and change any cross-references to it.
 
