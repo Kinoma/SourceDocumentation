@@ -53,7 +53,7 @@ Use Notes formatted like the one below (including the indentation) for incidenta
 To emphasize important, critical information, use the format illustrated below (again including the indentation).
 
 <!-- From CR: I had trouble making just "Important:" show up in red. Can you help?-->
->**_Important:_** To emphasize important, critical information, use this format.
+><span style="color: red">**_Important:_**</span> To emphasize important, critical information, use this format.  
 
 ###Lists (- and N.)
 Precede each item in a bulleted list with a hyphen (followed by a space) and in an ordered (numbered) list with "N. ", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
@@ -258,11 +258,11 @@ Omit the description if the function is self-explanatory—in particular, if all
 #####Events  
 [Same events as for `other-object-name` instances (cross-reference)[, plus:]]
 
-The cross-reference in parentheses above has this format:
+> The cross-reference in parentheses above has this format:
 
-see "Events" in the section "[Other-object-name Object](#other-object-name-object)."
+> see "Events" in the section "[Other-object-name Object](#other-object-name-object)."
 
-where the section heading in the cross-reference is a link.
+> where the section heading in the cross-reference is a link.
 
 `name(param1, param2)`
 
