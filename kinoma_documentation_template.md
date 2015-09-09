@@ -8,7 +8,7 @@ If starting from scratch, please work from a copy of this document, deleting wha
 
 <!--From CR: The doc titles in the next paragaph should be links—but what are the appropriate URLs?-->
 
-See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or ediytorial style.
+See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or editorial style.
 
 For more details about Markdown, see its documentation on the web. Note that there are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
 
@@ -19,6 +19,7 @@ Since # (level-1 heading) is used for the title of the document, the headings wi
 Content of subsection follows here.
 
 <!-- From CR: Can you make the line across the page for level 5 headings less faint? I'd like to see what that looks like. (Note, I've added that heading in many places where you were just using bold before.)-->
+
 ####Sub-subsection Heading (####)
 
 Unless absolutely necessary, subsections should not go lower than this level. 
@@ -31,7 +32,7 @@ Paragraphs within sections have no special formatting. The sections below descri
 
 Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) (though they will look straight in GitHub's preview). One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you'll see in numerous places in this template.
 
-####Italic (_)
+####Italic (\_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example:
 
 > A _host object_ is a special kind of object with data that can be directly accessed only in C.
