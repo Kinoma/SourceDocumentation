@@ -17,6 +17,7 @@ Since # (level-1 heading) is used for the title of the document, the headings wi
 ###Subsection Heading (###)
 Content of subsection follows here.
 
+<!-- From CR: I'd prefer that you remove the faint gray line across the page for the level 5 heading and  make it plain bold rather than extra-bold, because it should be more understated than that. IMO just a blank line above and plain bold is more appropriate.-->
 ####Sub-subsection Heading (####)
 
 Unless absolutely necessary, subsections should not go lower than this level. 
@@ -28,7 +29,7 @@ Use a level-5 heading for occasional headings on code examples, terms in the glo
 Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
 
 <!-- From CR: Is Option-Shift-hyphen (below) Mac-specific? If so, I'll qualify as such.-->
-Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), stick with the basic ASCII character set—that is, what you get by default in Markdown. This means, for example, using "straight" quotation marks (" and ') rather than the "curly" kind (“ ” and ‘ ’) that were the default in Mirosoft Word. One exception is the em dash (—, typed with Option-Shift-hyphen), as you'll see in numerous places in this template.
+Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), stick with the basic ASCII character set—that is, what you get by default in Markdown. This means, for example, using "straight" quotation marks (" and ') rather than the "curly" kind (“ ” and ‘ ’) that were the default in Mirosoft Word. One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you'll see in numerous places in this template.
 
 ####Italic (_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example:
@@ -55,8 +56,8 @@ Use Notes formatted like the one below (including the indentation) for incidenta
 
 To emphasize important, critical information, use the format illustrated below (again including the indentation).
 
-<!-- From CR: "Important:" is not showing up in red in Preview. To do: Look at it in web output. -->
-> <span style="color: red">**_Important:_**</span> To emphasize important, critical information, use this format.  
+<!-- From CR: FYI, the red doesn't show up in Markdown's preview. -->
+> <span style="color: red">**_Important:_** To emphasize important, critical information, use this format.</span>  
 
 ###Lists (- and N.)
 Precede each item in a bulleted list with a hyphen (followed by a space) and in an ordered (numbered) list with "N. ", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
