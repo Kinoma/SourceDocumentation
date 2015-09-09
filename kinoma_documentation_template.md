@@ -25,9 +25,10 @@ Unless absolutely necessary, subsections should not go lower than this level.
 Use a level-5 heading for occasional headings on code examples, terms in the glossary, and the like. (Examples follow later.)
 
 ###Body Text
-Paragraphs within sections have no special formatting. Formatting for certains characters within text are described in the sections below.
+Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
 
-Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), go with the basic ASCII character set—that is, what you get by default in Markdown. This means, for example, using "straight" quotation marks (" and ') rather than the "curly" kind (“” and ‘’) that were the default in Mirosoft Word. One exception is the em dash (—, typed with Option-Shift-hyphen), as you'll see in numerous places in this template.
+<!-- From CR: Is Option-Shift-hyphen (below) Mac-specific? If so, I'll qualify as such.-->
+Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), stick with the basic ASCII character set—that is, what you get by default in Markdown. This means, for example, using "straight" quotation marks (" and ') rather than the "curly" kind (“ ” and ‘ ’) that were the default in Mirosoft Word. One exception is the em dash (—, typed with Option-Shift-hyphen), as you'll see in numerous places in this template.
 
 ####Italic (_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example:
@@ -54,7 +55,7 @@ Use Notes formatted like the one below (including the indentation) for incidenta
 
 To emphasize important, critical information, use the format illustrated below (again including the indentation).
 
-<!-- From CR: I had trouble making just "Important:" show up in red. Can you help?-->
+<!-- From CR: "Important:" is not showing up in red in Preview. To do: Look at it in web output. -->
 > <span style="color: red">**_Important:_**</span> To emphasize important, critical information, use this format.  
 
 ###Lists (- and N.)
@@ -93,7 +94,7 @@ When changing the wording of any heading, check for references to it in the docu
 ###Code (`)
 For the "computer voice" font within body text, use back-ticks (\`). For example, refer to an element named `foo` as "the `foo` element."
 
-For code blocks—that is, one or more code lines that are separate from body text—place a line of three back ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per “tab.” An example (using the tab character) follows.
+For code blocks—that is, one or more code lines that are separate from body text—place a line of three back-ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per "tab." An example (using the tab character) follows.
 
 ```
 src = new File(argv[2], "r");
@@ -347,8 +348,9 @@ Several elements that have the same explanation may be grouped together, with on
 The words “JavaScript code” [optionally followed by further description]
 
 ###_XS_: XS Elements
-<!--From CR: Make refs to _XS_ doc in this section be links?-->
 In the _XS_ document, XS elements are typically first discussed in a tutorial manner, with usage guidance and examples, and then described in a manner appropriate for later reference. The formatting used for each of these presentation types is discussed here.
+
+>**Note:** None of the XS documents have been publicly posted yet.
 
 To the extent reasonable, the section heading for a tutorial discussion should be explanatory (such as "Defining Build Targets"), whereas the heading for a reference section should be the element name (as in "xs:target").
 
@@ -436,7 +438,7 @@ None (or enter a description if applicable)
 In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "_XS_: XS Elements"; the constructor and prototype are documented as shown here. 
 
 <!--Link below not working; to be explored/fixed.-->
-**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section “[_KinomaJS Reference_: KinomaJS Object Reference](KinomaJS-Reference-:-KinomaJS-Object Reference).”
+**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section “[_KinomaJS Reference_: KinomaJS Object Reference](KinomaJS-Reference-KinomaJS-Object Reference).”
 
 ####Constructor Description
 After a brief introduction to the constructor, all forms of the constructor are listed and described as illustrated below.
