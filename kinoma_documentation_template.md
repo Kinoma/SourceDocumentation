@@ -157,7 +157,7 @@ Here are some general rules for what not to do when writing descriptions in this
 
 - Do not refer to the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document; all the basic information (without much elaboration) should be in the reference subsection itself. 
 
-- Do not state any default that’s being assumed per the introduction to the Reference section (see in particular **Default values** and **Pixels** in the introduction). 
+- Do not state any default that's being assumed per the introduction to the Reference section (see in particular **Default values** and **Pixels** in the introduction). 
 
 - Do not include graphics or code examples. 
 
@@ -321,7 +321,7 @@ Next, include only whichever of the following lower-level sections apply. Square
 
 > Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true,` ..."  
 
-> If "required \*" (which indicates that a related note follows), add a paragraph beginning with "* " that provides the note.  
+> If "required \*" (which indicates that a related note follows), add a paragraph beginning with "* " that provides the note.
 
 List attribute names in alphabetical order.
 
@@ -438,7 +438,7 @@ None (or enter a description if applicable)
 In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "_XS_: XS Elements"; the constructor and prototype are documented as shown here. 
 
 <!--Link below not working; to be explored/fixed.-->
-**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section “[_KinomaJS JavaScript API Reference_: Object Reference](KinomaJS-JavaScript-API-Reference-:-Object Reference).”
+**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference_: Object Reference](KinomaJS-JavaScript-API-Reference-:-Object Reference)."
 
 ####Constructor Description
 After a brief introduction to the constructor, all forms of the constructor are listed and described as illustrated below.
