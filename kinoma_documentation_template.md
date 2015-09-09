@@ -7,6 +7,7 @@ The formatting conventions are first described in general and then presented in 
 If starting from scratch, please work from a copy of this document, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
 
 <!--From CR: The doc titles in the next paragaph should be links—but what are the appropriate URLs?-->
+
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or ediytorial style.
 
 For more details about Markdown, see its documentation on the web. Note that there are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
