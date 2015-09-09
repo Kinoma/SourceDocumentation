@@ -291,7 +291,7 @@ Event description (without indentation), as:
 
 This event happens when ....
 
-###_KinomaJS XML API Reference:_ XML Element Reference
+###_KinomaJS XML API Reference:_ Element Reference
 The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/) document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
 
 ####Element-Name Element
@@ -438,7 +438,7 @@ None (or enter a description if applicable)
 In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "_XS_: XS Elements"; the constructor and prototype are documented as shown here. 
 
 <!--Link below not working; to be explored/fixed.-->
-**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section “[_KinomaJS Reference_: KinomaJS Object Reference](KinomaJS-Reference-KinomaJS-Object Reference).”
+**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section “[_KinomaJS JavaScript API Reference_: Object Reference](KinomaJS-JavaScript-API-Reference-:-Object Reference).”
 
 ####Constructor Description
 After a brief introduction to the constructor, all forms of the constructor are listed and described as illustrated below.
