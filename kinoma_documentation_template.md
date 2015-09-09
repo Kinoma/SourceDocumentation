@@ -17,7 +17,7 @@ Since # (level-1 heading) is used for the title of the document, the headings wi
 ###Subsection Heading (###)
 Content of subsection follows here.
 
-<!-- From CR: I'd prefer that you remove the faint gray line across the page for the level 5 heading and  make it plain bold rather than extra-bold, because it should be more understated than that. IMO just a blank line above and plain bold is more appropriate.-->
+<!-- From CR: Can you make the line across the page for level 5 headings less faint? I'd like to see what that looks like. (Note, I've added that heading in many places where you were just using bold before.)-->
 ####Sub-subsection Heading (####)
 
 Unless absolutely necessary, subsections should not go lower than this level. 
@@ -28,8 +28,7 @@ Use a level-5 heading for occasional headings on code examples, terms in the glo
 ###Body Text
 Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
 
-<!-- From CR: Is Option-Shift-hyphen (below) Mac-specific? If so, I'll qualify as such.-->
-Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), stick with the basic ASCII character set—that is, what you get by default in Markdown. This means, for example, using "straight" quotation marks (" and ') rather than the "curly" kind (“ ” and ‘ ’) that were the default in Mirosoft Word. One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you'll see in numerous places in this template.
+Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, excet in code, they will be converted to the "curly" kind (“ ” and ‘ ’) (though they will look straight in GitHub's preview). One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you'll see in numerous places in this template.
 
 ####Italic (_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example:
@@ -40,27 +39,27 @@ For emphasis and other uses of italic (including document titles), use underscor
 Use double asterisks for bold—for example, when referring to a user interface element as in "Press **Menu**."
 
 ####Escape Character (\\)
-To prevent Markdown from processing a character as a command, precede it with backslash (as done in the heading above).
+To prevent Markdown from processing a character as a command, precede the character with backslash (as done in the heading above). Do not use it in code, however, because everything typed as code it taken literally (not interpreted as a command).
 
 ###Indentation (>)
 Use blockquote for indentation, as done here:  
 
-> Markdown's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
+> GitHub's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
 
-Adding a space after the angle bracket makes the text stand out better as a blockquote (that is, in color) in Markdown.
+<!--! From CR re blockquote:  Blockequoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to be the normal spacing?-->
+Adding a space after the angle bracket makes the text stand out better as a blockquote in GitHub's edit view (making the quoted text appear in color).
 
 ###Special Notes
 Use Notes formatted like the one below (including the indentation) for incidental, noncritical information.
 
 > **Note:** This is how incidental, noncritical Notes should be formatted.
 
-To emphasize important, critical information, use the format illustrated below (again including the indentation).
+To emphasize important, critical information, use red as illustrated below (but note, the red with not show up in Markdown's preview). These should be very rare.
 
-<!-- From CR: FYI, the red doesn't show up in Markdown's preview. -->
-> <span style="color: red">**_Important:_** To emphasize important, critical information, use this format.</span>  
+> <span style="color: red">**Important:** To emphasize important, critical information, use this format.</span>  
 
 ###Lists (- and N.)
-Precede each item in a bulleted list with a hyphen (followed by a space) and in an ordered (numbered) list with "N. ", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1).
+Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hhyphen or "N." with a space.
 
 If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
 
@@ -86,9 +85,12 @@ When referring to another Kinoma document (or any Kinoma web page), do not expli
 
 If the title of any Kinoma document changes, check for references to it in other documents and update them.
 
-For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading (except not case-sensitive) with dashes where any spaces were. It will link to the first heading with that exact name.
+For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with dashes where any spaces were; excluding any punctuation in the heading and not case-sensitive. It will link to the first heading with that name.
 
 > See the section "[Applying the Formats](#applying-the-formats)." 
+
+<!-- From CR: Re note below, will any other punctuation screw it up?-->
+Note, however, that this will note work if the heading has a colon in it.
 
 When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
 
@@ -96,6 +98,8 @@ When changing the wording of any heading, check for references to it in the docu
 For the "computer voice" font within body text, use back-ticks (\`). For example, refer to an element named `foo` as "the `foo` element."
 
 For code blocks—that is, one or more code lines that are separate from body text—place a line of three back-ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per "tab." An example (using the tab character) follows.
+
+>**Note:** Even a single line of code should be formatted in this way, otherwise Markdown's highlighting within code will not appear.
 
 ```
 src = new File(argv[2], "r");
@@ -150,9 +154,7 @@ This section shows how the aforementioned styles (plus some others) are applied 
 These examples from existing documents may also help with figuring out how to apply the styles in other, similar contexts.
 
 ###_KinomaJS JavaScript API Reference:_ Object Reference
-The [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document describes JavaScript objects in subsections like those shown here (although with different-level heads).
-
-> **_Important:_** Before creating subsections like these, be sure to read the current introduction to the object reference section of the [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document; the content of your descriptions should be consistent with what it says.
+The [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document describes JavaScript objects in subsections like those shown here (although with different-level heads). Before creating subsections like these, be sure to read the current introduction to the object reference section of the [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/) document; the content of your descriptions should be consistent with what it says.
 
 Here are some general rules for what not to do when writing descriptions in this Reference document:
 
@@ -196,9 +198,10 @@ The **Object Description** section is currently used only for the application, D
 
 > Parameter details
 
+<!-- From CR: The web output for the following table illustrates the problem that when there is no entry in the third column, the `type` isn't lined up correctly. Note this wil also happen when the optional third entry is omitted in the param descriptions above. You alluded to another possible solution for this; can we take a look at that? -->
 ||||
 | --- | --- | --- |
-| Returns| `type`| &nbsp; |
+| Returns| `type`|  |
 
 > Return value details  
 
@@ -301,7 +304,9 @@ The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/)
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable. (Also note the special "Same as..." format currently used in some **Attributes** and **Elements** section in the document.)
 
 #####Tag 
-`name`
+||
+| --- |
+| `name` |
 
 #####Attributes  
 
@@ -320,7 +325,7 @@ Next, include only whichever of the following lower-level sections apply. Square
 
 > Sentence fragment[. Optional additional sentences.] 
 
-> Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true,` ..."  
+> Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true`, ..."  
 
 > If "required \*" (which indicates that a related note follows), add a paragraph beginning with "* " that provides the note.
 
@@ -381,19 +386,20 @@ An example follows.
 #####Prototype
 
 ```
-color = { r: 0, g: 0, b: 0 }`
+color = { r: 0, g: 0, b: 0 }
 ```
 
 #####XML document
 
+<!-- From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why? -->
 ```
-<color>#FF8000</color>`
+<color>#FF8000</color>
 ```
 
-**Instance**
+#####Instance
 
 ```
-{ r: 255, g: 128, b: 0 }`
+{ r: 255, g: 128, b: 0 }
 ```
 
 ####XS Element Reference
@@ -417,13 +423,13 @@ The information below these headings is formatted as illustrated below.
 
 ||||
 | --- | --- | --- |
-| `attribute2` | optional | default="" |
+| `attribute2` | optional | default=`"[whatever]"` |
 
 > Explanation here.
 
 ||||
 | --- | --- | --- |
-| `attribute3` | inherited | default="" |
+| `attribute3` | inherited | default=`"[whatever]"` |
 
 > Explanation here.
 
@@ -439,7 +445,7 @@ None (or enter a description if applicable)
 In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "_XS_: XS Elements"; the constructor and prototype are documented as shown here. 
 
 <!--Link below not working; to be explored/fixed.-->
-**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference_: Object Reference](KinomaJS-JavaScript-API-Reference-:-Object Reference)."
+>**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference:_ Object Reference](KinomaJS-JavaScript-API-Reference-Object-Reference)."
 
 ####Constructor Description
 After a brief introduction to the constructor, all forms of the constructor are listed and described as illustrated below.
@@ -465,7 +471,9 @@ After a brief introduction to the prototype, all properties of the prototype are
 > Explanation of the function and its parameter(s).
 
 #####Example  
-`/* An example (or examples) if applicable. \*/`
+```
+An example (or examples) if applicable.
+```
 
 ###_XS in C:_ C API
 This section describes the formatting used to present C macros in the document _XS in C._
