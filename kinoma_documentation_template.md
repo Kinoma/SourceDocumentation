@@ -28,7 +28,7 @@ Use a level-5 heading for occasional headings on code examples, terms in the glo
 ###Body Text
 Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
 
-Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, excet in code, they will be converted to the "curly" kind (“ ” and ‘ ’) (though they will look straight in GitHub's preview). One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you'll see in numerous places in this template.
+Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) (though they will look straight in GitHub's preview). One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you'll see in numerous places in this template.
 
 ####Italic (_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example:
@@ -41,22 +41,20 @@ Use double asterisks for bold—for example, when referring to a user interface 
 ####Escape Character (\\)
 To prevent Markdown from processing a character as a command, precede the character with backslash (as done in the heading above). Do not use it in code, however, because everything typed as code it taken literally (not interpreted as a command).
 
-###Indentation (>)
-Use blockquote for indentation, as done here:  
+###Notes and Other Indentation (>)
+Use Notes formatted like the one below—including blockquote (>) for indentation—for incidental, noncritical information.
 
-> GitHub's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
+> **Note:** Adding a space after the angle bracket makes the text stand out better as a blockquote in GitHub's edit view (making the quoted text appear in color). This is an example of how incidental, noncritical Notes should be formatted.
 
 <!--! From CR re blockquote:  Blockequoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to be the normal spacing?-->
-Adding a space after the angle bracket makes the text stand out better as a blockquote in GitHub's edit view (making the quoted text appear in color).
-
-###Special Notes
-Use Notes formatted like the one below (including the indentation) for incidental, noncritical information.
-
-> **Note:** This is how incidental, noncritical Notes should be formatted.
 
 To emphasize important, critical information, use red as illustrated below (but note, the red with not show up in Markdown's preview). These should be very rare.
 
 > <span style="color: red">**Important:** To emphasize important, critical information, use this format.</span>  
+
+Although uncommon (outside of reference sections), indentation can be useful for setting off things other than special notes. In such cases, just use blockquote by itself, as done here:  
+
+> GitHub's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
 
 ###Lists (- and N.)
 Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hhyphen or "N." with a space.
