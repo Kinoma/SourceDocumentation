@@ -2,9 +2,12 @@
 
 ##About This Document
 This document provides a starting point for creating drafts of Kinoma technical documentation in the proper Markdown format.
-The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts.
+The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts. 
 
-If starting from scratch, please work from a copy of this document, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
+<!-- From CR: Reword "post-processing" in the next paragraph? I wasn't sure what to call it other than that. -->
+Looking at this template in GitHub's edit view will show how the formatting in it was specified; looking at it in GitHub's preview will show a close approximation of the final web output, but the latter will look different in some places (as noted in the template), due to post-processing.
+
+If starting from scratch, please work from a copy of this template, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replacing stub or filler text with the appropriate text for the documentation you’re writing.
 
 <!--From CR: The doc titles in the next paragaph should be links—but what are the (ultimately) appropriate URLs?-->
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or editorial style.
@@ -146,7 +149,7 @@ To create a table, use the following as a starting point.
 
 When adding, deleting, or moving a table, remember to also update the numbering of any other affected tables.
 
-Especially in reference sections, it can be useful to arrange information in a simple columnar format, without a table caption or heading; the next section includes many examples of this.
+Especially in reference sections, it can be useful to arrange information in a simple columnar format, without a table caption or column heads; the next section includes many examples of this.
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
@@ -179,7 +182,7 @@ Object inherits from `Other-object-name.protoype`.
 
 [Object is sealed.]
 
-The "Object Description" ssection is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#Prototype-Description)," later, but without the `.prototype`.
+The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#Prototype-Description)," later, but without the `.prototype`.
 
 #####Constructor Description  
 `Object-name(param1, param2)`  
