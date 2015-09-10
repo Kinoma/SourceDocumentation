@@ -4,10 +4,11 @@
 This document provides a starting point for creating drafts of Kinoma technical documentation in the proper Markdown format.
 The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts. 
 
-<!-- From CR: Reword "post-processing" in the next paragraph? I wasn't sure what to call it other than that. -->
-Looking at this template in GitHub's edit view will show how the formatting in it was specified; looking at it in GitHub's preview will show a close approximation of the final web output, but the latter will look different in some places (as noted in the template), due to post-processing.
+Looking at this template in GitHub's edit view will show how the formatting in it was specified; looking at it in GitHub's preview will show a close approximation of the final web page, but the latter will look different in some places (as noted in the template) due to CSS styling.
 
 If starting from scratch, please work from a copy of this template, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replacing stub or filler text with the appropriate text for the documentation you’re writing.
+
+###Related Reading
 
 <!--From CR: The doc titles in the next paragaph should be links—but what are the (ultimately) appropriate URLs?-->
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or editorial style.
@@ -30,7 +31,7 @@ Use a level-5 heading for occasional headings on code examples, terms in the glo
 ###Body Text
 Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
 
-Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) (though they will look straight in GitHub's preview). One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you'll see in numerous places in this template.
+Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page (though they will look straight in GitHub's preview). One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you should enter as such (not as a hyphen, which is narrower).
 
 ####Italic (\_)
 For emphasis and other uses of italic (including document titles), use underscores, as in this example:
@@ -41,7 +42,7 @@ For emphasis and other uses of italic (including document titles), use underscor
 Use double asterisks for bold—for example, when referring to a user interface element as in "Press **Menu**."
 
 ####Escape Character (\\)
-To prevent Markdown from processing a character as a command, precede the character with backslash (as done in the heading above). Do not use it in code, however, because everything typed as code it taken literally (not interpreted as a command).
+To prevent Markdown from processing a character as a command, precede the character with backslash (as done in the heading above). Do not use it in code, however, because everything entered as code is taken literally (not interpreted as a command).
 
 ###Notes and Other Indentation (>)
 Use Notes formatted like the one below—including blockquote (>) for indentation—for incidental, noncritical information.
@@ -56,10 +57,10 @@ To emphasize important, critical information, use red as illustrated below (but 
 
 Although uncommon (outside of reference sections), indentation can be useful for setting off things other than special notes. In such cases, just use blockquote by itself, as done here:  
 
-> GitHub's preview will show blockquoted text in gray and with a bar in the margin, but post-processing will remove that in the final web output.
+> GitHub's preview will show blockquoted text in gray and with a bar in the margin, but CSS styling will remove that on the web page.
 
 ###Lists (- and N.)
-Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hhyphen or "N." with a space.
+Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space.
 
 If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
 
@@ -91,7 +92,7 @@ When referring to another Kinoma document (or any Kinoma web page), do not expli
 
 If the title of any Kinoma document changes, check for references to it in other documents and update them.
 
-For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with dashes where any spaces were; excluding any punctuation in the heading and not case-sensitive. It will link to the first heading with that name.
+For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with dashes where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
 
 > See the section "[Applying the Formats](#applying-the-formats)." 
 
@@ -100,9 +101,9 @@ When changing the wording of any heading, check for references to it in the docu
 ###Code (`)
 For the "computer voice" font within body text, use back-ticks (\`). For example, refer to an element named `foo` as "the `foo` element."
 
-For code blocks—that is, one or more code lines that are separate from body text—place a line of three back-ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per "tab." An example (using the tab character) follows.
+For code blocks—that is, one or more code lines that are separate from body text—place a line of three back-ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per "tab." An example (using the tab character) follows. Note that color highlighting in code will show up only on the web page and not in GitHub's preview.
 
->**Note:** Even a single line of code should be formatted in this way, otherwise Markdown's highlighting within code will not appear.
+>**Note:** Even a single line of code should be formatted this way (not with just single back-ticks around it on the same line), otherwise the color highlighting will not appear on the web page.
 
 ```
 src = new File(argv[2], "r");
@@ -139,7 +140,7 @@ When adding, deleting, or moving a captioned figure, remember to also update the
 ###Tables and Other Columnar Formats
 To create a table, use the following as a starting point.
 
-<!-- From CR: Do I understand correctly that you post-process tables differently so they'll look different in the web output depending on where they appear in the document? If so, please elborate. -->
+<!-- From CR: Do I understand correctly that tables  will look different on the web page depending on whether they're ordinary tables or used for special formatting in reference sections? If so, please elborate. -->
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** |
@@ -153,11 +154,11 @@ When adding, deleting, or moving a table, remember to also update the numbering 
 Especially in reference sections, it can be useful to arrange information in a simple columnar format, without a table caption or column heads; the next section includes many examples of this.
 
 ###Comments
-Comments from the writer or a reviewer of the document should be  placed above the paragraph that each comment refers to and  indicate who the comment is from, as in this example:
+Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from, as in this example:
 
 \<\!\-- From CR: Please check the following paragraph for accuracy. --\>
 
-The comments will of course be visible only in GitHub's edit view.
+The comments will of course be visible only in GitHub's edit view. (The example above has been "escaped" so as not to be interpreted as a comment.)
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
@@ -317,7 +318,7 @@ The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/)
 
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable. (Not shown here is the special "Same as..." format used in some "Attributes" and "Elements" section in the document.)
 
-> **Note:** The value in the "Tag" section below is formatted as a single-column table so that it will line up with the slight indentation of the (tabular) contents of the sections that follow.
+> **Note:** The value in the "Tag" section below is formatted as a single-column table so that it will line up with the slight indentation of the (tabular) contents of the sections that follow it.
 
 #####Tag 
 ||
@@ -377,7 +378,7 @@ In the _XS_ document, XS elements are typically first discussed in a tutorial ma
 To the extent reasonable, the section heading for a tutorial discussion should be explanatory (such as "Defining Build Targets"), whereas the heading for a reference section should be the element name (as in "xs:target").
 
 ####Discussing XS Elements
-In sections discussing XS property elements and the like (including patterns), examples are organized under the following level 5 headings:
+In sections discussing XS property elements and the like (including patterns), examples are organized under the following level-5 headings:
 
 - **Grammar** — The grammar itself.
 
@@ -415,7 +416,7 @@ color = { r: 0, g: 0, b: 0 }
 ```
 
 ####XS Element Reference
-In sections in the _XS_ document that describe XS elements and the like for reference purposes, a brief description of the element is followed by information under the following level 5 headings:
+In sections in the _XS_ document that describe XS elements and the like for reference purposes, a brief description of the element is followed by information under the following level-5 headings:
 
 - **Attributes** — All the attributes of the element along with an indication of whether they are required, optional, or inherited from the prototype of the instance that owns the property. If optional and a default value applies, or if inherited but there is no prototype, the default value is shown.
 
@@ -509,7 +510,7 @@ Additional discussion of the macro sometimes follows (in the normal body text st
 Include example if applicable.
 ````
 
-If this structure needs to be extended for other C API documentation, consider adding level 5 headings (such as a "See also" heading) to introduce additional types of information.
+If this structure needs to be extended for other C API documentation, consider adding level-5 headings (such as a "See also" heading) to introduce additional types of information.
 
 ##Glossary
 In any document where reasonable, end with a "Glossary" section in which each item has the following format. (No introductory text is needed, so delete this paragraph in the actual document.)
