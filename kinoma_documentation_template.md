@@ -10,7 +10,7 @@ If starting from scratch, please work from a copy of this template, deleting wha
 
 ###Related Reading
 
-<!--From CR: The doc titles in the next paragaph should be links—but what are the (ultimately) appropriate URLs?-->
+<!-- From CR: The doc titles in the next paragaph should be links—but what are the (ultimately) appropriate URLs? -->
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or editorial style.
 
 For more details about Markdown, see its documentation on the web. Note that there are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
