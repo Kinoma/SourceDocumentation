@@ -139,6 +139,7 @@ When adding, deleting, or moving a captioned figure, remember to also update the
 ###Tables and Other Columnar Formats
 To create a table, use the following as a starting point.
 
+<!-- From CR: Do I understand correctly that you post-process tables differently so they'll look different in the web output depending on where they appear in the document? If so, please elborate. -->
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** |
@@ -150,6 +151,13 @@ To create a table, use the following as a starting point.
 When adding, deleting, or moving a table, remember to also update the numbering of any other affected tables.
 
 Especially in reference sections, it can be useful to arrange information in a simple columnar format, without a table caption or column heads; the next section includes many examples of this.
+
+###Comments
+Comments from the writer or a reviewer of the document should be  placed above the paragraph that each comment refers to and  indicate who the comment is from, as in this example:
+
+\<\!\-- From CR: Please check the following paragraph for accuracy. --\>
+
+The comments will of course be visible only in GitHub's edit view.
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
@@ -227,6 +235,9 @@ After the text shown above, describe all the value properties and function prope
 
 Describe value properties in this format:
 
+<!-- From CR: Note, adding a heading below for every value property is a big change, which (as I mentioned in an earlier email) is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think? -->
+`Object-name.prototype.property-name`
+
 ||||
 | --- | --- | --- |
 | `Object-name.prototype.property-name` | `type`| [read only] |
@@ -237,7 +248,6 @@ Describe value properties in this format:
 
 > Exception: Whenever possible, describe a boolean with a complete sentence beginning with "If `true`,"  
 
-<!-- From CR: Ideally the properties would all align the same on the left, but, as currently set forth in this template, the value properties will be indented a bit because they're in a table. Is this something we'll have to live with? -->
 Describe function properties in this format:
 
 `Object-name.prototype.function-name(param1, param2)`
