@@ -9,7 +9,7 @@ Looking at this template in GitHub's edit view will show how the formatting in i
 If starting from scratch, please work from a copy of this template, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replacing stub or filler text with the appropriate text for the documentation you’re writing.
 
 <!-- From CR: The doc titles in the next paragaph should be links—but what are the (ultimately) appropriate URLs? -->
-See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or editorial style.
+See also the editorial style guidelines in the _Kinoma Documentation Style Sheet._ Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide,_ which focuses on the process and content rather than the format or editorial style.
 
 For more details about Markdown, see its documentation on the web. Note that there are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
 
@@ -211,6 +211,7 @@ The "Object Description" section is currently used only for the application, DOM
 > Parameter details
 
 <!-- From CR: The web output for the following table illustrates the problem that when there is no entry in the 3rd column, the 2nd column isn't lined up correctly. Note this wil also happen when the optional 3rd entry is omitted in the param descriptions above. You alluded to another possible solution for this; can we take a look at that? Note that in general in such 3-column reference formats, the 1st column's entry could be as long as `Style.prototype.horizontalAlignment`. -->
+
 ||||
 | --- | --- | --- |
 | Returns| `type`|  |
