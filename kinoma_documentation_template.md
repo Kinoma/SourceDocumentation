@@ -6,8 +6,7 @@ The formatting conventions are first described in general and then presented in 
 
 If starting from scratch, please work from a copy of this document, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replace stub or filler text with the appropriate text for the documentation you’re writing.
 
-<!--From CR: The doc titles in the next paragaph should be links—but what are the appropriate URLs?-->
-
+<!--From CR: The doc titles in the next paragaph should be links—but what are the (ultimately) appropriate URLs?-->
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet_. Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide_, which focuses on the process and content rather than the format or editorial style.
 
 For more details about Markdown, see its documentation on the web. Note that there are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
@@ -17,8 +16,6 @@ Since # (level-1 heading) is used for the title of the document, the headings wi
 
 ###Subsection Heading (###)
 Content of subsection follows here.
-
-<!-- From CR: Can you make the line across the page for level 5 headings less faint? I'd like to see what that looks like. (Note, I've added that heading in many places where you were just using bold before.)-->
 
 ####Sub-subsection Heading (####)
 
@@ -48,9 +45,9 @@ Use Notes formatted like the one below—including blockquote (>) for indentatio
 
 > **Note:** Adding a space after the angle bracket makes the text stand out better as a blockquote in GitHub's edit view (making the quoted text appear in color). This is an example of how incidental, noncritical Notes should be formatted.
 
-<!--! From CR re blockquote:  Blockequoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to be the normal spacing?-->
+<!--! From CR re blockquote: Blockquoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to look like the normal spacing? -->
 
-To emphasize important, critical information, use red as illustrated below (but note, the red with not show up in Markdown's preview). These should be very rare.
+To emphasize important, critical information, use red as illustrated below (but note, the red will not show up in Markdown's preview). These should be very rare.
 
 > <span style="color: red">**Important:** To emphasize important, critical information, use this format.</span>  
 
@@ -78,6 +75,12 @@ Items in a list would ideally be only one paragraph long, but in some cases an i
 
    Continuation of list item above (preceded by three spaces in Markdown)
 
+The following example illustrates the preferred format for beginning list items with a term or phrase that is then elaborated on.
+
+- **Bold term or phrase** — An elaboration on the term or phrase follows here. An em dash surrounded by spaces precedes the elboration.
+
+- **Next such item** – And so on.
+
 ###Cross-References and Links
 When referring to another Kinoma document (or any Kinoma web page), do not explicitly show the link; for example, [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/), [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/), and [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/). When referring to anything else on the web, show the link explicitly, as in this example:
 
@@ -88,9 +91,6 @@ If the title of any Kinoma document changes, check for references to it in other
 For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with dashes where any spaces were; excluding any punctuation in the heading and not case-sensitive. It will link to the first heading with that name.
 
 > See the section "[Applying the Formats](#applying-the-formats)." 
-
-<!-- From CR: Re note below, will any other punctuation screw it up?-->
-Note, however, that this will note work if the heading has a colon in it.
 
 When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
 
@@ -133,18 +133,20 @@ Create (or crop) all figures so that there’s no blank space on any of the four
 
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
-###Tables
+###Tables and Other Columnar Formats
 To create a table, use the following as a starting point.
 
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** |
 | ------------ | ------------- |
-| Table entry	 | Table entry	  |
-| Table entry	 | Table entry	  |
-| Table entry	 | Table entry	  |  
+| Table entry | Table entry |
+| Table entry | Table entry |
+| Table entry | Table entry |  
 
 When adding, deleting, or moving a table, remember to also update the numbering of any other affected tables.
+
+Especially in reference sections, it can be useful to arrange information in a simple columnar format, without a table caption or heading; the next section includes many examples of this.
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
@@ -177,7 +179,7 @@ Object inherits from `Other-object-name.protoype`.
 
 [Object is sealed.]
 
-The **Object Description** section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for **Prototype Description**, later, but without the `.prototype`.
+The "Object Description" ssection is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#Prototype-Description)," later, but without the `.prototype`.
 
 #####Constructor Description  
 `Object-name(param1, param2)`  
@@ -198,7 +200,7 @@ The **Object Description** section is currently used only for the application, D
 
 > Parameter details
 
-<!-- From CR: The web output for the following table illustrates the problem that when there is no entry in the third column, the `type` isn't lined up correctly. Note this wil also happen when the optional third entry is omitted in the param descriptions above. You alluded to another possible solution for this; can we take a look at that? -->
+<!-- From CR: The web output for the following table illustrates the problem that when there is no entry in the 3rd column, the 2nd column isn't lined up correctly. Note this wil also happen when the optional 3rd entry is omitted in the param descriptions above. You alluded to another possible solution for this; can we take a look at that? Note that in general in such 3-column reference formats, the 1st column's entry could be as long as `Style.prototype.horizontalAlignment`. -->
 ||||
 | --- | --- | --- |
 | Returns| `type`|  |
@@ -211,7 +213,7 @@ Optionally describe (without indentation) what the function does, using this for
 
 Omit this description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).  
 
-Some **Constructor Description** subsections also describe value properties; see **Prototype Description**, next, for the format of value property descriptions.
+Some "Constructor Description" sections also describe value properties; see "Prototype Description," next, for the format of value property descriptions.
 
 #####Prototype Description  
 Prototype inherits from `Other-object-name.prototype`.
@@ -232,6 +234,7 @@ Describe value properties in this format:
 
 > Exception: Whenever possible, describe a boolean with a complete sentence beginning with "If `true`,"  
 
+<!-- From CR: Ideally the properties would all align the same on the left, but, as currently set forth in this template, the value properties will be indented a bit because they're in a table. Is this something we'll have to live with? -->
 Describe function properties in this format:
 
 `Object-name.prototype.function-name(param1, param2)`
@@ -291,17 +294,17 @@ Omit the description if the function is self-explanatory—in particular, if all
 
 > Parameter details  
 
-Event description (without indentation), as:
-
-This event happens when ....
+Event description (without indentation), beginning with "This event happens when"
 
 ###_KinomaJS XML API Reference:_ Element Reference
-The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/) document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to Object Reference sections shown in the preceding section).
+The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/) document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to object reference sections shown above in this template).
 
 ####Element-Name Element
 [Optional] Full sentences _briefly_ describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
 
-Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable. (Also note the special "Same as..." format currently used in some **Attributes** and **Elements** section in the document.)
+Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable. (Not shown here is the special "Same as..." format used in some "Attributes" and "Elements" section in the document.)
+
+> **Note:** The value in the "Tag" section below is formatted as a single-column table so that it will line up with the slight indentation of the (tabular) contents of the sections that follow.
 
 #####Tag 
 ||
@@ -314,10 +317,10 @@ Next, include only whichever of the following lower-level sections apply. Square
 | --- | --- | --- |
 | `name` | `type`| [comment] |
 
-> where `type` can be any of the allowed attribute types, followed by "(_n_ or more, separated by commas)" if applicable (where _n_ is the appropriate starting number), and the optional comment can be one of the following:  
+> where `type` can be any of the allowed attribute types, followed by "(N or more, separated by commas)" if applicable (where N is the appropriate starting number), and the optional comment can be one of the following:  
 
 > required  
-> required *  
+> required \*  
 > 0 or more  
 > 0 or 1  
 
@@ -327,15 +330,15 @@ Next, include only whichever of the following lower-level sections apply. Square
 
 > Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true`, ..."  
 
-> If "required \*" (which indicates that a related note follows), add a paragraph beginning with "* " that provides the note.
+> If "required \*" (which indicates that a related note follows), add a paragraph beginning with "*" (followed by a space) that provides the note.
 
-List attribute names in alphabetical order.
+> List attribute names in alphabetical order.
 
 #####Elements
 
 ||||
 | --- | --- | --- |
-| `name` | comment|  |
+| `name` | comment |  |
 > where the comment indicates how many of this element. For example: 
 
 > 0 or more  
@@ -346,9 +349,9 @@ List attribute names in alphabetical order.
 
 > Sentence fragment[. Optional additional sentences.]
 
-List element names in alphabetical order (one per line).
+> List element names in alphabetical order (one per line).
 
-Several elements that have the same explanation may be grouped together, with only that one explanation following all of them.
+> Several elements that have the same explanation may be grouped together, with only that one explanation following all of them.
 
 #####CDATA
 The words “JavaScript code” [optionally followed by further description]
@@ -374,7 +377,6 @@ In sections discussing XS property elements and the like (including patterns), e
 An example follows.
 
 #####Grammar
-
 ```
 <object name="colorIO">
    <function name="parse" params="text" c="colorIOParse"/>
@@ -384,20 +386,17 @@ An example follows.
 ```
 
 #####Prototype
-
 ```
 color = { r: 0, g: 0, b: 0 }
 ```
 
 #####XML document
-
 <!-- From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why? -->
 ```
 <color>#FF8000</color>
 ```
 
 #####Instance
-
 ```
 { r: 255, g: 128, b: 0 }
 ```
@@ -442,9 +441,8 @@ None (or enter a description if applicable)
 None (or enter a description if applicable)
 
 ###_XS Chunks:_ ECMAScript Objects
-In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "_XS_: XS Elements"; the constructor and prototype are documented as shown here. 
+In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
 
-<!--Link below not working; to be explored/fixed.-->
 >**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference:_ Object Reference](KinomaJS-JavaScript-API-Reference-Object-Reference)."
 
 ####Constructor Description
@@ -501,7 +499,7 @@ Include example if applicable.
 If this structure needs to be extended for other C API documentation, consider adding level 5 headings (such as a "See also" heading) to introduce additional types of information.
 
 ##Glossary
-In any document where reasonable, end with a Glossary section in which each item has the following format. (No introductory text is needed, so delete this paragraph in the actual document.)
+In any document where reasonable, end with a "Glossary" section in which each item has the following format. (No introductory text is needed, so delete this paragraph in the actual document.)
 
 #####glossary item (#####)
 > Definition. (>)
