@@ -360,7 +360,6 @@ Next, include only whichever of the following lower-level sections apply. Square
 > Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true`, ..."  
 
 > If "required \*" (which indicates that a related note follows), add a paragraph beginning with * (followed by a space) that provides the note.
-
 > List attribute names in alphabetical order.
 
 #####Elements
@@ -423,7 +422,7 @@ color = { r: 0, g: 0, b: 0 }
 <!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
 
 ```
-<color>\#FF8000</color>
+<color>&#35;FF8000</color>
 ```
 
 #####Instance
