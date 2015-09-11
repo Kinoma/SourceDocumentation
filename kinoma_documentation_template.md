@@ -51,7 +51,7 @@ Use Notes formatted like the one below—including blockquote (>) for indentatio
 
 <!--From CR re blockquote: Blockquoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to look like the normal spacing?-->
 
-To emphasize important, critical information, use red as illustrated below (but note, the red will not show up in Markdown's preview). These should be very rare.
+To emphasize important, critical information, use red as illustrated below (but note, the red will not show up in Markdown's preview). These should be rare.
 
 > <span style="color: red">**Important:** To emphasize important, critical information, use this format.</span>  
 
@@ -60,7 +60,7 @@ Although uncommon (outside of reference sections), indentation can be useful for
 > GitHub's preview will show blockquoted text in gray and with a bar in the margin, but CSS styling will remove that on the web page.
 
 ###Lists (- and N.)
-Precede each itdashin a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space.
+Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space.
 
 If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
 
