@@ -223,6 +223,8 @@ The "Object Description" section is currently used only for the application, DOM
 
 <!--From CR: The web output for the following table illustrates the problem that when there is no entry in the 3rd column, the 2nd column isn't lined up correctly. Note this wil also happen when the optional 3rd entry is omitted in the param descriptions above. You alluded to another possible solution for this; can we take a look at that? Note that in general in such 3-column reference formats, the 1st column's entry could be as long as `Style.prototype.horizontalAlignment`.-->
 
+<!--From CK: Fixed as dicussed via CSS see: http://staging2.kinoma.com/develop/documentation/doc-template/index-md.php#applying-the-formats-->
+
 ||||
 | --- | --- | --- |
 | Returns| `type`|  |
