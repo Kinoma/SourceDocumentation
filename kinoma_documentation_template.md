@@ -83,7 +83,7 @@ The following example illustrates the preferred format for beginning list items 
 
 - **Bold term or phrase** — An elaboration on the term or phrase follows here. An em dash surrounded by spaces precedes the elboration.
 
-- **Next such item** – And so on.
+- **Next such item** — And so on.
 
 ###Cross-References and Links
 When referring to another Kinoma document (or any Kinoma web page), do not explicitly show the link; for example, [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/), [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/), and [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/). When referring to anything else on the web, show the link explicitly, as in this example:
