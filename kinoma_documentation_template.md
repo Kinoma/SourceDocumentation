@@ -155,11 +155,9 @@ When adding, deleting, or moving a table, remember to also update the numbering 
 Especially in reference sections, it can be useful to arrange information in a simple columnar format, without a table caption or column heads; the next section includes many examples of this.
 
 ###Comments
-Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from, as in this example:
+Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from. An example (visible ony in edit view) follows here.
 
-\<\!\-\-From CR: Please check the following paragraph for accuracy.\-\-\>
-
-The comments will of course be visible only in GitHub's edit view. (The example above has been "escaped" so as not to be interpreted as a comment.)
+<!--From CR: Format comments like this, with your name/initials after "From:".-->
 
 > <span style="color: red">**Important:** Do not type a space after or before the double hyphens, and always follow the comment with a blank line; it will look OK in preview but may seriously mess up the web page.</span>
 
