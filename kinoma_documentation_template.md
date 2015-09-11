@@ -159,7 +159,7 @@ Comments or queries from the writer or a reviewer of the document should be plac
 
 <!--From CR: Format comments like this, with your name/initials after "From:".-->
 
-> <span style="color: red">**Important:** Do not type a space after or before the double hyphens, and always follow the comment with a blank line; it will look OK in preview but may seriously mess up the web page.</span>
+> <span style="color: red">**Important:** Do not type a space after or before the double hyphens in the comment syntax, and always follow the comment with a blank line; it will look OK in preview but may seriously mess up the web page.</span>
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
