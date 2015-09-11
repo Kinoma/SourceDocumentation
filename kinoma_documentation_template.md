@@ -51,6 +51,7 @@ Use Notes formatted like the one below—including blockquote (>) for indentatio
 > **Note:** Adding a space after the angle bracket makes the text stand out better as a blockquote in GitHub's edit view (making the quoted text appear in color). This is an example of how incidental, noncritical Notes should be formatted.
 
 <!--From CR re blockquote: Blockquoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to look like the normal spacing?-->
+<!--From CK Fixed, see the page on the website http://staging2.kinoma.com/develop/documentation/doc-template/index-md.php#applying-the-formats-->
 
 To emphasize important, critical information, use red as illustrated below (but note, the red will not show up in Markdown's preview). These should be rare.
 
