@@ -141,6 +141,7 @@ When adding, deleting, or moving a captioned figure, remember to also update the
 To create a table, use the following as a starting point.
 
 <!--From CR: Do I understand correctly that tables will look different on the web page depending on whether they're ordinary tables or used for special formatting in reference sections? If so, please elborate.-->
+
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** |
@@ -160,7 +161,7 @@ Comments or queries from the writer or a reviewer of the document should be plac
 
 The comments will of course be visible only in GitHub's edit view. (The example above has been "escaped" so as not to be interpreted as a comment.)
 
-> <span style="color: red">**Important:** Do not type a space after or before the double hyphens; it will look OK in preview but _not_ on the web page.</span>
+> <span style="color: red">**Important:** Do not type a space after or before the double hyphens, and always follow the comment with a blank line; it will look OK in preview but may seriously mess up the web page.</span>
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
@@ -240,6 +241,7 @@ After the text shown above, describe all the value properties and function prope
 Describe value properties in this format:
 
 <!--From CR: Note, adding a heading below for every value property is a big change, which (as I mentioned in an earlier email) is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think?-->
+
 `Object-name.prototype.property-name`
 
 ||||
@@ -409,6 +411,7 @@ color = { r: 0, g: 0, b: 0 }
 
 #####XML document
 <!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
+
 ```
 <color>#FF8000</color>
 ```
