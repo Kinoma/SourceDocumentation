@@ -185,7 +185,7 @@ Next, include only whichever of the following lower-level sections apply. Square
 Full sentences providing coordinates information.
 
 #####Object Description  
-Object inherits from `Other-object-name.protoype`.
+Object inherits from `Other-object-name.prototype`.
 
 [Object is sealed.]
 
