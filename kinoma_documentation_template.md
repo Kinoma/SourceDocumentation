@@ -4,7 +4,7 @@
 This document provides a starting point for creating drafts of Kinoma technical documentation in the proper Markdown format.
 The formatting conventions are first described in general and then presented in terms of how to apply them in different contexts. 
 
-Looking at this template in GitHub's edit view will show how the formatting in it was specified; looking at it in GitHub's preview will show a close approximation of the final web page, but the latter will look different in some places (as noted in the template) due to CSS styling.
+Looking at this template in GitHub's edit view will show how the formatting in it was specified (along with related comments); looking at it in GitHub's preview will show a close approximation of the final web page, but the latter will look different in some places due to CSS styling.
 
 If starting from scratch, please work from a copy of this template, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replacing stub or filler text with the appropriate text for the documentation you’re writing.
 
