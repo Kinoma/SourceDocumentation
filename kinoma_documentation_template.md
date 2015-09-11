@@ -33,7 +33,7 @@ Use a level-5 heading for occasional headings on code examples, terms in the glo
 ###Body Text
 Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
 
-Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page (though they will look straight in GitHub's preview). One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you should enter as such (not as a hyphen, which is narrower).
+Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page (though they will look straight in GitHub's preview). Likewise, two hyphens in a row will appear as an em dash on the web page.
 
 ####Italic (\_)
 For emphasis and other uses of italic (including document titles), use underscores, as done _here._
@@ -157,7 +157,7 @@ Especially in reference sections, it can be useful to arrange information in a s
 ###Comments
 Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from, as in this example:
 
-\<\!\--From CR: Please check the following paragraph for accuracy.--\>
+\<\!\-\-From CR: Please check the following paragraph for accuracy.\-\-\>
 
 The comments will of course be visible only in GitHub's edit view. (The example above has been "escaped" so as not to be interpreted as a comment.)
 
