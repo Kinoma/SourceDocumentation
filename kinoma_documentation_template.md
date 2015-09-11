@@ -68,6 +68,8 @@ If all or most of the listed items are very short, don't separate them with blan
 
 <!--From CR: The following list has no blank space between entries in preview but does have it on the web page; no big deal, but I mention it in case there's a workaround. Please advise. (If not, I'll change this discussion accordingly.) Also note that the web output of the following list doesn't have the smaller font that all other lists have, which would mean we'd have to warn against using this format.-->
 
+<!--From CK: Yes, this was a bug where the markdown was adding paragraph tags to most of the list items and thus affecting their size. Fixed for documentation pages. All lists should use standard body copy size. I think the spaces above/below list items are good for readablity especially when the list items are multiline. We can discuss if you are dissatisfied. -->
+
 - First short item  
 - Second short item  
 
