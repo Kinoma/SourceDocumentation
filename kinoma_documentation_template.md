@@ -250,6 +250,8 @@ Describe value properties in this format:
 
 <!--From CR: Note, adding a heading below for every value property is a big change, which (as I mentioned in an earlier email) is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think?-->
 
+<!--From CK: If this works for you I am fine. Assume you will just be copy pasting properly formatted snippets and updating the content -->
+
 `Object-name.prototype.property-name`
 
 ||||
@@ -421,7 +423,7 @@ color = { r: 0, g: 0, b: 0 }
 <!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
 
 ```
-<color>#FF8000</color>
+<color>\#FF8000</color>
 ```
 
 #####Instance
