@@ -10,12 +10,13 @@ If starting from scratch, please work from a copy of this template, deleting wha
 
 ###Related Reading
 <!--From CR: The doc titles in the next paragraph should be links—but what are the (ultimately) appropriate URLs?-->
+<!--From CK: Added link code and will post other pages-->
 
 For more details about Markdown, see its documentation on the web. 
 
 > **Note:** There are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
 
-See also the editorial style guidelines in the _Kinoma Documentation Style Sheet._ Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide,_ which focuses on the process and content rather than the format or editorial style.
+See also the editorial style guidelines in the [_Kinoma Documentation Style Sheet._](http://http://www.kinoma.com/develop/documentation/doc-stylesheet/index-md.php) Writers of documents in the KinomaJS documentation suite should also read the [_KinomaJS Documentation Writer’s Guide,_](http://http://www.kinoma.com/develop/documentation/doc-writers-guide/index-md.php) which focuses on the process and content rather than the format or editorial style.
 
 ##Section Heading (##)
 Since # (level-1 heading) is used for the title of the document, the headings within the document start at level 2.
