@@ -9,7 +9,6 @@ Looking at this template in GitHub's edit view will show how the formatting in i
 If starting from scratch, please work from a copy of this template, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replacing stub or filler text with the appropriate text for the documentation you’re writing.
 
 ###Related Reading
-
 <!--From CR: The doc titles in the next paragaph should be links—but what are the (ultimately) appropriate URLs?-->
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet._ Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide,_ which focuses on the process and content rather than the format or editorial style.
 
@@ -160,7 +159,7 @@ Comments or queries from the writer or a reviewer of the document should be plac
 
 The comments will of course be visible only in GitHub's edit view. (The example above has been "escaped" so as not to be interpreted as a comment.)
 
-> <span style="color: red">**Important:** Do not type a space after or before the double hyphens; it will look OK in preview but _not_ on the web page.
+> <span style="color: red">**Important:** Do not type a space after or before the double hyphens; it will look OK in preview but _not_ on the web page.</span>
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
