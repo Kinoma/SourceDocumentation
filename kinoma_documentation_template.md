@@ -148,6 +148,8 @@ To create a table, use the following as a starting point (or, for more complicat
 
 <!--From CR: Do I understand correctly that tables will look different on the web page depending on whether they're ordinary tables or used for special formatting in reference sections? If so, please explain.-->
 
+<!--From CK: All tables in set up like below will not show borders, backgrounds, etc. If an ordinary table is needed we need to use standard HTML table markup -->
+
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** |
