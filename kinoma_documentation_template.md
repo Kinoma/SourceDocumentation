@@ -138,9 +138,9 @@ Create (or crop) all figures so that there’s no blank space on any of the four
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
 ###Tables and Other Columnar Formats
-To create a table, use the following as a starting point.
+To create a table, use the following as a starting point (or, for more complicated tables, use HTML).
 
-<!--From CR: Do I understand correctly that tables will look different on the web page depending on whether they're ordinary tables or used for special formatting in reference sections? If so, please elborate.-->
+<!--From CR: Do I understand correctly that tables will look different on the web page depending on whether they're ordinary tables or used for special formatting in reference sections? If so, please explain.-->
 
 **Table 1.** Table Caption Goes Here
 
