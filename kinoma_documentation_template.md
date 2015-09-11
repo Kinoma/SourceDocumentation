@@ -8,11 +8,13 @@ Looking at this template in GitHub's edit view will show how the formatting in i
 
 If starting from scratch, please work from a copy of this template, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replacing stub or filler text with the appropriate text for the documentation you’re writing.
 
+###Related Reading
 <!--From CR: The doc titles in the next paragaph should be links—but what are the (ultimately) appropriate URLs?-->
-
 See also the editorial style guidelines in the _Kinoma Documentation Style Sheet._ Writers of documents in the KinomaJS documentation suite should also read the _KinomaJS Documentation Writer’s Guide,_ which focuses on the process and content rather than the format or editorial style.
 
-For more details about Markdown, see its documentation on the web. Note that there are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
+For more details about Markdown, see its documentation on the web. 
+
+> **Note:** There are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
 
 ##Section Heading (##)
 Since # (level-1 heading) is used for the title of the document, the headings within the document start at level 2.
@@ -48,7 +50,7 @@ Use Notes formatted like the one below—including blockquote (>) for indentatio
 
 > **Note:** Adding a space after the angle bracket makes the text stand out better as a blockquote in GitHub's edit view (making the quoted text appear in color). This is an example of how incidental, noncritical Notes should be formatted.
 
-<!--! From CR re blockquote: Blockquoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to look like the normal spacing? -->
+<!--From CR re blockquote: Blockquoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to look like the normal spacing?-->
 
 To emphasize important, critical information, use red as illustrated below (but note, the red will not show up in Markdown's preview). These should be very rare.
 
@@ -139,7 +141,7 @@ When adding, deleting, or moving a captioned figure, remember to also update the
 ###Tables and Other Columnar Formats
 To create a table, use the following as a starting point.
 
-<!-- From CR: Do I understand correctly that tables  will look different on the web page depending on whether they're ordinary tables or used for special formatting in reference sections? If so, please elborate. -->
+<!--From CR: Do I understand correctly that tables will look different on the web page depending on whether they're ordinary tables or used for special formatting in reference sections? If so, please elborate.-->
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** |
@@ -155,9 +157,11 @@ Especially in reference sections, it can be useful to arrange information in a s
 ###Comments
 Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from, as in this example:
 
-\<\!\-- From CR: Please check the following paragraph for accuracy. --\>
+\<\!\--From CR: Please check the following paragraph for accuracy.--\>
 
 The comments will of course be visible only in GitHub's edit view. (The example above has been "escaped" so as not to be interpreted as a comment.)
+
+> <span style="color: red">**Important:** Do not type a space after or before the double hyphens; it will look OK in preview but _not_ on the web page.
 
 ##Applying the Formats
 This section shows how the aforementioned styles (plus some others) are applied in specific contexts, in subsections with headings like this:
@@ -211,7 +215,7 @@ The "Object Description" section is currently used only for the application, DOM
 
 > Parameter details
 
-<!-- From CR: The web output for the following table illustrates the problem that when there is no entry in the 3rd column, the 2nd column isn't lined up correctly. Note this wil also happen when the optional 3rd entry is omitted in the param descriptions above. You alluded to another possible solution for this; can we take a look at that? Note that in general in such 3-column reference formats, the 1st column's entry could be as long as `Style.prototype.horizontalAlignment`. -->
+<!--From CR: The web output for the following table illustrates the problem that when there is no entry in the 3rd column, the 2nd column isn't lined up correctly. Note this wil also happen when the optional 3rd entry is omitted in the param descriptions above. You alluded to another possible solution for this; can we take a look at that? Note that in general in such 3-column reference formats, the 1st column's entry could be as long as `Style.prototype.horizontalAlignment`.-->
 
 ||||
 | --- | --- | --- |
@@ -236,7 +240,7 @@ After the text shown above, describe all the value properties and function prope
 
 Describe value properties in this format:
 
-<!-- From CR: Note, adding a heading below for every value property is a big change, which (as I mentioned in an earlier email) is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think? -->
+<!--From CR: Note, adding a heading below for every value property is a big change, which (as I mentioned in an earlier email) is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think?-->
 `Object-name.prototype.property-name`
 
 ||||
@@ -405,7 +409,7 @@ color = { r: 0, g: 0, b: 0 }
 ```
 
 #####XML document
-<!-- From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why? -->
+<!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
 ```
 <color>#FF8000</color>
 ```
