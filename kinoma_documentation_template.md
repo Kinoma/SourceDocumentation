@@ -157,7 +157,7 @@ When adding, deleting, or moving a table, remember to also update the numbering 
 Especially in reference sections, it can be useful to arrange information in a simple columnar format, without a table caption or column heads; the next section includes many examples of this.
 
 ###Comments
-Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from. An example (visible ony in edit view) follows here.
+Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from. An example (visible only in edit view) follows here.
 
 <!--From CR: Format comments like this, with your name/initials after "From:".-->
 
