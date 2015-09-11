@@ -349,7 +349,7 @@ Next, include only whichever of the following lower-level sections apply. Square
 
 > Exception: Whenever possible, describe a boolean with a complete sentence of the form "If `true`, ..."  
 
-> If "required \*" (which indicates that a related note follows), add a paragraph beginning with "*" (followed by a space) that provides the note.
+> If "required \*" (which indicates that a related note follows), add a paragraph beginning with * (followed by a space) that provides the note.
 
 > List attribute names in alphabetical order.
 
@@ -514,7 +514,7 @@ Additional discussion of the macro sometimes follows (in the normal body text st
 #####Example
 ```
 Include example if applicable.
-````
+```
 
 If this structure needs to be extended for other C API documentation, consider adding level-5 headings (such as a "See also" heading) to introduce additional types of information.
 
