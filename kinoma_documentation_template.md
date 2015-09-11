@@ -63,6 +63,7 @@ Although uncommon (outside of reference sections), indentation can be useful for
 Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space.
 
 If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
+<!--From CR: The following list has no blank space between entries in preview but does have it on the web page; no big deal, but I mention it in case there's a workaround. Please advise. (If not, I'll change this discussion accordingly.)-->
 
 - First short item  
 - Second short item  
