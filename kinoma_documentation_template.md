@@ -33,7 +33,7 @@ Use a level-5 heading for occasional headings on code examples, terms in the glo
 ###Body Text
 Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
 
-Although entering characters outside the basic ASCII character set—such as the em dash, used here—will work fine, you can stick with the basic set; it may not look right in Github's preview, but CSS styling will make it look right on the web page. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page. Likewise, two hyphens in a row will appear as an em dash (--) on the web page.
+Although entering characters outside the basic ASCII character set—such as the em dash, used here—will work fine, you can stick with the basic set; it may not look right in Github's preview, but CSS styling will make it look right on the web page. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page. Likewise, two hyphens in a row will appear as an em dash on the web page.
 
 ####Italic (\_)
 For emphasis and other uses of italic (including document titles), use underscores, as done _here._
