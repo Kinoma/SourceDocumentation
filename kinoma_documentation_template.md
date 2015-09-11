@@ -35,9 +35,7 @@ Paragraphs within sections have no special formatting. The sections below descri
 Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page (though they will look straight in GitHub's preview). One exception is the em dash—illustrated here and typed (for example) with Option-Shift-hyphen on a Mac—which you should enter as such (not as a hyphen, which is narrower).
 
 ####Italic (\_)
-For emphasis and other uses of italic (including document titles), use underscores, as in this example:
-
-> A _host object_ is a special kind of object with data that can be directly accessed only in C.
+For emphasis and other uses of italic (including document titles), use underscores, as done _here._
 
 ####Bold (**)
 Use double asterisks for bold—for example, when referring to a user interface element as in "Press **Menu**."
