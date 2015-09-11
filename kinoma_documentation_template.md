@@ -33,7 +33,7 @@ Use a level-5 heading for occasional headings on code examples, terms in the glo
 ###Body Text
 Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
 
-Except where indicated otherwise in this document (or any of the other support documents for Kinoma documentation), you can stick with the basic ASCII character set—that is, what you get by default when you type in GitHub's edit view. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page (though they will look straight in GitHub's preview). Likewise, two hyphens in a row will appear as an em dash on the web page.
+Although entering characters outside the basic ASCII character set—such as the em dash, used here—will work fine, you can stick with the basic set; it may not look right in Github's preview, but CSS styling will make it look right on the web page. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page. Likewise, two hyphens in a row will appear as an em dash (--) on the web page.
 
 ####Italic (\_)
 For emphasis and other uses of italic (including document titles), use underscores, as done _here._
@@ -60,7 +60,7 @@ Although uncommon (outside of reference sections), indentation can be useful for
 > GitHub's preview will show blockquoted text in gray and with a bar in the margin, but CSS styling will remove that on the web page.
 
 ###Lists (- and N.)
-Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space.
+Precede each itdashin a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space.
 
 If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
 
@@ -92,7 +92,7 @@ When referring to another Kinoma document (or any Kinoma web page), do not expli
 
 If the title of any Kinoma document changes, check for references to it in other documents and update them.
 
-For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with dashes where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
+For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
 
 > See the section "[Applying the Formats](#applying-the-formats)." 
 
