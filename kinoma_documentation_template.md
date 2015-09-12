@@ -111,7 +111,7 @@ For code blocks—that is, one or more code lines that are separate from body te
 
 >**Note:** Even a single line of code should be formatted this way (not with just single back-ticks around it on the same line), otherwise the color highlighting will not appear on the web page.
 
-```
+```javascript
 src = new File(argv[2], "r");
 dst = new File(argv[3], "w");
 while (buf = src.getLine())
@@ -119,7 +119,7 @@ while (buf = src.getLine())
 ```  
 Show missing code (omitted for brevity) with `...`; this notation is acceptable on a line by itself (appropriately indented) or within a line, as in the following example.
 
-```
+```javascript
 <header> ... </header>
 ```
 
@@ -421,7 +421,7 @@ color = { r: 0, g: 0, b: 0 }
 #####XML document
 <!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
 <!--From CK:  this is a tricky one the code highlighter thinks it is a comment since there is a # in the code line. I will have to come up with a fix but will take a bit. -->
-```
+```javascript
 <color>#FF8000</color>
 ```
 
