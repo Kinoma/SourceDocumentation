@@ -421,8 +421,9 @@ color = { r: 0, g: 0, b: 0 }
 #####XML document
 <!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
 <!--From CK:  this is a tricky one the code highlighter thinks it is a comment since there is a # in the code line. I will have to come up with a fix but will take a bit. -->
-```
-&lt;color&gt;#FF8000&lt;/color&gt;
+<pre>
+<code>&lt;color&gt;#FF8000&lt;/color&gt;</code>
+</pre>
 ```
 
 #####Instance
