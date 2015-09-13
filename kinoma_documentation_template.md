@@ -422,7 +422,7 @@ color = { r: 0, g: 0, b: 0 }
 <!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
 <!--From CK:  this is a tricky one the code highlighter thinks it is a comment since there is a # in the code line. I will have to come up with a fix but will take a bit. -->
 ```
-`<color>#FF8000</color>`
+<color>#FF8000</color>
 ```
 
 #####Instance
