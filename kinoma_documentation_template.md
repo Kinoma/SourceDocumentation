@@ -102,7 +102,7 @@ For the "computer voice" font within body text, use back-ticks (\`). For example
 
 For code blocks—that is, one or more code lines that are separate from body text—place a line of three back-ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per "tab." An example (using the tab character) follows. Note that color highlighting in code will show up only on the web page and not in GitHub's preview.
 
->**Note:** Even a single line of code should be formatted this way (not with just single back-ticks around it on the same line), otherwise the color highlighting will not appear on the web page.
+> **Note:** Even a single line of code should be formatted this way (not with just single back-ticks around it on the same line), otherwise the color highlighting will not appear on the web page.
 
 ```
 src = new File(argv[2], "r");
@@ -220,7 +220,7 @@ The "Object Description" section is currently used only for the application, DOM
 
 <!--From CK: Fixed as dicussed via CSS see: http://staging2.kinoma.com/develop/documentation/doc-template/index-md.php#applying-the-formats-->
 
-<!--From CR: I'm still seeing a misaligned "Returns"; should we discuss?-->
+<!--From CR: I'm still seeing a misaligned "Returns."-->
 
 ||||
 | --- | --- | --- |
@@ -243,21 +243,20 @@ Prototype inherits from `Other-object-name.prototype`.
 
 After the text shown above, describe all the value properties and function properties (combined, in alphabetical order). Multiple properties that have the same explanation may be grouped together, with only that one explanation following all of them.
 
-Describe value properties in this format:
+Describe value properties in the following format (where thie placeholder name reflects the current maximum length that a name in this section can be):
 
 <!--From CR: Note, adding a heading below for every value property is a big change, which (as I mentioned in an earlier email) is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think?-->
 
 <!--From CK: If this works for you I am fine. Assume you will just be copy pasting properly formatted snippets and updating the content -->
 
-<!--From CR: Please see my emailed response to this, sent Sep 13. See also my next comment.--> 
+<!--New from CR: Please see my emailed response to this, sent Sep 13. See also my next comment.--> 
 
-`Object-name.prototype.property-name`
+`ObjectName.prototype.nameOfproperty`
 
-<!--New from CR: The way the first column folds the name in the following table is very unfortunate. Can more room be made? Can the names also break after a period??-->
+<!--New from CR: I changed the name in the first column below to remove the dashes, which wouldn't be in a real name, and I also made it as long as the actual longest name; the way the name folds is very unfortunate. Can more room be made? Can the names also break after a period??-->
 
 ||||
-| --- | --- | --- |
-| `Object-name.prototype.property-name` | `type`| [read only] |
+| `ObjectName.prototype.nameOfproperty` | `type`| [read only] |
 
 > Follow with property details, as:  
 
@@ -267,7 +266,7 @@ Describe value properties in this format:
 
 Describe function properties in this format:
 
-`Object-name.prototype.function-name(param1, param2)`
+`Object-name.prototype.functionName(param1, param2)`
 
 ||||
 | --- | --- | --- |
@@ -422,6 +421,7 @@ color = { r: 0, g: 0, b: 0 }
 #####XML document
 <!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
 <!--From CK:  Fixed, this is rare but if there is a # character in a code snippet it will by styled incorrectly by the syntax hightligher. We need to use html instead of the markdown triple backticks and escape the brackets so they render correctly in a browser. Very rare issue I think. -->
+
 <pre>
 <code class="nohighlight">&lt;color&gt;#FF8000&lt;/color&gt;</code>
 </pre>
