@@ -139,8 +139,8 @@ When adding, deleting, or moving a captioned figure, remember to also update the
 ###Tables and Other Columnar Formats
 To create a table, use the following as a starting point or, for more complicated tables (for example, where it's necessary to show borders) use HTML.
 
-<!--From CR: Do the columns in the table below need to be so far apart (in the web output)? It's a wide enough gap that it might make it difficult to correlate the entries in the two columns. -->
-<!--From KO: Add an addtional empty 3rd column to the 2-column-table should solve this problem  -->
+<!--From CR: Do the columns in the table below need to be so far apart (in the web output)? It's a wide enough gap that it might make it difficult to correlate the entries in the two columns.-->
+<!--From KO: Add an addtional empty 3rd column to the 2-column-table should solve this problem.-->
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** ||
