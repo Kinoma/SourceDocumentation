@@ -221,7 +221,7 @@ The "Object Description" section is currently used only for the application, DOM
 
 ||||
 | --- | --- | --- |
-| Returns| `type`|  |
+| Returns| `type`| testing |
 
 > Return value details  
 
