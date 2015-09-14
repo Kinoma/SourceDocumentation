@@ -143,7 +143,7 @@ To create a table, use the following as a starting point (or, for more complicat
 
 <!--From CK: All tables in set up like below will not show borders, backgrounds, etc. If an ordinary table is needed we need to use standard HTML table markup -->
 
-<!--From CR: I thought this was an ordinary table. Can we discuss?-->
+<!--From CR: I thought this _was_ an ordinary table. Can we discuss?-->
 
 **Table 1.** Table Caption Goes Here
 
@@ -249,9 +249,11 @@ Describe value properties in this format:
 
 <!--From CK: If this works for you I am fine. Assume you will just be copy pasting properly formatted snippets and updating the content -->
 
-<!--From CR: Please see my emailed response to this, sent Sep 13--> 
+<!--From CR: Please see my emailed response to this, sent Sep 13. See also my next comment.--> 
 
 `Object-name.prototype.property-name`
+
+<!--New from CR: The way the first column folds the name in the following table is very unfortunate. Can more room be made? Can the names also break after a period??-->
 
 ||||
 | --- | --- | --- |
