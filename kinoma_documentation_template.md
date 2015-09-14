@@ -220,6 +220,8 @@ The "Object Description" section is currently used only for the application, DOM
 
 <!--From CR: I'm still seeing a misaligned "Returns" (and similar manifestations of this problem later).-->
 
+<!--From KO: The misalignment should be resolved now.-->
+
 ||||
 | --- | --- | --- |
 | Returns| `type`| |
