@@ -14,6 +14,8 @@ For more details about Markdown, see its documentation on the web.
 
 > **Note:** There are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
 
+<!--From CR: 2nd link in paragraph below isn't working for me.-->
+
 See also the editorial style guidelines in the [_Kinoma Documentation Style Sheet._](http://www.kinoma.com/develop/documentation/doc-stylesheet/index-md.php) Writers of documents in the KinomaJS documentation suite should also read the [_KinomaJS Documentation Writer’s Guide,_](http://www.kinoma.com/develop/documentation/doc-writers-guide/index-md.php) which focuses on the process and content rather than the format or editorial style.
 
 ##Section Heading (##)
@@ -48,9 +50,6 @@ Use Notes formatted like the one below—including blockquote (>) for indentatio
 
 > **Note:** Adding a space after the angle bracket makes the text stand out better as a blockquote in GitHub's edit view (making the quoted text appear in color). This is an example of how incidental, noncritical Notes should be formatted.
 
-<!--From CR re blockquote: Blockquoted text has more blank space above and below in the web output than normal paragraphs do; can that be changed to look like the normal spacing?-->
-<!--From CK Fixed, see the page on the website http://staging2.kinoma.com/develop/documentation/doc-template/index-md.php#applying-the-formats-->
-
 To emphasize important, critical information, use red as illustrated below (but note, the red will not show up in Markdown's preview). These should be rare.
 
 > <span style="color: red">**Important:** To emphasize important, critical information, use this format.</span>  
@@ -60,18 +59,14 @@ Although uncommon (outside of reference sections), indentation can be useful for
 > GitHub's preview will show blockquoted text in gray and with a bar in the margin, but CSS styling will remove that on the web page.
 
 ###Lists (- and N.)
-Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space.
-
-If all or most of the listed items are very short, don't separate them with blank lines, as illustrated here:
-
-<!--From CR: The following list has no blank space between entries in preview but does have it on the web page; no big deal, but I mention it in case there's a workaround. Please advise. (If not, I'll change this discussion accordingly.) Also note that the web output of the following list doesn't have the smaller font that all other lists have, which would mean we'd have to warn against using this format.-->
-
-<!--From CK: Yes, this was a bug where the markdown was adding paragraph tags to most of the list items and thus affecting their size. Fixed for documentation pages. All lists should use standard body copy size. I think the spaces above/below list items are good for readablity especially when the list items are multiline. We can discuss if you are dissatisfied. -->
+Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space. For example:
 
 - First short item  
 - Second short item  
 
-If all or most of the listed items are long, separate them with blank lines.
+Note that even if you don't add a blank line between items in Markdown, there will be blank space between them on the web page.
+
+Here's a numbered list:
  
 1. First long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
  
@@ -148,6 +143,8 @@ To create a table, use the following as a starting point (or, for more complicat
 
 <!--From CK: All tables in set up like below will not show borders, backgrounds, etc. If an ordinary table is needed we need to use standard HTML table markup -->
 
+<!--From CR: I thought this was an ordinary table. Can we discuss?-->
+
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** |
@@ -223,6 +220,8 @@ The "Object Description" section is currently used only for the application, DOM
 
 <!--From CK: Fixed as dicussed via CSS see: http://staging2.kinoma.com/develop/documentation/doc-template/index-md.php#applying-the-formats-->
 
+<!--From CR: I'm still seeing a misaligned "Returns"; should we discuss?-->
+
 ||||
 | --- | --- | --- |
 | Returns| `type`|  |
@@ -249,6 +248,8 @@ Describe value properties in this format:
 <!--From CR: Note, adding a heading below for every value property is a big change, which (as I mentioned in an earlier email) is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think?-->
 
 <!--From CK: If this works for you I am fine. Assume you will just be copy pasting properly formatted snippets and updating the content -->
+
+<!--From CR: Please see my emailed response to this, sent Sep 13--> 
 
 `Object-name.prototype.property-name`
 
