@@ -9,14 +9,12 @@ Looking at this template in GitHub's edit view will show how the formatting in i
 If starting from scratch, please work from a copy of this template, deleting whatever parts of it don’t apply in your case (including explanatory text like this, once you no longer need it) and replacing stub or filler text with the appropriate text for the documentation you’re writing.
 
 ###Related Reading
-<!--From CR: The doc titles in the next paragraph should be links—but what are the (ultimately) appropriate URLs?-->
-<!--From CK: Added link code and will post other pages-->
 
 For more details about Markdown, see its documentation on the web. 
 
 > **Note:** There are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
 
-See also the editorial style guidelines in the [_Kinoma Documentation Style Sheet._](http://www.kinoma.com/develop/documentation/doc-stylesheet/index-md.php) Writers of documents in the KinomaJS documentation suite should also read the [_KinomaJS Documentation Writer’s Guide,_](http://http://www.kinoma.com/develop/documentation/doc-writers-guide/index-md.php) which focuses on the process and content rather than the format or editorial style.
+See also the editorial style guidelines in the [_Kinoma Documentation Style Sheet._](http://www.kinoma.com/develop/documentation/doc-stylesheet/index-md.php) Writers of documents in the KinomaJS documentation suite should also read the [_KinomaJS Documentation Writer’s Guide,_](http://www.kinoma.com/develop/documentation/doc-writers-guide/index-md.php) which focuses on the process and content rather than the format or editorial style.
 
 ##Section Heading (##)
 Since # (level-1 heading) is used for the title of the document, the headings within the document start at level 2.
