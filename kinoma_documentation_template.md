@@ -137,13 +137,9 @@ Create (or crop) all figures so that there’s no blank space on any of the four
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
 ###Tables and Other Columnar Formats
-To create a table, use the following as a starting point (or, for more complicated tables, use HTML).
+To create a table, use the following as a starting point or, for more complicated tables (for example, where it's necessary to show borders) use HTML.
 
-<!--From CR: Do I understand correctly that tables will look different on the web page depending on whether they're ordinary tables or used for special formatting in reference sections? If so, please explain.-->
-
-<!--From CK: All tables in set up like below will not show borders, backgrounds, etc. If an ordinary table is needed we need to use standard HTML table markup -->
-
-<!--From CR: I thought this _was_ an ordinary table. Can we discuss?-->
+<!--From CR: Do the columns in the table below need to be so far apart (in the web output)? It's a wide enough gap that it might make it difficult to correlate the entries in the two columns. -->
 
 **Table 1.** Table Caption Goes Here
 
@@ -220,7 +216,7 @@ The "Object Description" section is currently used only for the application, DOM
 
 <!--From CK: Fixed as dicussed via CSS see: http://staging2.kinoma.com/develop/documentation/doc-template/index-md.php#applying-the-formats-->
 
-<!--From CR: I'm still seeing a misaligned "Returns."-->
+<!--From CR: I'm still seeing a misaligned "Returns" (and similar manifestations of this problem later).-->
 
 ||||
 | --- | --- | --- |
@@ -252,8 +248,6 @@ Describe value properties in the following format (where thie placeholder name r
 <!--New from CR: Please see my emailed response to this, sent Sep 13. See also my next comment.--> 
 
 `ObjectName.prototype.nameOfProperty`
-
-<!--New from CR: I changed the name in the first column below to remove the dashes, which wouldn't be in a real name, and I also made it as long as the actual longest name; the way the name folds is very unfortunate. Can more room be made? Can the names also break after a period??-->
 
 ||||
 | --- | --- | --- |
@@ -494,10 +488,10 @@ An example (or examples) if applicable.
 ####Prototype Description
 After a brief introduction to the prototype, all properties of the prototype are listed and described as illustrated below.
 
-`Object.prototype.value-property`  
+`Object.prototype.valueProperty`  
 > Explanation.
 
-`Object.prototype.function-property(param)`  
+`Object.prototype.functionProperty(param)`  
 > Explanation of the function and its parameter(s).
 
 #####Example  
