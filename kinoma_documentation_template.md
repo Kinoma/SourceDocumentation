@@ -182,7 +182,7 @@ Here are some general rules for what not to do when writing descriptions in this
 
 - Do not include graphics or code examples. 
 
-####Object-Name Object
+####ObjectName Object
 [Optional] Full sentences _briefly_ describing the object and/or providing other details about the object. If what the object represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
 
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable.
@@ -191,14 +191,14 @@ Next, include only whichever of the following lower-level sections apply. Square
 Full sentences providing coordinates information.
 
 #####Object Description  
-Object inherits from `Other-object-name.prototype`.
+Object inherits from `OtherObjectName.prototype`.
 
 [Object is sealed.]
 
 The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#Prototype-Description)," later, but without the `.prototype`.
 
 #####Constructor Description  
-`Object-name(param1, param2)`  
+`ObjectName(param1, param2)`  
 
 ||||
 | --- | --- | --- |
@@ -237,7 +237,7 @@ Omit this description if the function is self-explanatory—in particular, if al
 Some "Constructor Description" sections also describe value properties; see "Prototype Description," next, for the format of value property descriptions.
 
 #####Prototype Description  
-Prototype inherits from `Other-object-name.prototype`.
+Prototype inherits from `OtherObjectName.prototype`.
 
 [Instances are sealed [and volatile].]
 
@@ -251,12 +251,13 @@ Describe value properties in the following format (where thie placeholder name r
 
 <!--New from CR: Please see my emailed response to this, sent Sep 13. See also my next comment.--> 
 
-`ObjectName.prototype.nameOfproperty`
+`ObjectName.prototype.nameOfProperty`
 
 <!--New from CR: I changed the name in the first column below to remove the dashes, which wouldn't be in a real name, and I also made it as long as the actual longest name; the way the name folds is very unfortunate. Can more room be made? Can the names also break after a period??-->
 
 ||||
-| `ObjectName.prototype.nameOfproperty` | `type`| [read only] |
+| --- | --- | --- |
+| `ObjectName.prototype.nameOfProperty` | `type`| [read only] |
 
 > Follow with property details, as:  
 
@@ -266,7 +267,7 @@ Describe value properties in the following format (where thie placeholder name r
 
 Describe function properties in this format:
 
-`Object-name.prototype.functionName(param1, param2)`
+`ObjectName.prototype.functionName(param1, param2)`
 
 ||||
 | --- | --- | --- |
@@ -297,11 +298,11 @@ Optionally describe (without indentation) what the function does, using this for
 Omit the description if the function is self-explanatory—in particular, if all that needs to be said is what the function returns (above).
 
 #####Events  
-[Same events as for `other-object-name` instances (cross-reference)[, plus:]]
+[Same events as for `otherObjectName` instances (cross-reference)[, plus:]]
 
 > The cross-reference in parentheses above has this format:
 
-> see "Events" in the section "[Other-object-name Object](#other-object-name-object)."
+> see "Events" in the section "[OtherObjectName Object](#otherobjectname-object)."
 
 > where the section heading in the cross-reference is a link.
 
