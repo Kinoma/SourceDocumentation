@@ -144,7 +144,7 @@ To create a table, use the following as a starting point or, for more complicate
 **Table 1.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** ||
-| ------------ | ------------- ||
+| ------------ | ------------- |------------- |
 | Table entry | Table entry ||
 | Table entry | Table entry ||
 | Table entry | Table entry || 
