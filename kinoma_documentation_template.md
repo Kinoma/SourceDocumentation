@@ -478,7 +478,7 @@ None (or enter a description if applicable)
 ###_XS Chunks:_ ECMAScript Objects
 <!--From CR: The internal links in the following two paragraphs go nowhere, in both GitHub's preview and on the web page.-->
 
-In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS:-XS-Elements)"; the constructor and prototype are documented as shown here. 
+In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
 
 > **Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference:_ Object Reference](#KinomaJS-JavaScript-API-Reference-Object-Reference)."
 
