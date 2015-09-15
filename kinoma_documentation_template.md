@@ -14,9 +14,6 @@ For more details about Markdown, see its documentation on the web.
 
 > **Note:** There are alternatives to some of the formatting comventions described in this template, but the conventions described here are preferred.
 
-<!--From CR: 2nd link in paragraph below isn't working for me.-->
-<!--From KO: The link is working now.-->
-
 See also the editorial style guidelines in the [_Kinoma Documentation Style Sheet._](http://www.kinoma.com/develop/documentation/doc-stylesheet/index-md.php) Writers of documents in the KinomaJS documentation suite should also read the [_KinomaJS Documentation Writer’s Guide,_](http://www.kinoma.com/develop/documentation/doc-writers-guide/index-md.php) which focuses on the process and content rather than the format or editorial style.
 
 ##Section Heading (##)
@@ -111,6 +108,13 @@ dst = new File(argv[3], "w");
 while (buf = src.getLine())
 	dst.putLine(buf.toLowercase());
 ```  
+
+In rare cases where the code includes a `#`, use HTML instead of the back-ticks and escape the brackets, as illustrated below.
+
+<pre>
+<code class="nohighlight">&lt;color&gt;#FF8000&lt;/color&gt;</code>
+</pre>
+
 Show missing code (omitted for brevity) with `...`; this notation is acceptable on a line by itself (appropriately indented) or within a line, as in the following example.
 
 ```
@@ -249,7 +253,7 @@ Describe value properties in the following format (where thie placeholder name r
 
 <!--From CK: If this works for you I am fine. Assume you will just be copy pasting properly formatted snippets and updating the content -->
 
-<!--New from CR: Please see my emailed response to this, sent Sep 13. See also my next comment.--> 
+<!--New from CR: Please see my emailed response to this, sent Sep 13.--> 
 
 `ObjectName.prototype.nameOfProperty`
 
@@ -327,7 +331,7 @@ Event description (without indentation), beginning with "This event happens when
 ###_KinomaJS XML API Reference:_ Element Reference
 The [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/) document provides details on the elements that make up the XML API, in subsections like those shown here (analogous to object reference sections shown above in this template).
 
-####Element-Name Element
+####ElementName Element
 [Optional] Full sentences _briefly_ describing the element and/or providing other details about the element. If what the element represents is not obvious, describe it here. Any general details that are useful for reference can be stated here (though the main introduction and discussion should be in the [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/) document). Try to keep it no longer than one short paragraph.
 
 Next, include only whichever of the following lower-level sections apply. Square brackets indicate optional parts within subsections, to include only if applicable. (Not shown here is the special "Same as..." format used in some "Attributes" and "Elements" section in the document.)
@@ -366,6 +370,7 @@ Next, include only whichever of the following lower-level sections apply. Square
 ||||
 | --- | --- | --- |
 | `name` | comment |  |
+
 > where the comment indicates how many of this element. For example: 
 
 > 0 or more  
@@ -386,7 +391,7 @@ The words “JavaScript code” [optionally followed by further description]
 ###_XS_: XS Elements
 In the _XS_ document, XS elements are typically first discussed in a tutorial manner, with usage guidance and examples, and then described in a manner appropriate for later reference. The formatting used for each of these presentation types is discussed here.
 
->**Note:** None of the XS documents have been publicly posted yet.
+> **Note:** None of the XS documents have been publicly posted yet.
 
 To the extent reasonable, the section heading for a tutorial discussion should be explanatory (such as "Defining Build Targets"), whereas the heading for a reference section should be the element name (as in "xs:target").
 
@@ -418,13 +423,9 @@ color = { r: 0, g: 0, b: 0 }
 ```
 
 #####XML document
-<!--From CR:  everything following "<color>" in the web output for the following is in italic and gray; Why?-->
-<!--From CK:  Fixed, this is rare but if there is a # character in a code snippet it will by styled incorrectly by the syntax hightligher. We need to use html instead of the markdown triple backticks and escape the brackets so they render correctly in a browser. Very rare issue I think. -->
-
 <pre>
 <code class="nohighlight">&lt;color&gt;#FF8000&lt;/color&gt;</code>
 </pre>
-
 
 #####Instance
 ```
