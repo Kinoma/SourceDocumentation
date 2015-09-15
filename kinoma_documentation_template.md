@@ -153,10 +153,20 @@ To create a table, use the following as a starting point or, for more complicate
 <!--From KO: Add an addtional empty 3rd column to the 2-column-table should solve this problem.-->
 
 **Table 1.** Table Caption Goes Here
+<!--From CR: Can the column heads be centered? (I thought they were but then observed otherwsie when I lengthened the entries.)-->
+
+| **Column Head** | **Column Head** |
+| ------------ | ------------- | 
+| Table entry | Example of a second column with a long entry in it, such as a description of what is shown in the first column |
+| Table entry | Table entry |
+| Table entry | Table entry | 
+
+
+**Table 2.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** ||
 | ------------ | ------------- | ------------- |
-| What if it were a multiple-line table entry, like this one, which I'm making verbose as an experiment? | What if it were a multiple-line table entry, like this one, which I'm making verbose as an experiment? ||
+| Table entry | Table entry ||
 | Table entry | Table entry ||
 | Table entry | Table entry || 
 
