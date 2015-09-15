@@ -199,7 +199,7 @@ Object inherits from `OtherObjectName.prototype`.
 
 [Object is sealed.]
 
-<!--From CR: The internal link in the following goes nowhere, in both GitHub's preview and on the web page.-->
+<!--From CR: The internal link in the following works in GitHub's preview but goes nowhere on the web page.-->
 
 The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#prototype-description)," later, but without the `.prototype`.
 
