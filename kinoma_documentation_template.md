@@ -59,16 +59,16 @@ Although uncommon (outside of reference sections), indentation can be useful for
 ###Lists (- and N.)
 Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space. For example:
 
-- First short item  
-- Second short item  
+- First item  
+- Second item  
 
 Note that even if you don't add a blank line between items in Markdown, there will be blank space between them on the web page.
 
 Here's a numbered list:
  
-1. First long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
+1. First item
  
-2. Second long item. The purpose of this example is to show how a list should have blank lines between the entries whenever the listed items are long.
+2. Second item
 
 Items in a list would ideally be only one paragraph long, but in some cases an item will need to run to two paragraphs of text, or may be followed by a figure (or something else) before the next item in the list; in those cases, precede the continuation of the item with three space, as illustrated here:
 
@@ -113,8 +113,10 @@ while (buf = src.getLine())
 
 In rare cases where the code includes a `#`, use HTML instead of back-ticks and escape the brackets, as illustrated below.
 
+<!--From CR: For consistency, code below should be highlighted like all other code. Can you fix?-->
+
 <pre>
-<code class="nohighlight">&lt;color&gt;#FF8000&lt;/color&gt;</code>
+<code>&lt;color&gt;#FF8000&lt;/color&gt;</code>
 </pre>
 
 Show missing code (omitted for brevity) with `...`; this notation is acceptable on a line by itself (appropriately indented) or within a line, as in the following example.
