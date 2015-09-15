@@ -91,6 +91,8 @@ If the title of any Kinoma document changes, check for references to it in other
 
 For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
 
+<!--From CR: Internal link below (and same one later) works in GitHub's preview but not on the web page (it goes nowhere).-->
+
 > See the section "[Applying the Formats](#applying-the-formats)." 
 
 When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
@@ -109,7 +111,7 @@ while (buf = src.getLine())
 	dst.putLine(buf.toLowercase());
 ```  
 
-In rare cases where the code includes a `#`, use HTML instead of the back-ticks and escape the brackets, as illustrated below.
+In rare cases where the code includes a `#`, use HTML instead of back-ticks and escape the brackets, as illustrated below.
 
 <pre>
 <code class="nohighlight">&lt;color&gt;#FF8000&lt;/color&gt;</code>
@@ -197,9 +199,9 @@ Object inherits from `OtherObjectName.prototype`.
 
 [Object is sealed.]
 
-<!--From CR: The internal link in the following does not work.-->
+<!--From CR: The internal link in the following goes nowhere, in both GitHub's preview and on the web page.-->
 
-The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#Prototype-Description)," later, but without the `.prototype`.
+The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#prototype-description)," later, but without the `.prototype`.
 
 #####Constructor Description  
 `ObjectName(param1, param2)`  
@@ -306,7 +308,7 @@ Omit the description if the function is self-explanatory—in particular, if all
 
 > The cross-reference in parentheses above has this format:
 
-<!--From CR: The internal link in the following does not work.-->
+<!--From CR: The internal link in the following goes nowhere, in both GitHub's preview and on the web page.-->
 
 > see "Events" in the section "[OtherObjectName Object](#otherobjectname-object)."
 
@@ -476,11 +478,11 @@ None (or enter a description if applicable)
 None (or enter a description if applicable)
 
 ###_XS Chunks:_ ECMAScript Objects
-<!--From CR: The internal link in the following does not work.-->
+<!--From CR: The internal links in the following two paragraphs go nowhere, in both GitHub's preview and on the web page.-->
 
 In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
 
->**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference:_ Object Reference](KinomaJS-JavaScript-API-Reference-Object-Reference)."
+> **Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference:_ Object Reference](#KinomaJS-JavaScript-API-Reference-Object-Reference)."
 
 ####Constructor Description
 After a brief introduction to the constructor, all forms of the constructor are listed and described as illustrated below.
