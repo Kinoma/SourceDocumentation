@@ -59,10 +59,11 @@ Although uncommon (outside of reference sections), indentation can be useful for
 ###Lists (- and N.)
 Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space. For example:
 
-- First item  
+- First item
+
 - Second item  
 
-Note that even if you don't add a blank line between items in Markdown, there will be blank space between them on the web page.
+> **Note:** If you don't add a blank line between items in Markdown, you won't see any blank space between the items in GitHub's preview but there _will_ be blank space between them on the web page.
 
 Here's a numbered list:
  
@@ -111,12 +112,12 @@ while (buf = src.getLine())
 	dst.putLine(buf.toLowercase());
 ```  
 
-In rare cases where the code includes a `#`, use HTML instead of back-ticks and escape the brackets, as illustrated below.
+<!--From CR: Is my rewrite below correct—i.e., highlighting _must_ be suppressed, however inconsistent that might be with other code?-->
 
-<!--From CR: For consistency, code below should be highlighted like all other code. Can you fix?-->
+In rare cases where the code includes a `#`, use HTML instead of back-ticks, escape the brackets, and (inconsistent with other code, but necessary to make this work) suppress the highlighting, as illustrated below.
 
 <pre>
-<code>&lt;color&gt;#FF8000&lt;/color&gt;</code>
+<code class="nohighlight">&lt;color&gt;#FF8000&lt;/color&gt;</code>
 </pre>
 
 Show missing code (omitted for brevity) with `...`; this notation is acceptable on a line by itself (appropriately indented) or within a line, as in the following example.
@@ -155,7 +156,7 @@ To create a table, use the following as a starting point or, for more complicate
 
 | **Column Head** | **Column Head** ||
 | ------------ | ------------- | ------------- |
-| Table entry | Table entry ||
+| What if it were a multiple-line table entry, like this one, which I'm making verbose as an experiment? | What if it were a multiple-line table entry, like this one, which I'm making verbose as an experiment? ||
 | Table entry | Table entry ||
 | Table entry | Table entry || 
 
