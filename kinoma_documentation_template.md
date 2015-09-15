@@ -197,7 +197,9 @@ Object inherits from `OtherObjectName.prototype`.
 
 [Object is sealed.]
 
-The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#####Prototype-Description)," later, but without the `.prototype`.
+<!--From CR: The internal link in the following does not work.-->
+
+The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#Prototype-Description)," later, but without the `.prototype`.
 
 #####Constructor Description  
 `ObjectName(param1, param2)`  
@@ -304,7 +306,9 @@ Omit the description if the function is self-explanatory—in particular, if all
 
 > The cross-reference in parentheses above has this format:
 
-> see "Events" in the section "[OtherObjectName Object](##otherobjectname-object)."
+<!--From CR: The internal link in the following does not work.-->
+
+> see "Events" in the section "[OtherObjectName Object](#otherobjectname-object)."
 
 > where the section heading in the cross-reference is a link.
 
@@ -472,7 +476,9 @@ None (or enter a description if applicable)
 None (or enter a description if applicable)
 
 ###_XS Chunks:_ ECMAScript Objects
-In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](##XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
+<!--From CR: The internal link in the following does not work.-->
+
+In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
 
 >**Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference:_ Object Reference](KinomaJS-JavaScript-API-Reference-Object-Reference)."
 
