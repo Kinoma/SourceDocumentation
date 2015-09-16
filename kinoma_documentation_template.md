@@ -502,7 +502,7 @@ None (or enter a description if applicable)
 <!--From KO: These two are external links referring to sections in other Documentaion. We will make sure all links work after all Documentation editings are finished-->
 <!--I am referring to the two internal links (to sections in this template), #XS-XS-Elements and #KinomaJS-JavaScript-API-Reference-Object-Reference; please advise.-->
 
-In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS--XS-Elements)"; the constructor and prototype are documented as shown here. 
+In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
 
 > **Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference:_ Object Reference](#KinomaJS-JavaScript-API-Reference-Object-Reference)."
 
