@@ -133,11 +133,11 @@ Create (or crop) all figures so that there’s no blank space on the bottom or l
 
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
-<!--From CR: Is "#cross-references-and-links" right below or should it be "#crossreferences-and-links"?-->
+<!--From CR: The link below doesn't work in GitHub's preview. I've tried both "#cross-references-and-links" and "#crossreferences-and-links".-->
 
-This next caption is included here to illustrate how a figure (or table) can be linked to via a cross-reference, per the instruction later in the section "[Cross-References and Links](#crossreferences-and-links)." 
+This next caption is included here to illustrate how a figure (or table) can be linked to via a cross-reference, per the instructions later in the section "[Cross-References and Links](#cross-references-and-links)." 
 
-<!--From CR: WHy is the text on the web page green for a while from here on?-->
+<!--From CR: The text on the web page is green for a while from here on.-->
 
 <a name="targeted-image">**Figure 2.** Targeted Image  
 
@@ -183,7 +183,7 @@ If the title of any Kinoma document changes, check for references to it in other
 
 ###Internal Links
 
-The internal links described here will work in GitHub's preview, but they will not work on the web page until the links are changed when the `.md` file gets parsed into `.html`. Test them in preview and correct any that do not work properly there.
+The internal links described here will work in GitHub's preview, but they will not initially work on the web page (that is, not until the links are changed when the `.md` file gets parsed into `.html`). Test internal links in preview and correct any that do not work properly there.
 
 ####Links to Sections
 For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
@@ -235,9 +235,6 @@ Object inherits from `OtherObjectName.prototype`.
 
 [Object is sealed.]
 
-<!--From CR: The internal link in the following works in GitHub's preview but goes nowhere on the web page.-->
-<!--From KO: The reason why the internal link doesn't work on the web page is because the hyperlinks are changed when the .md file gets parsed into .html. We will correct the links and make sure they work on the web page eventually.-->
-
 The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#prototype-description)," later, but without the `.prototype`.
 
 #####Constructor Description  
@@ -282,11 +279,9 @@ After the text shown above, describe all the value properties and function prope
 
 Describe value properties in the following format (where thie placeholder name reflects the current maximum length that a name in this section can be):
 
-<!--From CR: Note, adding a heading below for every value property is a big change, which (as I mentioned in an earlier email) is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think?-->
-
+<!--From CR: Adding a heading below for every value property is a big change, which is a way to have all properties (whether value properties or function properties) align the same on the left. What do you think?-->
 <!--From CK: If this works for you I am fine. Assume you will just be copy pasting properly formatted snippets and updating the content -->
-
-<!--New from CR: Please see my emailed response to this, sent Sep 13.--> 
+<!--New from CR: Please respond to my emailed response to this, sent Sep 13.--> 
 
 `ObjectName.prototype.nameOfProperty`
 
@@ -505,8 +500,9 @@ None (or enter a description if applicable)
 None (or enter a description if applicable)
 
 ###_XS Chunks:_ ECMAScript Objects
-<!--From CR: The internal links in the following two paragraphs go nowhere, in both GitHub's preview and on the web page.-->
+<!--From CR: The internal links in the following two paragraphs do not work in both GitHub's preview.-->
 <!--From KO: These two are external links referring to sections in other Documentaion. We will make sure all links work after all Documentation editings are finished-->
+<!--I am referring to the two internal links (to sections in this template), #XS-XS-Elements and #KinomaJS-JavaScript-API-Reference-Object-Reference; please advise.-->
 
 In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
 
