@@ -133,8 +133,6 @@ Create (or crop) all figures so that there’s no blank space on the bottom or l
 
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
-<!--From CR: The link below doesn't work in GitHub's preview. I've tried both "#cross-references-and-links" and "#crossreferences-and-links".-->
-
 This next caption is included here to illustrate how a figure (or table) can be linked to via a cross-reference, per the instructions later in the section "[Cross-References and Links](#cross-references-and-links)." 
 
 <!--From CR: The text on the web page is green for a while from here on.-->
@@ -186,7 +184,7 @@ If the title of any Kinoma document changes, check for references to it in other
 The internal links described here will work in GitHub's preview, but they will not initially work on the web page (that is, not until the links are changed when the `.md` file gets parsed into `.html`). Test internal links in preview and correct any that do not work properly there.
 
 ####Links to Sections
-For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
+For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation (except hyphens) in the heading; and not case-sensitive. It will link to the first heading with that name.
 
 > See the section "[Applying the Formats](#applying-the-formats)." 
 
@@ -504,7 +502,7 @@ None (or enter a description if applicable)
 <!--From KO: These two are external links referring to sections in other Documentaion. We will make sure all links work after all Documentation editings are finished-->
 <!--I am referring to the two internal links (to sections in this template), #XS-XS-Elements and #KinomaJS-JavaScript-API-Reference-Object-Reference; please advise.-->
 
-In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
+In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS--XS-Elements)"; the constructor and prototype are documented as shown here. 
 
 > **Note:** A more advisable format has since evolved for describing constructors and prototypes; see the section "[_KinomaJS JavaScript API Reference:_ Object Reference](#KinomaJS-JavaScript-API-Reference-Object-Reference)."
 
