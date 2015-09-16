@@ -92,9 +92,6 @@ If the title of any Kinoma document changes, check for references to it in other
 
 For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
 
-<!--From CR: Internal link below (and same one later) works in GitHub's preview but not on the web page (it goes nowhere).-->
-<!--From KO: The reason why the internal link doesn't work on the web page is because the hyperlinks are changed when the .md file gets parsed into .html. We will correct the links and make sure they work on the web page eventually.-->
-
 > See the section "[Applying the Formats](#applying-the-formats)." 
 
 When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
