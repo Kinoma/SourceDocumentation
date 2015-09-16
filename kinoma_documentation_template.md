@@ -137,10 +137,9 @@ When adding, deleting, or moving a captioned figure, remember to also update the
 
 This next caption is included here to illustrate how a figure (or table) can be linked to via a cross-reference, per the instruction later in the section "[Cross-References and Links](#cross-references-and-links)." 
 
-<!--From CR: WHy is the text on the web page all green for a while from here on?-->
+<!--From CR: WHy is the text on the web page green for a while from here on?-->
 
 <a name="targeted-image">**Figure 2.** Targeted Image  
-![](http://kinoma.com/create/img/open-sensor-illus.png)
 
 ##Tables and Other Columnar Formats
 To create a table consisting of short entries, use the example table below as a starting point. Note that a third, blank column has been added in this example so that the second column will not be too far to the right of the first column.
