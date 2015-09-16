@@ -112,7 +112,7 @@ while (buf = src.getLine())
 	dst.putLine(buf.toLowercase());
 ```  
 
-<!--From CR: Is my rewrite below correct? Must code like this be inconsitent with other code in terms of highlighting?-->
+<!--From CR: Is my rewrite below correct? Must code like this be inconsistent with other code in terms of highlighting?-->
 
 In rare cases where the code includes a `#`, use HTML instead of back-ticks, escape the brackets, and (inconsistent with other code, but necessary to make this work) suppress the highlighting, as illustrated below.
 
@@ -151,7 +151,7 @@ To create a table consisting of short entries, use the example table below as a 
 
 <!--From CR: Do the columns in the table below need to be so far apart (in the web output)? It's a wide enough gap that it might make it difficult to correlate the entries in the two columns.-->
 <!--From KO: Add an addtional empty 3rd column to the 2-column-table should solve this problem.-->
-<!--From CR: That works for the case of short entries but not if the entries in the 2nd column are long (which is not uncommon), as in Table 2 below; in that case the 2nd column is too narrow on the web page. But removing the 3rd, blank column doesn't look right either. Also, can the column heads be centered on the web page? In these respects, Table 2 looks reasonable in GitHub's preview but not on the web page.-->
+<!--From CR: That works for the case of short entries but not if the entries in the 2nd column are long (which is not uncommon), as in Table 2 below; in that case the 2nd column is too narrow on the web page. But removing the 3rd, blank column doesn't look right either. Also, can the column heads be centered in the web output? In these respects, Table 2 looks reasonable in GitHub's preview but not on the web.-->
 
 **Table 1.** Table Caption Goes Here
 
@@ -161,7 +161,7 @@ To create a table consisting of short entries, use the example table below as a 
 | Table entry | Table entry ||
 | Table entry | Table entry || 
 
-To create a table consisting of longer entries, use the example table below as a starting point. **I'll edit this sentence once the issue is resolved.**
+To create a table consisting of longer entries, use the example table below as a starting point. **(I'll edit this sentence depending on how the related issues are resolved.)**
 
 **Table 2.** Table with Longer Entries
 
