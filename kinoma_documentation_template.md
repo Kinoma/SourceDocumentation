@@ -30,9 +30,9 @@ Unless absolutely necessary, subsections should not go lower than this level.
 Use a level-5 heading for occasional headings on code examples, terms in the glossary, and the like. (Examples follow later.)
 
 ###Body Text
-Paragraphs within sections have no special formatting. The sections below describe formatting for certain characters.
+Paragraphs within sections have no special formatting. The subsections below describe formatting for certain characters.
 
-Although entering characters outside the basic ASCII character set—such as the em dash, used here—will work fine, you can stick with the basic set; it may not look right in Github's preview, but CSS styling will make it look right on the web page. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page. Likewise, two hyphens in a row will appear as an em dash on the web page.
+Although entering characters outside the basic ASCII character set—such as the em dash, used here—will work fine, you can stick with the basic set; it may not look right in GitHub's preview, but CSS styling will make it look right on the web page. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page. Likewise, two hyphens in a row will appear as an em dash on the web page.
 
 ####Italic (\_)
 For emphasis and other uses of italic (including document titles), use underscores, as done _here._
@@ -103,8 +103,6 @@ For the "computer voice" font within body text, use back-ticks (\`). For example
 
 For code blocks—that is, one or more code lines that are separate from body text—place a line of three back-ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per "tab." An example (using the tab character) follows. Note that color highlighting in code will show up only on the web page and not in GitHub's preview.
 
-<!--From CR: Code higlighting isn't appearing at all now on the web page; intentional change? Note, if that's fixed, there's then the issue that the HTML example following this one suppresses higlighting and so is inconsistent with other code.-->
-
 > **Note:** Even a single line of code should be formatted this way (not with just single back-ticks around it on the same line), otherwise the color highlighting will not appear on the web page.
 
 ```
@@ -113,6 +111,8 @@ dst = new File(argv[3], "w");
 while (buf = src.getLine())
 	dst.putLine(buf.toLowercase());
 ```  
+
+<!--From CR: Is my rewrite below correct? Must code like this be inconsitent with other code in terms of highlighting?-->
 
 In rare cases where the code includes a `#`, use HTML instead of back-ticks, escape the brackets, and (inconsistent with other code, but necessary to make this work) suppress the highlighting, as illustrated below.
 
