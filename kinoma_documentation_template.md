@@ -16,34 +16,34 @@ For more details about Markdown, see its documentation on the web.
 
 See also the editorial style guidelines in the [_Kinoma Documentation Style Sheet._](http://www.kinoma.com/develop/documentation/doc-stylesheet/index-md.php) Writers of documents in the KinomaJS documentation suite should also read the [_KinomaJS Documentation Writer’s Guide,_](http://www.kinoma.com/develop/documentation/doc-writers-guide/index-md.php) which focuses on the process and content rather than the format or editorial style.
 
-##Section Heading (##)
+##Section Headings (##)
 Since # (level-1 heading) is used for the title of the document, the headings within the document start at level 2.
 
-###Subsection Heading (###)
+###Subsection Headings (###)
 Content of subsection follows here.
 
-####Sub-subsection Heading (####)
+####Sub-subsection Headings (####)
 
 Unless absolutely necessary, subsections should not go lower than this level. 
 
-#####Special Low-Level Heading (#####)
+#####Special Low-Level Headings (#####)
 Use a level-5 heading for occasional headings on code examples, terms in the glossary, and the like. (Examples follow later.)
 
-###Body Text
+##Body Text
 Paragraphs within sections have no special formatting. The subsections below describe formatting for certain characters.
 
 Although entering characters outside the basic ASCII character set—such as the em dash, used here—will work fine, you can stick with the basic set; it may not look right in GitHub's preview, but CSS styling will make it look right on the web page. For example, you can type the default "straight" quotation marks and, except in code, they will be converted to the "curly" kind (“ ” and ‘ ’) on the web page. Likewise, two hyphens in a row will appear as an em dash on the web page.
 
-####Italic (\_)
+###Italic (\_)
 For emphasis and other uses of italic (including document titles), use underscores, as done _here._
 
-####Bold (**)
+###Bold (**)
 Use double asterisks for bold—for example, when referring to a user interface element as in "Press **Menu**."
 
-####Escape Character (\\)
+###Escape Character (\\)
 To prevent Markdown from processing a character as a command, precede the character with backslash (as done in the heading above). Do not use it in code, however, because everything entered as code is taken literally (not interpreted as a command).
 
-###Notes and Other Indentation (>)
+##Notes and Other Indentation (>)
 Use Notes formatted like the one below—including blockquote (>) for indentation—for incidental, noncritical information.
 
 > **Note:** Adding a space after the angle bracket makes the text stand out better as a blockquote in GitHub's edit view (making the quoted text appear in color). This is an example of how incidental, noncritical Notes should be formatted.
@@ -56,14 +56,14 @@ Although uncommon (outside of reference sections), indentation can be useful for
 
 > GitHub's preview will show blockquoted text in gray and with a bar in the margin, but CSS styling will remove that on the web page.
 
-###Lists (- and N.)
+##Lists (- and N.)
 Precede each item in a bulleted list with a hyphen and in an ordered (numbered) list with "N.", where N is the number for that item (though it can be any number at all, as Markdown always numbers sequentially from 1). Be sure to follow the hyphen or "N." with a space. For example:
 
 - First item
 
 - Second item  
 
-> **Note:** If you don't add a blank line between items in Markdown, you won't see any blank space between the items in GitHub's preview but there _will_ be blank space between them on the web page.
+> **Note:** If you do not add a blank line between items in Markdown, you will not see any blank space between the items in GitHub's preview but there _will_ be blank space between them on the web page.
 
 Here's a numbered list:
  
@@ -83,20 +83,7 @@ The following example illustrates the preferred format for beginning list items 
 
 - **Next such item** — And so on.
 
-###Cross-References and Links
-When referring to another Kinoma document (or any Kinoma web page), do not explicitly show the link; for example, [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/), [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/), and [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/). When referring to anything else on the web, show the link explicitly, as in this example:
-
-> A _module_ in KinomaJS is a JavaScript module as specified by CommonJS ([wiki.commonjs.org/wiki/Modules/1.1](http://wiki.commonjs.org/wiki/Modules/1.1)).
-
-If the title of any Kinoma document changes, check for references to it in other documents and update them.
-
-For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
-
-> See the section "[Applying the Formats](#applying-the-formats)." 
-
-When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
-
-###Code (`)
+##Code (`)
 For the "computer voice" font within body text, use back-ticks (\`). For example, refer to an element named `foo` as "the `foo` element."
 
 For code blocks—that is, one or more code lines that are separate from body text—place a line of three back-ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per "tab." An example (using the tab character) follows. Note that color highlighting in code will show up only on the web page and not in GitHub's preview.
@@ -134,7 +121,7 @@ var CB = require("SharedBehaviors");
 
 Reference sections typically describe many different code entities, using special context-specific formats; for more information, see the section "[Applying the Formats](#applying-the-formats)."
 
-###Figures
+##Figures
 Format figures with numbered captions as shown below. Numbers and captions need not be included where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step above it described. 
 
 **Figure 1.** Figure Caption Goes Here  
@@ -144,8 +131,8 @@ Create (or crop) all figures so that there’s no blank space on any of the four
 
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
-###Tables and Other Columnar Formats
-To create a table consisting of short entries, use the example table below as a starting point. Note that a third, blank column has been added in this example so that the second column won't be too far to the right of the first column.
+##Tables and Other Columnar Formats
+To create a table consisting of short entries, use the example table below as a starting point. Note that a third, blank column has been added in this example so that the second column will not be too far to the right of the first column.
 
 <!--From CR: Do the columns in the table below need to be so far apart (in the web output)? It's a wide enough gap that it might make it difficult to correlate the entries in the two columns.-->
 <!--From KO: Add an addtional empty 3rd column to the 2-column-table should solve this problem.-->
@@ -175,7 +162,32 @@ When adding, deleting, or moving a table, remember to also update the numbering 
 
 Especially in reference sections, it can be useful to arrange information in a simple columnar format, without a table caption or column heads; the next section includes many examples of this.
 
-###Comments
+##Cross-References and Links
+
+###External Links
+When referring to another Kinoma document (or any Kinoma web page), do not explicitly show the link; for example, [_KinomaJS Overview_](http://kinoma.com/develop/documentation/overview/), [_KinomaJS JavaScript API Reference_](http://kinoma.com/develop/documentation/javascript/), and [_KinomaJS XML API Reference_](http://kinoma.com/develop/documentation/xml/). When referring to anything else on the web, show the link explicitly, as in this example:
+
+> A _module_ in KinomaJS is a JavaScript module as specified by CommonJS ([wiki.commonjs.org/wiki/Modules/1.1](http://wiki.commonjs.org/wiki/Modules/1.1)).
+
+If the title of any Kinoma document changes, check for references to it in other documents and update them.
+
+###Internal Links to Sections
+For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
+
+> See the section "[Applying the Formats](#applying-the-formats)." 
+
+When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
+
+###Internal Links to Figures or Tables
+Although rare, it may be useful to have a cross-reference a figure or table (other than the reference introducing it in the paragraph above it); this can be accomplished by manually adding an HTML anchor target. For example, given a figure whose caption is targeted like this: 
+
+<a name="targeted-image"></a>**Figure 3.** Targeted Image
+
+you could link to it with a cross-reference like this:
+
+> See [Figure 3](#targeted-image). 
+
+##Comments
 Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from. An example (visible only in edit view) follows here.
 
 <!--From CR: Format comments like this, with your name/initials after "From:".-->
