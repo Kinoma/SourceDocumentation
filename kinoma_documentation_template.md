@@ -124,7 +124,7 @@ Reference sections typically describe many different code entities, using specia
 ##Figures
 Format figures with numbered captions as shown below. Numbers and captions need not be included where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step above it described. 
 
-**Figure 1.** Figure Caption Goes Here  
+<a name="targeted-image">**Figure 1.** Figure Caption Goes Here  
 ![](http://kinoma.com/create/img/open-sensor-illus.png)
    
 Create (or crop) all figures so that there’s no blank space on any of the four sides.
@@ -181,7 +181,7 @@ When changing the wording of any heading, check for references to it in the docu
 ###Internal Links to Figures or Tables
 Although rare, it may be useful to have a cross-reference a figure or table (other than the reference introducing it in the paragraph above it); this can be accomplished by manually adding an HTML anchor target. For example, given a figure whose caption is targeted like this: 
 
-<a name="targeted-image"></a>**Figure 3.** Targeted Image
+</a>**Figure 3.** Targeted Image
 
 you could link to it with a cross-reference like this:
 
