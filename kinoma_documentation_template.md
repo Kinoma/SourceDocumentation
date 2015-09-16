@@ -129,7 +129,7 @@ Format figures with numbered captions as shown below. Numbers and captions need 
    
 Note that two spaces follow the caption above; without them, figure placement may be wrong on the web page. Alternatively, a blank line may be added after the caption, but it will add a blank line above the figure on the web page.
 
-Create (or crop) all figures so that there’s no blank space on any of the four sides.
+Create (or crop) all figures so that there’s no blank space on the bottom or left.
 
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
@@ -140,6 +140,7 @@ This next caption is included here to illustrate how a figure (or table) can be 
 <!--From CR: WHy is the text on the web page all green for a while from here on?-->
 
 <a name="targeted-image">**Figure 2.** Targeted Image  
+![](http://kinoma.com/create/img/open-sensor-illus.png)
 
 ##Tables and Other Columnar Formats
 To create a table consisting of short entries, use the example table below as a starting point. Note that a third, blank column has been added in this example so that the second column will not be too far to the right of the first column.
