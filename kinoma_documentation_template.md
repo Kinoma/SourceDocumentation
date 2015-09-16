@@ -122,12 +122,12 @@ var CB = require("SharedBehaviors");
 Reference sections typically describe many different code entities, using special context-specific formats; for more information, see the section "[Applying the Formats](#applying-the-formats)."
 
 ##Figures
-Format figures with numbered captions as shown below. Numbers and captions need not be included where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step above it described. Be sure to follow the caption with a blank line or two spaces, or the figure placement may be incorrect. 
+Format figures with numbered captions as shown below. Numbers and captions need not be included where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step above it described.
 
 **Figure 1.** Figure Caption Goes Here  
 ![](http://kinoma.com/create/img/open-sensor-illus.png)
    
-Note that two spaces follow the caption above; without them, figure placement may be wrong on the web page. Alternatively, a blank line may be added after the caption, but it will add a blank line above the figure on the web page.
+Note that two spaces follow the caption above; without them, figure placement might be wrong on the web page. Alternatively, you can a blank line after the caption, but it will add a blank line above the figure on the web page.
 
 Create (or crop) all figures so that there’s no blank space on the bottom or left.
 
