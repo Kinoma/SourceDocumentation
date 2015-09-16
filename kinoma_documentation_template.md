@@ -135,7 +135,7 @@ When adding, deleting, or moving a captioned figure, remember to also update the
 
 <!--From CR: Is "#cross-references-and-links" right below or should it be "#crossreferences-and-links"?-->
 
-This next caption is included here to illustrate how a figure (or table) can be linked to via a cross-reference, per the instruction later in the section "[Cross-References and Links](#cross-references-and-links)." 
+This next caption is included here to illustrate how a figure (or table) can be linked to via a cross-reference, per the instruction later in the section "[Cross-References and Links](#crossreferences-and-links)." 
 
 <!--From CR: WHy is the text on the web page green for a while from here on?-->
 
@@ -181,14 +181,18 @@ When referring to another Kinoma document (or any Kinoma web page), do not expli
 
 If the title of any Kinoma document changes, check for references to it in other documents and update them.
 
-###Internal Links to Sections
+###Internal Links
+
+The internal links described here will work in GitHub's preview, but they will not work on the web page until the links are changed when the `.md` file gets parsed into `.html`. Test them in preview and correct any that do not work properly there.
+
+####Links to Sections
 For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
 
 > See the section "[Applying the Formats](#applying-the-formats)." 
 
 When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
 
-###Internal Links to Figures or Tables
+#### Links to Figures or Tables
 Although rare, it may be useful to have a cross-reference to a figure or table (other than the reference introducing it in the paragraph above it); this can be accomplished by adding an HTML anchor target. For example:
 
 > See [Figure 2](#targeted-image). 
