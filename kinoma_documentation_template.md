@@ -151,6 +151,7 @@ To create a table consisting of short entries, use the example table below as a 
 
 <!--From CR: Do the columns in the table below need to be so far apart (in the web output)? It's a wide enough gap that it might make it difficult to correlate the entries in the two columns.-->
 <!--From KO: Add an addtional empty 3rd column to the 2-column-table should solve this problem.-->
+<!--From CR: That works for the case of short entries but not if the entries in the 2nd column are long (which is not uncommon), as in Table 2 below; in that case the 2nd column is too narrow on the web page. But removing the 3rd, blank column doesn't look right either. Also, can the column heads be centered on the web page? In these respects, Table 2 looks reasonable in GitHub's preview but not on the web page.-->
 
 **Table 1.** Table Caption Goes Here
 
@@ -160,7 +161,7 @@ To create a table consisting of short entries, use the example table below as a 
 | Table entry | Table entry ||
 | Table entry | Table entry || 
 
-<!--From CR: That works for the case of short entries but not if the entries in the second column are long (which is not uncommon), as in the second example below; in that case the second column is too narrow. But removing the third, blank column doesn't look right either (at least not on the web page). Also, can the column heads be centered on the web page? In these respects, this next example looks perfect in GitHub's preview but not on the web page.-->
+To create a table consisting of longer entries, use the example table below as a starting point. **I'll edit this sentence once the issue is resolved.**
 
 **Table 2.** Table with Longer Entries
 
