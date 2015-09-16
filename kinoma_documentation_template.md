@@ -527,7 +527,7 @@ xsType xsMacro(xsType param1, xsType param2)
 ```
 
 ||||
-| --- | --- ||
+| --- | --- | --- |
 | `param1` | Brief parameter description (potentially, though rarely, more than one line long) ||
 | `param2` | Brief parameter description ||
 | Returns | Brief return value description ||
