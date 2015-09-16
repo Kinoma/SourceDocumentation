@@ -167,7 +167,7 @@ To create a table consisting of longer entries, use the example table below as a
 
 | **Column Head** | **Column Head** ||
 | ------------ | ------------- | ------------- |
-| Table entry | Example of a second column with long entries in it—for example, describing what is shown in the first column ||
+| Table entry | `Example of a second column with long entries in it—for example, describing what is shown in the first column` ||
 | Table entry | Example of a second column with long entries in it—for example, describing what is shown in the first column ||
 | Table entry | Example of a second column with long entries in it—for example, describing what is shown in the first column ||
 
