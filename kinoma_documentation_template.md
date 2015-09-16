@@ -147,28 +147,30 @@ Create (or crop) all figures so that there’s no blank space on any of the four
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
 
 ###Tables and Other Columnar Formats
-To create a table, use the following as a starting point or, for more complicated tables (for example, where it's necessary to show borders) use HTML.
+To create a table consisting of short entries, use the example table below as a starting point. Note that a third, blank column has been added in this example so that the second column won't be too far to the right of the first column.
 
 <!--From CR: Do the columns in the table below need to be so far apart (in the web output)? It's a wide enough gap that it might make it difficult to correlate the entries in the two columns.-->
 <!--From KO: Add an addtional empty 3rd column to the 2-column-table should solve this problem.-->
 
 **Table 1.** Table Caption Goes Here
-<!--From CR: Can the column heads be centered? (I thought they were but then observed otherwsie when I lengthened the entries.)-->
-
-| **Column Head** | **Column Head** |
-| ------------ | ------------- | 
-| Table entry | Example of a second column with a long entry in it, such as a description of what is shown in the first column |
-| Table entry | Table entry |
-| Table entry | Table entry | 
-
-
-**Table 2.** Table Caption Goes Here
 
 | **Column Head** | **Column Head** ||
 | ------------ | ------------- | ------------- |
 | Table entry | Table entry ||
 | Table entry | Table entry ||
 | Table entry | Table entry || 
+
+<!--From CR: That works for the case of short entries but not if the entries in the second column are long (which is not uncommon), as in the second example below; in that case the second column is too narrow. But removing the third, blank column doesn't look right either (at least not on the web page). Also, can the column heads be centered?-->
+
+**Table 2.** Table with Longer Entries
+
+| **Column Head** | **Column Head** ||
+| ------------ | ------------- | ------------- |
+| Table entry | Example of a second column with long entries in it—for example, describing what is shown in the first column ||
+| Table entry | Example of a second column with long entries in it—for example, describing what is shown in the first column ||
+| Table entry | Example of a second column with long entries in it—for example, describing what is shown in the first column || 
+
+For more complicated tables than what's illustrated here—for example, where it's necessary to show borders—use HTML.
 
 When adding, deleting, or moving a table, remember to also update the numbering of any other affected tables.
 
@@ -234,14 +236,6 @@ The "Object Description" section is currently used only for the application, DOM
 | `param2`| `type`| [required] |
 
 > Parameter details
-
-<!--From CR: The web output for the following table illustrates the problem that when there is no entry in the 3rd column, the 2nd column isn't lined up correctly. Note this wil also happen when the optional 3rd entry is omitted in the param descriptions above. You alluded to another possible solution for this; can we take a look at that? Note that in general in such 3-column reference formats, the 1st column's entry could be as long as `Style.prototype.horizontalAlignment`.-->
-
-<!--From CK: Fixed as dicussed via CSS see: http://staging2.kinoma.com/develop/documentation/doc-template/index-md.php#applying-the-formats-->
-
-<!--From CR: I'm still seeing a misaligned "Returns" (and similar manifestations of this problem later).-->
-
-<!--From KO: The misalignment should be resolved now.-->
 
 ||||
 | --- | --- | --- |
@@ -532,11 +526,11 @@ After a brief introduction to the macro, parameters of the macro (if any) are li
 xsType xsMacro(xsType param1, xsType param2)
 ```
 
-|||
-| --- | --- |
-| `param1` | Brief parameter description (potentially, though rarely, more than one line long) |
-| `param2` | Brief parameter description|
-| Returns | Brief return value description |
+||||
+| --- | --- ||
+| `param1` | Brief parameter description (potentially, though rarely, more than one line long) ||
+| `param2` | Brief parameter description ||
+| Returns | Brief return value description ||
 
 
 Additional discussion of the macro sometimes follows (in the normal body text style), and an example formatted as shown below may also be provided.
