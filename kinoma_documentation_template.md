@@ -124,7 +124,8 @@ Reference sections typically describe many different code entities, using specia
 ##Figures
 Format figures with numbered captions as shown below. Numbers and captions need not be included where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step above it described. 
 
-<a name="targeted-image">**Figure 1.** Figure Caption Goes Here  
+<a name="targeted-image">**Figure 1.** Figure Caption Goes Here 
+
 ![](http://kinoma.com/create/img/open-sensor-illus.png)
    
 Create (or crop) all figures so that there’s no blank space on any of the four sides.
