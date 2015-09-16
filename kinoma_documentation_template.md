@@ -93,6 +93,7 @@ If the title of any Kinoma document changes, check for references to it in other
 For cross-references to headings (items with one or more # in front), use an anchor link, as illustrated below. The words after the # in Markdown are the exact heading, except: with hyphens where any spaces were; excluding any punctuation in the heading; and not case-sensitive. It will link to the first heading with that name.
 
 <!--From CR: Internal link below (and same one later) works in GitHub's preview but not on the web page (it goes nowhere).-->
+<!--From KO: The reason why the internal link doesn't work on the web page is because the hyperlinks are changed when the .md file gets parsed into .html. We will correct the links and make sure they work on the web page eventually.-->
 
 > See the section "[Applying the Formats](#applying-the-formats)." 
 
@@ -165,8 +166,7 @@ To create a table consisting of longer entries, use the example table below as a
 
 **Table 2.** Table with Longer Entries
 
-<!--| **Column Head** | **Column Head** ||-->
-||||
+| **Column Head** | **Column Head** ||
 | ------------ | ------------- | ------------- |
 | Table entry | Example of a second column with long entries in it—for example, describing what is shown in the first column ||
 | Table entry | Example of a second column with long entries in it—for example, describing what is shown in the first column ||
@@ -217,6 +217,7 @@ Object inherits from `OtherObjectName.prototype`.
 [Object is sealed.]
 
 <!--From CR: The internal link in the following works in GitHub's preview but goes nowhere on the web page.-->
+<!--From KO: The reason why the internal link doesn't work on the web page is because the hyperlinks are changed when the .md file gets parsed into .html. We will correct the links and make sure they work on the web page eventually.-->
 
 The "Object Description" section is currently used only for the application, DOM, and shell objects. The rest of the section is the same as for "[Prototype Description](#prototype-description)," later, but without the `.prototype`.
 
@@ -486,6 +487,7 @@ None (or enter a description if applicable)
 
 ###_XS Chunks:_ ECMAScript Objects
 <!--From CR: The internal links in the following two paragraphs go nowhere, in both GitHub's preview and on the web page.-->
+<!--From KO: These two are external links referring to sections in other Documentaion. We will make sure all links work after all Documentation editings are finished-->
 
 In the _XS Chunks_ document, the documentation for ECMAScript objects created in XS typically includes descriptions of the constructor, prototype, and XS element corresponding to the object. The XS element is documented as described in the section "[_XS:_ XS Elements](#XS-XS-Elements)"; the constructor and prototype are documented as shown here. 
 
