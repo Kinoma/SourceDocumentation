@@ -103,6 +103,8 @@ For the "computer voice" font within body text, use back-ticks (\`). For example
 
 For code blocks—that is, one or more code lines that are separate from body text—place a line of three back-ticks (```) above and below the code block. For indentation within code, either use a tab character or enter three spaces per "tab." An example (using the tab character) follows. Note that color highlighting in code will show up only on the web page and not in GitHub's preview.
 
+<!--From CR: Code higlighting isn't appearing at all now on the web page; intentional change? Note, if that's fixed, there's then the issue that the HTML example following this one suppresses higlighting and so is inconsistent with other code.-->
+
 > **Note:** Even a single line of code should be formatted this way (not with just single back-ticks around it on the same line), otherwise the color highlighting will not appear on the web page.
 
 ```
@@ -111,8 +113,6 @@ dst = new File(argv[3], "w");
 while (buf = src.getLine())
 	dst.putLine(buf.toLowercase());
 ```  
-
-<!--From CR: Is my rewrite below correct—i.e., highlighting _must_ be suppressed, however inconsistent that might be with other code?-->
 
 In rare cases where the code includes a `#`, use HTML instead of back-ticks, escape the brackets, and (inconsistent with other code, but necessary to make this work) suppress the highlighting, as illustrated below.
 
@@ -160,7 +160,7 @@ To create a table consisting of short entries, use the example table below as a 
 | Table entry | Table entry ||
 | Table entry | Table entry || 
 
-<!--From CR: That works for the case of short entries but not if the entries in the second column are long (which is not uncommon), as in the second example below; in that case the second column is too narrow. But removing the third, blank column doesn't look right either (at least not on the web page). Also, can the column heads be centered?-->
+<!--From CR: That works for the case of short entries but not if the entries in the second column are long (which is not uncommon), as in the second example below; in that case the second column is too narrow. But removing the third, blank column doesn't look right either (at least not on the web page). Also, can the column heads be centered on the web page? In these respects, this next example looks perfect in GitHub's preview but not on the web page.-->
 
 **Table 2.** Table with Longer Entries
 
