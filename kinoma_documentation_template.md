@@ -189,7 +189,7 @@ For cross-references to headings (items with one or more # in front), use an anc
 When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
 
 ###Internal Links to Figures or Tables
-Although rare, it may be useful to have a cross-reference a figure or table (other than the reference introducing it in the paragraph above it); this can be accomplished by manually adding an HTML anchor target. For example:
+Although rare, it may be useful to have a cross-reference to a figure or table (other than the reference introducing it in the paragraph above it); this can be accomplished by adding an HTML anchor target. For example:
 
 > See [Figure 2](#targeted-image). 
 
