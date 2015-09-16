@@ -124,13 +124,16 @@ Reference sections typically describe many different code entities, using specia
 ##Figures
 Format figures with numbered captions as shown below. Numbers and captions need not be included where doing so would be overkill, such as in numbered steps where every figure obviously demonstrates what the step above it described. 
 
-<a name="targeted-image">**Figure 1.** Figure Caption Goes Here 
-
+**Figure 1.** Figure Caption Goes Here 
 ![](http://kinoma.com/create/img/open-sensor-illus.png)
    
 Create (or crop) all figures so that there’s no blank space on any of the four sides.
 
 When adding, deleting, or moving a captioned figure, remember to also update the numbering of any other affected figures.
+
+This next caption is included here to illustrate how a figure (or table) can be linked to via a cross-reference, per the instruction later in the section "[Cross-References and Links](#cross-references-and-links)." 
+
+<a name="targeted-image">**Figure 2.** Targeted Image 
 
 ##Tables and Other Columnar Formats
 To create a table consisting of short entries, use the example table below as a starting point. Note that a third, blank column has been added in this example so that the second column will not be too far to the right of the first column.
@@ -180,13 +183,9 @@ For cross-references to headings (items with one or more # in front), use an anc
 When changing the wording of any heading, check for references to it in the document and update them. (Kinoma documents should not cross-reference each other's headings, so you only need to check for this in the current document.)
 
 ###Internal Links to Figures or Tables
-Although rare, it may be useful to have a cross-reference a figure or table (other than the reference introducing it in the paragraph above it); this can be accomplished by manually adding an HTML anchor target. For example, given a figure whose caption is targeted like this: 
+Although rare, it may be useful to have a cross-reference a figure or table (other than the reference introducing it in the paragraph above it); this can be accomplished by manually adding an HTML anchor target. For example:
 
-</a>**Figure 3.** Targeted Image
-
-you could link to it with a cross-reference like this:
-
-> See [Figure 3](#targeted-image). 
+> See [Figure 2](#targeted-image). 
 
 ##Comments
 Comments or queries from the writer or a reviewer of the document should be placed above the paragraph that each comment refers to and should indicate who the comment is from. An example (visible only in edit view) follows here.
