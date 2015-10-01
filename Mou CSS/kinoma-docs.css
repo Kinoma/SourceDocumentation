@@ -145,6 +145,21 @@ table.normalTable, .normalTable th, .normalTable td {
    white-space: nowrap;
 } 
 
+table.half-halfTable {
+   width: 100%;
+   margin-top: 14px;
+}
+
+table.half-halfTable th {
+   text-align: left;
+   width: 50%;
+}
+
+.tableIndent {
+   display: inline-block;
+   width: 14px;
+}
+
 blockquote {
     border-left: medium none;
     font-size: inherit;
