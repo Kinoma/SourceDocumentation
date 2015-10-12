@@ -142,6 +142,7 @@ table.normalTable, .normalTable th, .normalTable td {
 .normalTable th {
    text-align: center;
    white-space: nowrap;
+   font-weight:600;
 } 
 
 table.half-halfTable {
@@ -182,10 +183,13 @@ li p {
   margin-right: 14px;
 }
 
+.greenblock2 {
+    background-color: #c5f09e !important;
+    border: 1px solid #ccc;
+}
 
-
-
-
-
+pre.greenblock2 code {
+    background-color: #c5f09e !important;;
+}
 
 
