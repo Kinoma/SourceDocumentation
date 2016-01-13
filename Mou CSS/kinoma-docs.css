@@ -45,6 +45,7 @@ h2{
 	padding-top: 8px;
 	margin-top: 40px;
 	font-size: 32px;
+	line-height: 38px;
 }
 	
 	
@@ -53,6 +54,7 @@ h3 {
 	padding-top: 8px;
 	margin-top: 40px;
 	font-size: 28px;
+	line-height: 34px;
 }
 
 h4{
@@ -208,5 +210,18 @@ pre.greenblock2 code {
 
 /** first p after flatdoc table style**/
 #documentation table + p {
-  padding-top: 16px;
+	padding-top: 16px;
+}
+
+span.listNumber{
+	margin-left: 18px;
+    margin-right: 9px;
+}
+
+ol li ol{
+	list-style-type: lower-alpha;
+}
+
+ol li ol li ol{
+	list-style-type: lower-roman;
 }
